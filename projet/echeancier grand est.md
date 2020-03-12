@@ -11,7 +11,7 @@ Ce document a vocation à proposer un échéancier à l'équipe des petits débr
 
 ## Premier versement
 **Montant**: 5000 euros <br>
-**Date**: 15 mars 2020 (le plus tôt) possible <br>
+**Date**: 31 mars 2020 (le plus tôt) possible <br>
 **Objectif**: Livraison de la plateforme V1 - wordpress + gogocarto <br>
 **Détails**: La première version de la plateforme des CdlT est légère et nécessite peut de développement. Elle ne sera pas interopérable et utilisera des technologies développées pour rendre visible le projet et préfigurer des espaces de partage de données. <br>
 **Prévisionnel**: 2000 euros seront utilisés pour le design + 3000 euros seront utilisés pour son intégration dans Wordpress afin d'avoir un rendu professionnel. <br>
