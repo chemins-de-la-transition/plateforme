@@ -21,7 +21,7 @@ Ce document a vocation à proposer un échéancier à l'équipe des petits débr
 **Date**: Mensuellement à partir d'Aout 2020 <br>
 **Objectif**: Recherche-Action-Développement de la plateforme <br>
 **Détails**: Embauche de 2 développeurs + Un profil spécifique product manager/testeur/designeur <br>
-4 personnes - prévisonnel de 400 euros / jour : 25 jours de travail. <br>
+4 personnes - prévisonnel de 400 euros / jour -> 25 jours de travail / mois <br>
 Prévisionnel : <br>
 *Fin Septembre*: Livraison d'une plateforme de test <br>
 *Fin Octobre*: Livraison d'une plateforme de production 'Minimum viable' <br>
