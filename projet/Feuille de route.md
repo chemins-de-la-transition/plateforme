@@ -9,7 +9,7 @@ Version : 1
 Ce document a pour vocation à partager la feuille de route du développement de la plateforme des [Chemins de la Transition](http://lescheminsdelatransition.org/).
 
 ## Périmètre
-La plateforme des Chemins de la Transition a pour vocation à rendre visible des lieux en transition et leurs activités, à faciliter le cheminement des apprenants, leur mise en lien avec des expériences en transition existantantes et à créer des parcours de découverte, d'apprentissage et de formation sur des thématiques spécifiques (découverte, régionale/géographique, métier, etc...) => pas clair ce qui est entre parenthèse.
+La plateforme des Chemins de la Transition a pour vocation à rendre visible des lieux en transition et leurs activités, à faciliter le cheminement des apprenants, leur mise en lien avec des expériences en transition existantantes et à créer des parcours de découverte, d'apprentissage et de formation sur des thématiques spécifiques (découverte, régionale/géographique, métier, etc...).
 
 Nous adoptons une stratégie de développement dite agile, avec une feuille de route itérative dont la création se fait par le développement de versions successives.
 
@@ -33,7 +33,6 @@ Il y 2 profils types :
 ### Version 2: Agenda
 Dans cette seconde version, on ajoute la fonctionnalité Agenda, qui permet aux accueillants de renseigner leurs formations / événements dans une base de données spécifiques (et pas dans des champs textes comme le propose la première version). 
 
-MR: et/ou calendrier de disponibilité pour accueil du public (qui peut être indépendant des "formations") - jours et horaires + "modalité de disponibilité" ? Est-ce que dans cette version il y a possibilité d'intégrer outil genre bus sémantique qui permet d'aller scroller les sites des accueillants et aspirer les éventuelles foramtions/événements proposés 
 
 ### Version 3: Réservation
 Dans cette troisième version, les chemineurs ont la possibilité de réserver directement leur formation et donc de se faire un calendrier en ligne. MR: + possibilité de payer en ligne le cas échéant // Est-ce que cela intègre du coup des "modules de discussion / échange" entre accueillant et chemineur? + validation de réservation...
