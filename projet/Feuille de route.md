@@ -26,8 +26,9 @@ Grâce à cette version :
 ( à débattre) En tant que chemineur, je peux renseigner des lieux. Ceux-ci ne m'appartiennent pas, mais je peux les cartographier pour participer. => Pas clair, cela dit on comprend : Les chemineurs peuvent contribuer à la documentation des lieux ... A mon avis, ca suppose des mécanismes de contribution de type pull request, ce qui serait topissime. 
 
 
-Cette version est assez similaire à ce que propose TWIZA, sauf que ce ne sont pas des lieux de chantiers participatifs qui sont référencés mais des lieux formations.
-Il y 2 profils types :
+Cette version est assez similaire à ce que propose TWIZA, sauf que ce ne sont pas des lieux de chantiers participatifs qui sont référencés mais des lieux formations. Elle mélange des fonctionnalités de wiki et de gogocarto.
+Il y 3 profils types :
+- Curieux
 - Chemineurs (carto)
 - Accueillant
 
