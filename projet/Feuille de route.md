@@ -21,9 +21,10 @@ Cette caractéristique permet à chaque région d'exprimer sa singularité (char
 Cette première version, c'est la base, les fonctionnalités sans lesquelles on ne pourrait pas développer les suivantes.
 Grâce à cette version :
 - En tant qu'accueillant, je peux rendre visible mon lieu sur la carte et y renseigner les informations qui le décrivent, concernent mon accueil, les activités et événements (découverte, apprentissages, formations) que je propose et leur modalités.
-- En tant que chemineur, je peux renseigner des lieux. Ceux-ci ne m'appartiennent pas, mais je peux les cartographier pour participer. => Pas clair, cela dit on comprend : Les chemineurs peuvent contribuer à la documentation des lieux ... A mon avis, ca suppose des mécanismes de contribution de type pull request, ce qui serait topissime. 
+- En tant que membre des cdlt je peux créer un profil.
 
-MR: Idem, pas clair, que le chemineur puisse commenter un lieu (ou proposer des ajouts - à valider par lieu ou par modérateur) me semble intéressant, qu'il puisse créer des fiches lieux, il ne me semble pas que ca fasse partie de la V1 ni des priorités de développement (?). En revanche, mais je crois qu'on avais mis ça de coté sur le V1, mais qu'on puisse avoir un profil utilisateur pour les chemineurs avec possibilité pour lui d'avoir une "fiche perso"  avec ses compétences et ses "envies / recherches" me semblerait intéressant. On reste dans le rendre visible, coté chemineur - et on prépare la création de "portefeuille de compétences" évolutifs et l'intégration d'Open Badges (ce qui peut aussi intéresser des "financeurs").  
+( à débattre) En tant que chemineur, je peux renseigner des lieux. Ceux-ci ne m'appartiennent pas, mais je peux les cartographier pour participer. => Pas clair, cela dit on comprend : Les chemineurs peuvent contribuer à la documentation des lieux ... A mon avis, ca suppose des mécanismes de contribution de type pull request, ce qui serait topissime. 
+
 
 Cette version est assez similaire à ce que propose TWIZA, sauf que ce ne sont pas des lieux de chantiers participatifs qui sont référencés mais des lieux formations.
 Il y 2 profils types :
@@ -32,6 +33,9 @@ Il y 2 profils types :
 
 ### Version 2: Agenda
 Dans cette seconde version, on ajoute la fonctionnalité Agenda, qui permet aux accueillants de renseigner leurs formations / événements dans une base de données spécifiques (et pas dans des champs textes comme le propose la première version). 
+La partie agenda est déjà proposée dans la V1 dans un champs libre. Elle est sémantisée dans la V2 ce qui permet d'effectuer des recherches.
+
+-- Si la feuille de route des 2 premières versions est fixées, le développement des futures fonctionnalités est soumis à l'agilité et au retour que nous ferons les utilisateurs --
 
 
 ### Version 3: Réservation
@@ -43,3 +47,6 @@ Dans cette nouvelle version, il est possible de créer des parcours thématiques
 
 ### Version 5: A définir
 Ajouter des fonctionnalités sociales, recueil de feedback, notes, messagerie, etc... à conceptualiser en fonction des retours. Gamifier la plateforme ;)
+- Créer un outil de blog dédié
+- Créer un wiki qui permette de capitaliser sur les savoirs acquis (où compléter celui de movilab)
+- créer des outils de communication
