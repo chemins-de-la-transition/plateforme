@@ -20,6 +20,7 @@ Plus largement, la plateforme sera susceptible de faciliter le cheminement des a
 Nous adoptons une stratégie de développement dite agile, avec une feuille de route itérative dont la création se fait par le développement de versions successives.
 
 ## Contraintes
+Nous construisons cette plateforme comme si nous étions nos propres clients. Elle incarne les valeurs dans lesquels on croit.
 La caractéristique principale (qui est aussi une des principales contraintes) est l'éthique de cette plateforme.
 Celon nous, cette éthique est fondée sur :
 - la sobriété des technologies mises en oeuvre (toute proportion gardée, nous nous engageons à faire au mieux)
