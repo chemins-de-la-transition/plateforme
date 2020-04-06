@@ -9,22 +9,30 @@ Version : 1
 Ce document a pour vocation à partager la feuille de route du développement de la plateforme des [Chemins de la Transition](http://lescheminsdelatransition.org/).
 
 ## Périmètre
-La plateforme des Chemins de la Transition a pour vocation à rendre visible des lieux en transition et leurs activités, à faciliter le cheminement des apprenants, leur mise en lien avec des expériences en transition existantantes et à créer des parcours de découverte, d'apprentissage et de formation sur des thématiques spécifiques (découverte, régionale/géographique, métier, etc...).
+La plateforme des Chemins de la Transition est au service de l'animation territoriale. Ces clients sont :
+ - Les facilitateurs de l'association, les personnes qui animent le réseau et sont garants de sa qualité.
+ - Les utilisateurs direct à fortiori, c'est à dire les chemineurs et les passeurs de savoir. Ceux-ci ne sont pas les clients directs de la plateforme mais une forme de B2B2C.
+
+La plateforme a donc pour vocation à rendre visible les moyens de se former aux métiers de "demain", en rendant visible les collectifs, les lieux et les évènements qui proposent des apprentissages.
+
+Plus largement, la plateforme sera susceptible de faciliter le cheminement des apprenants (leur déplacement, leur hébergement), la création de parcours de découverte, d'apprentissage et de formation sur des thématiques spécifiques (découverte, régionale/géographique, métier, etc...).
 
 Nous adoptons une stratégie de développement dite agile, avec une feuille de route itérative dont la création se fait par le développement de versions successives.
 
-## Fonctionnalités
-La caractéristique principale (qui est aussi une des principales contraintes) est que cette plateforme est fondée sur des technologies intéropérables. C'est à dire qu'on aura la possibilité d'héberger plusieurs instances de la plateforme (une par région par exemple) et que celles-ci pourront dialoguer les unes avec les autres.
-Cette caractéristique permet à chaque région d'exprimer sa singularité (charte graphique, valeur) et donc de mettre en valeur son activité, sans pour autant travailler en vase clos dans un environnement fermé.
+## Contraintes
+La caractéristique principale (qui est aussi une des principales contraintes) est l'éthique de cette plateforme.
+Celon nous, cette éthique est fondée sur :
+- la sobriété des technologies mises en oeuvre (toute proportion gardée, nous nous engageons à faire au mieux)
+- la maitrise des données par les utilisateurs finaux.
+- l'intéropérabilité avec d'autres plateformes. A ce propos, nous ne construitons pas une plateforme unique mais bien un réseau de plateforme. Cette caractéristique permet à chaque région d'exprimer sa singularité (charte graphique, valeur) et donc de mettre en valeur son activité, sans pour autant travailler en vase clos dans un environnement fermé.
 
 ### Version 1: Rendre visible
 Cette première version, c'est la base, les fonctionnalités sans lesquelles on ne pourrait pas développer les suivantes.
 Grâce à cette version :
 - En tant qu'accueillant, je peux rendre visible mon lieu sur la carte et y renseigner les informations qui le décrivent, concernent mon accueil, les activités et événements (découverte, apprentissages, formations) que je propose et leur modalités.
 - En tant que membre des cdlt je peux créer un profil.
-
-( à débattre) En tant que chemineur, je peux renseigner des lieux. Ceux-ci ne m'appartiennent pas, mais je peux les cartographier pour participer. => Pas clair, cela dit on comprend : Les chemineurs peuvent contribuer à la documentation des lieux ... A mon avis, ca suppose des mécanismes de contribution de type pull request, ce qui serait topissime. 
-
+- En tant qu'administrateur, je peux pré-renseigner des lieux. Ceux-si ne sont pas visibles au grand public mais constituent une base de contact qui n'est mise en ligne publiquement qu'au moment où son propriétaire se les approprie, s'il le souhaite. On peut imaginer une vocation à prendre le rôle d'un CRM (Customer Relationship Management).
+- En tant qu'administrateur, je peux faire des suggestions de modification sur un lieu déjà existant (de type pull request)
 
 Cette version est assez similaire à ce que propose TWIZA, sauf que ce ne sont pas des lieux de chantiers participatifs qui sont référencés mais des lieux formations. Elle mélange des fonctionnalités de wiki et de gogocarto.
 Il y 3 profils types :
