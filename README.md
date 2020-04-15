@@ -1,5 +1,4 @@
-# Chemin De La Transition
-
+# Règles du jeu
 Vous trouverez dans ce répertoire les élements spécifiques au projet des Chemins De La Transition de l'Assemblée Virtuelle.
 
 Les éléments standards sont développés par SemApps, vous trouverez donc ici uniquement des éléments de configuration (l'ontologie en particulier) et de documentation
