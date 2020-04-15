@@ -3,7 +3,7 @@ Vous trouverez dans ce répertoire les élements spécifiques au projet des Chem
 
 Les éléments standards sont développés par SemApps, vous trouverez donc ici uniquement des éléments de configuration (l'ontologie en particulier) et de documentation
 
-## Ressources :
+## Ressources
 * [Site web](http://lescheminsdelatransition.org/)
 * [La carte](https://lescheminsdelatransition.gogocarto.fr/)
 * [La gare centrale](http://lescheminsdelatransition.org/garecentrale/)
