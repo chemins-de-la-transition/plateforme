@@ -22,3 +22,5 @@ L’Assemblée Virtuelle) est définie par un #CodeSocial que tu es invité à l
 Pour participer à la vie de l’association, une adhésion à prix libre est demandée, elle symbolique mais selon nous nécessaire, dans la mesure où elle témoigne d’un véritable engagement. Seuls les adhérents prennent part aux décisions structurantes de l’association.
 
 Au plaisir d'échanger ! 
+
+L'équipe des Chemins de la Transition
