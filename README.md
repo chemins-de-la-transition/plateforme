@@ -1,12 +1,19 @@
 # Règles du jeu
-Vous trouverez dans ce répertoire les élements spécifiques au projet des Chemins De La Transition de l'Assemblée Virtuelle.
+Vous trouverez dans ce répertoire les élements spécifiques à la plateforme des Chemins De La Transition de l'Assemblée Virtuelle.
 
-Les éléments standards sont développés par SemApps, vous trouverez donc ici uniquement des éléments de configuration (l'ontologie en particulier) et de documentation
+Nous développons la v1 des Chemins de la Transition sur : 
+* [Semantic Media Wiki](https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki)
+* [Gogocarto](gogocarto.fr/)
+
+La V2 sera basée sur [SemApps](https://semapps.org/). 
+
+Pour accéder aux comptes rendus de réunions et à la documentation du projet, [rendez-vous sur le Wiki !](https://github.com/chemins-de-la-transition/plateforme/wiki)
+Pour accéder à la gestion de projet, [rendez-vous sur le kanban](https://github.com/chemins-de-la-transition/plateforme/projects/1)
+
 
 ## Ressources :
 * [Site web](http://lescheminsdelatransition.org/)
 * [La carte](https://lescheminsdelatransition.gogocarto.fr/)
-* [La gare centrale](http://lescheminsdelatransition.org/garecentrale/)
 
 ## Contribuer
 
@@ -14,11 +21,12 @@ Nous sommes un projet frère de l'Assemblée Virtuelle, nous en reprenons le cod
 
 * L’humain d’abord :
 Prenons un café, retrouvons nous à l’apéro, lors d’un événement ou en visio, et apprenons à nous connaître !
+Pour cela, écris nous à bonjour@lescheminsdelatransition.org
 
-* Le #CodeSocial ensuite :
-L’Assemblée Virtuelle) est définie par un #CodeSocial que tu es invité à lire et valider, si tu veux nous rejoindre. Le #CodeSocial constitue le code source de l’association, tu y trouveras les informations nécessaires à une bonne compréhension de ce que nous faisons, comment nous travaillons, les droits et les devoirs de chacun envers le collectif et inversement 😉
+* L'embarquement ensuite :
+Au sein des Chemins de la Transition, tu trouveras un parrain qui t'accueillera et te guidera dans ton implication sur les Chemins de la Transition. 
 
-* Adhérer enfin : 
-Pour participer à la vie de l’association, une adhésion à prix libre est demandée, elle symbolique mais selon nous nécessaire, dans la mesure où elle témoigne d’un véritable engagement. Seuls les adhérents prennent part aux décisions structurantes de l’association.
+* L'Adhésion enfin : 
+Si le projet et la communauté te plaisent, alors, tu pourras décider de nous rejoindre officiellement en prenant ton adhésion !
 
 Au plaisir d'échanger ! 
