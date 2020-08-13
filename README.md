@@ -11,7 +11,7 @@ Pour accéder aux comptes rendus de réunions et à la documentation du projet, 
 Pour accéder à la gestion de projet, [rendez-vous sur le kanban](https://github.com/chemins-de-la-transition/plateforme/projects/1)
 
 
-## Ressources :
+## Ressources
 * [Site web](http://lescheminsdelatransition.org/)
 * [La carte](https://lescheminsdelatransition.gogocarto.fr/)
 
