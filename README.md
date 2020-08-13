@@ -30,3 +30,5 @@ Au sein des Chemins de la Transition, tu trouveras un parrain qui t'accueillera 
 Si le projet et la communauté te plaisent, alors, tu pourras décider de nous rejoindre officiellement en prenant ton adhésion !
 
 Au plaisir d'échanger ! 
+
+L'équipe des Chemins de la Transition
