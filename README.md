@@ -2,7 +2,7 @@
 Vous trouverez dans ce répertoire les élements spécifiques à la plateforme des Chemins De La Transition de l'Assemblée Virtuelle.
 
 Nous développons la v1 des Chemins de la Transition sur : 
-* [Semantic Media Wiki](https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki)
+* [YesWiki](https://yeswiki.net/)
 * [Gogocarto](gogocarto.fr/)
 
 La V2 sera basée sur [SemApps](https://semapps.org/). 
@@ -13,7 +13,8 @@ Pour accéder à la gestion de projet, [rendez-vous sur le kanban](https://githu
 
 ## Ressources
 * [Site web](http://lescheminsdelatransition.org/)
-* [La carte](https://lescheminsdelatransition.gogocarto.fr/)
+* [La carte Gogocarto](https://lescheminsdelatransition.gogocarto.fr/)
+* [La plateforme V1](https://lescheminsdelatransition.org/plateforme)
 
 ## Contribuer
 
