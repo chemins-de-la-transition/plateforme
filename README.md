@@ -1,11 +1,11 @@
 # Règles du jeu
 Vous trouverez dans ce répertoire les élements spécifiques à la plateforme des Chemins De La Transition de l'Assemblée Virtuelle.
 
-Nous développons la v1 des Chemins de la Transition sur : 
+Nous développons la v0.1 des Chemins de la Transition sur : 
 * [YesWiki](https://yeswiki.net/)
 * [Gogocarto](gogocarto.fr/)
 
-La V2 sera basée sur [SemApps](https://semapps.org/). 
+La V1 sera basée sur [SemApps](https://semapps.org/). 
 
 Pour accéder aux comptes rendus de réunions et à la documentation du projet, [rendez-vous sur le Wiki !](https://github.com/chemins-de-la-transition/plateforme/wiki)
 Pour accéder à la gestion de projet, [rendez-vous sur le kanban](https://github.com/chemins-de-la-transition/plateforme/projects/1)
@@ -13,8 +13,8 @@ Pour accéder à la gestion de projet, [rendez-vous sur le kanban](https://githu
 
 ## Ressources
 * [Site web](http://lescheminsdelatransition.org/)
-* [La carte Gogocarto](https://lescheminsdelatransition.gogocarto.fr/)
-* [La plateforme V1](https://lescheminsdelatransition.org/plateforme)
+* [La carte Gogocarto](https://lescheminsdelatransition.gogocarto.fr/) (plateforme V0.0)
+* [La plateforme V0.1](https://lescheminsdelatransition.org/plateforme)
 
 ## Contribuer
 
