@@ -8,11 +8,15 @@ $wakkaConfig = array (
   'yeswiki_version' => 'doryphore',
   'yeswiki_release' => '2020-05-27-1',
   'debug' => 'no',
+  'mysql_host' => 'XXXXXXXXX',
+  'mysql_database' => 'XXXXXXXXX',
+  'mysql_user' => 'XXXXXXXXX',
+  'mysql_password' => 'XXXXXXXXX',
   'table_prefix' => 'yeswiki_plateforme_',
   'base_url' => 'https://lescheminsdelatransition.org/plateforme/?',
   'rewrite_mode' => '0',
   'meta_keywords' => 'transition, écologie, écolieux, formation, permaculture, alternatif, parcours, chemin, apprenant',
-  'meta_description' => 'Plateforme des chemins de la transition',
+  'meta_description' => 'Plateforme des Chemins de la Transition',
   'action_path' => 'actions',
   'handler_path' => 'handlers',
   'header_action' => 'header',
@@ -28,7 +32,7 @@ $wakkaConfig = array (
   'disable_wiki_links' => false,
   'timezone' => 'GMT',
   'root_page' => 'AccueiL',
-  'wakka_name' => 'Chemins de la transition',
+  'wakka_name' => 'Chemins de la Transition',
   'template_directories' => 
   array (
     0 => 'custom/templates',
@@ -39,5 +43,6 @@ $wakkaConfig = array (
   'default_language' => 'fr',
   'db_charset' => 'utf8mb4',
   'baz_map_zoom' => '6',
+  'api_status' => 'off',
 );
 ?>
