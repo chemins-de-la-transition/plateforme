@@ -1,76 +1,16 @@
-- Nom du groupe : admins
-  - Membres : 
-    - WikiAdmin
-    - les développeurs
-    - les coordinateurs de l'association
-  - Pouvoirs : 
-    - Créer une page
-    - Supprimer toutes les pages
-    - Modifier toutes les pages
-    - Devenir propriétaire de toutes les pages
-    - Afficher les pages Gerer.../Tableau de Bord/Bazar
-    - Modifier les pages Gerer.../Tableau de Bord/Bazar
-    - Modifier les groupes d'utilisateurs
-    - Supprimer des utilisateurs
-- Nom du groupe : editeurs
-  - Raison d'être : modifier le contenu du site
-  - Membres : 
-    - @admins
-    - Les contributeurs
-    - les testeurs du site
-  - Pouvoirs : 
-    - Créer une page
-    - Supprimer toutes les pages (sauf Gerer.../Tableau de Bord/Bazar) s'il en est propriétaire.
-    - Modifier toutes les pages (sauf Gerer.../Tableau de Bord/Bazar)
-    - Afficher les pages Gerer.../Tableau de Bord/Bazar
-    - S'approprier une page non appropriée
-    - Modifier/supprimer les pages de titre, les menus et les pages d'accueil
-  - Ne peut pas faire :
-    - Devenir propriétaire d'une page déjà appropriée
-    - Modifier les pages Gerer.../Tableau de Bord/Bazar
-    - Modifier les groupes d'utilisateurs
-    - Supprimer des utilisateurs
-- Nom du groupe : moderateurs
-  - Raison d'être : modéré le contenu des fiches crées
-  - Membres : 
-    - @admins
-    - Les modérateurs
-  - Pouvoirs : 
-    - Créer une page
-    - Supprimer toutes les pages (sauf Gerer.../Tableau de Bord/Bazar/menus/titres) s'il en est propriétaire.
-    - Modifier toutes les pages (sauf Gerer.../Tableau de Bord/Bazar/menus/titres)
-    - S'approprier une page non appropriée
-  - Ne peut pas faire :
-    - Afficher les pages Gerer.../Tableau de Bord/Bazar
-    - Modifier les pages Gerer.../Tableau de Bord/Bazar
-    - Devenir propriétaire d'une page déjà appropriée
-    - Modifier les groupes d'utilisateur
-    - Supprimer des utilisateurs
-    - Modifier/supprimer les pages de titre, les menus et les pages d'accueil
-- Nom du groupe : utilisateur connecté
-  - Pouvoirs : 
-    - Créer une page
-    - Supprimer toutes les pages (sauf Gerer.../Tableau de Bord/Bazar/menus/titres) s'il en est propriétaire.
-    - Modifier toutes les pages (sauf Gerer.../Tableau de Bord/Bazar/menus/titres)
-    - S'approprier une page non appropriée
-  - Ne peut pas faire :
-    - Afficher les pages Gerer.../Tableau de Bord/Bazar
-    - Modifier les pages Gerer.../Tableau de Bord/Bazar
-    - Devenir propriétaire d'une page déjà appropriée
-    - Modifier les groupes d'utilisateurs 
-    - Supprimer des utilisateurs
-    - Modifier/supprimer les pages de titre, les menus et les pages d'accueil
-- Nom du groupe : utilisateur non connecté
-  - Pouvoirs : 
-    - Créer une page
-    - Modifier toutes les pages (sauf Gerer.../Tableau de Bord/Bazar/menus/titres)
-    - Peut modifier une fiche existante
-  - Ne peut pas faire :
-    - Supprimer une page
-    - Afficher les pages Gerer.../Tableau de Bord/Bazar
-    - Modifier les pages Gerer.../Tableau de Bord/Bazar
-    - Devenir propriétaire d'une page déjà appropriée
-    - Modifier les groupes d'utilisateurs
-    - Supprimer des utilisateurs
-    - Modifier/supprimer les pages de titre, les menus et les pages d'accueil
-    - S'approprier une page non appropriée
+
+
+| Groupe                                                                    | admins                                                    | editeurs                            | moderateurs                         | utilisateur   connecté              | utilisateur  non connecté |
+| ------------------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------------- | ------------------------- |
+| **Membres**                                                               | Wikiadmins   Développeurs  Coordinateurs de l'association | @admins Contributeurs  Testeurs     | @admins  Modérateurs                |                                     |                           |
+| **Créer une page**                                                        | Oui                                                       | Oui                                 | Oui                                 | Oui                                 | Oui                       |
+| **Modifier une page**                                                     | Toutes                                                    | si acl = `*`, `+` ou `@editeurs`    | si acl = `*`, `+` ou `@moderateurs` | si acl = `*` ou `+`                 | uniquement si  acl = `*`  |
+| **S'approprier une page**                                                 | Toutes                                                    | Uniquement si pas encore appropriée | Uniquement si pas encore appropriée | Uniquement si pas encore appropriée | Non                       |
+| **Supprimer une page**                                                    | Une fois propriétaire                                     | Une fois propriétaire               | Une fois propriétaire               | Une fois propriétaire               | Non                       |
+| **Modifier un groupe utilisateur**                                        | Oui                                                       | Non                                 | Non                                 | Non                                 | Non                       |
+| **Supprimer un groupe utilisateur**                                       | Oui                                                       | Non                                 | Non                                 | Non                                 | Non                       |
+| **Supprimer un utilisateur**                                              | Oui                                                       | Non                                 | Non                                 | Non                                 | Non                       |
+| **Afficher les pages commençant par `Gerer`, `TableauDeBord` et `Bazar`** | Oui                                                       | Oui                                 | Non                                 | Non                                 | Non                       |
+| **Modifier les pages commençant par `Gerer`, `TableauDeBord` et `Bazar`** | Oui                                                       | Non                                 | Non                                 | Non                                 | Non                       |
+| **Modifier les pages de titres, menus et contenu de l'association**       | Oui                                                       | Oui                                 | Non                                 | Non                                 | Non                       |
+| **Saisir, modifier, supprimer des fiches lieu** | Oui                                                       | Oui                                 | Oui                                 | Non                                 | Non                       |
