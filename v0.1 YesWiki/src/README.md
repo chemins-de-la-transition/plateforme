@@ -7,5 +7,5 @@ Dans ce dossier, sont déposés :
  
 Les données personnelles ou sensibles sont retirées de ces fichiers sources.
 
-Le dossier pages ne doit pas âtre copié tel quel.
+Le dossier `pages` ne doit pas être copié tel quel.
 Il contient les sources de chaqeu page en clair.
