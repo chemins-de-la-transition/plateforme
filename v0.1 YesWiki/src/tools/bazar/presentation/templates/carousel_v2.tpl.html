@@ -91,6 +91,11 @@ Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
     margin: 0;
     padding: 0;
 }
+.hero p {
+  overflow-y: hidden;
+  height: 20vh ;
+  
+}
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
     -webkit-transition: 2s all ease-in-out .1s;
@@ -198,13 +203,13 @@ padding: 20px;
                 <?php if (isset($fiche['bf_description']) && $fiche['bf_description']!='' ) : ?>
                   <p><?php echo $fiche['bf_description']; ?></p>
                 <?php endif; ?>
+				<a href="<?php echo $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>">En savoir plus...</a>
           <?php endif; ?>
       </div>
 	   <div class="col-sm-5">
 	    <?php if (!empty($fiche['imagebf_image'])) : ?>
 	      <a href="<?php echo $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>"><img class="slide-<?php echo $nb; ?>" src="<?php echo 'cache/image_'.$fiche['imagebf_image'];?>" width="100%;" style="margin:3px;"></a>
 	    <?php endif; ?>
-           <a class="btn btn-hero btn-lg btn-primary" href="<?php echo $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>">En savoir plus</a>
                 <?php if (isset($fiche['bf_lien']) && $fiche['bf_lien']!='' ) : ?>
                     <a class="btn btn-hero btn-lg" href="<?php echo $fiche['bf_lien']; ?>">Site internet</a>
                 <?php endif; ?>
