@@ -1,12 +1,9 @@
 <?php
-// wakka.config.php cr&eacute;&eacute;e Wed Aug  5 00:29:18 2020
-// ne changez pas la yeswiki_version manuellement !
-
 $wakkaConfig = array (
   'wakka_version' => '0.1.1',
   'wikini_version' => '0.5.0',
   'yeswiki_version' => 'doryphore',
-  'yeswiki_release' => '2020-05-27-1',
+  'yeswiki_release' => '2020-09-03-1',
   'debug' => 'no',
   'mysql_host' => 'XXXXXXXXX',
   'mysql_database' => 'XXXXXXXXX',
@@ -45,4 +42,3 @@ $wakkaConfig = array (
   'baz_map_zoom' => '6',
   'api_status' => 'off',
 );
-?>
