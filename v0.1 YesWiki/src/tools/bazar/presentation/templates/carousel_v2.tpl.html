@@ -1,0 +1,223 @@
+<?php
+// ce template fonctionne avec une page PageDessusSlider à créer sur le wiki et qui contient ce qui apparait sur le slider quand on applique le paramètre avecpage="oui" dans le template
+if (count($fiches)>0) :
+    $nb = 0; ?>
+
+<?php
+    $avecpage = ''; // declaration d'une chaine de char vide
+    $sanstitre = ''; // declaration d'une chaine de char vide
+	$id_carousel = '' ; // declaration d'une chaine de char vide
+	$duree_ms = '' ; // declaration d'une chaine de char vide
+
+    /**************************************************************************************************
+     * parametres du template :
+     * ils peuvent être passés dans l'action bazar ou bazarliste, mais sont spécifiques à ce template
+     **************************************************************************************************/
+
+    // version avec une page par dessus le slider (avecpage="oui") sinon c'est slider classique
+    $avecpage = $GLOBALS['wiki']->GetParameter('avecpage');
+    if (empty($avecpage)) {
+        $avecpage = 'non';
+    }
+
+    // version qui cache le titre (sanstitre="oui") sinon c'est classique
+    $sanstitre = $GLOBALS['wiki']->GetParameter('sanstitre');
+    if (empty($sanstitre)) {
+        $sanstitre = 'non';
+    }
+	
+	// récupérer l'id du carrousel sinon ''
+    $id_carousel = $GLOBALS['wiki']->GetParameter('idcarousel');
+    if (empty($id_carousel)) {
+        $id_carousel = '';
+    }
+	
+	// récupérer la durée de transition en ms sinon 4000
+    $duree_ms = $GLOBALS['wiki']->GetParameter('dureems');
+    if (empty($duree_ms)) {
+        $duree_ms = '4000';
+    }
+    
+
+?>
+
+<style>
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+*/
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 60vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 60vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #09C;
+    border-color: #09C;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    /*position: absolute;*/
+    top: 5px;
+    left: 5px;
+    z-index: 3;
+    color: var(--main-text-color);
+    /*text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);*/
+}
+.hero h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.hero p {
+  overflow-y: hidden;
+  height: 20vh ;
+  
+}
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s;
+        -ms-transition: 2s all ease-in-out .1s;
+         -o-transition: 2s all ease-in-out .1s;
+            transition: 2s all ease-in-out .1s;
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s;
+        -ms-transition: 2s all ease-in-out .1s;
+         -o-transition: 2s all ease-in-out .1s;
+            transition: 2s all ease-in-out .1s;
+}
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--neutral-soft-color) ;
+    opacity: .3;
+}
+.carousel-inner {
+  z-index:2;
+}
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #09C;
+    border-color: #09C;
+    outline: none;
+    margin: 5px auto;
+}
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-img {
+  height: 60vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* CSS pour la page qui vient par dessus le slider */
+.yw-headerpage {position:relative}
+
+#text-slider { position: absolute;
+top: 0;
+left: 0;
+width: 440px;
+z-index: 4;
+background: rgba(245,245,220,.8);
+height: 60vh;
+margin-left: 13vw;
+padding: 20px;
+}
+</style>
+
+<?php if ($avecpage == 'oui') : ?>
+    <div id="text-slider">
+    <?php
+    // pour inclure du code wiki dans un template il faut utiliser la ligne ci-dessous
+    echo $GLOBALS['wiki']->Format('{{include page="PageDessusSlider"}}');
+    ?>
+    </div>
+<?php endif; ?>
+
+<?php echo '<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="' . $duree_ms . '" id="bs-carousel' . $id_carousel . '">' ?>
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Indicators -->
+  <?php if ($avecpage != 'oui') : ?>
+  <ol class="carousel-indicators">
+    <?php $nbfiches = count($fiches);
+    for ($i=0; $i < $nbfiches; $i++) {
+        echo '<li data-target="#bs-carousel' . $id_carousel . '" data-slide-to="'.$i.'"'.($i == 0 ? ' class="active"' : '').'></li>';
+    }
+    ?>
+  </ol>
+  <?php endif; ?>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <?php foreach ($fiches as $fiche) : $nb++; ?>
+    <div class="item slides <?php if ($nb == 1) echo 'active'; ?>">
+	
+
+       <div class="hero col-sm-7">
+        <?php if ($avecpage != 'oui') : ?>
+                <?php if ($sanstitre != 'oui') : ?>
+                  <h1><a href="<?php echo $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>"><?php echo $fiche['bf_titre']; ?></a></h1>
+                
+                <?php endif; ?>
+                <?php if (isset($fiche['bf_description']) && $fiche['bf_description']!='' ) : ?>
+                  <p><?php echo $fiche['bf_description']; ?></p>
+                <?php endif; ?>
+				<a href="<?php echo $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>">En savoir plus...</a>
+          <?php endif; ?>
+      </div>
+	   <div class="col-sm-5">
+	    <?php if (!empty($fiche['imagebf_image'])) : ?>
+	      <a href="<?php echo $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>"><img class="slide-<?php echo $nb; ?>" src="<?php echo 'cache/image_'.$fiche['imagebf_image'];?>" width="100%;" style="margin:3px;"></a>
+	    <?php endif; ?>
+                <?php if (isset($fiche['bf_lien']) && $fiche['bf_lien']!='' ) : ?>
+                    <a class="btn btn-hero btn-lg" href="<?php echo $fiche['bf_lien']; ?>">Site internet</a>
+                <?php endif; ?>
+	   </div>
+    </div>
+    <?php endforeach; ?>
+  </div>
+</div>
+
+<?php
+endif;
