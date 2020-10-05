@@ -25,19 +25,19 @@ if (count($fiches)>0) :
     if (empty($sanstitre)) {
         $sanstitre = 'non';
     }
-	
+
 	// récupérer l'id du carrousel sinon ''
     $id_carousel = $GLOBALS['wiki']->GetParameter('idcarousel');
     if (empty($id_carousel)) {
         $id_carousel = '';
     }
-	
+
 	// récupérer la durée de transition en ms sinon 4000
     $duree_ms = $GLOBALS['wiki']->GetParameter('dureems');
     if (empty($duree_ms)) {
         $duree_ms = '4000';
     }
-    
+
 
 ?>
 
@@ -46,21 +46,34 @@ if (count($fiches)>0) :
 Fade content bs-carousel with hero headers
 Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
 */
+
+/*.col-sm-5 {
+	 margin-bottom: 1em !important;
+}*/
+
 /********************************/
 /*       Fade Bs-carousel       */
 /********************************/
 .fade-carousel {
     position: relative;
-    height: 60vh;
+    min-height: 30vh; height: auto;
+    padding-bottom: 25px;
+}
+.fade-carousel .carousel-inner {
+	 padding: 20px;
 }
 .fade-carousel .carousel-inner .item {
-    height: 60vh;
+    min-height: 30vh; height: auto;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
     background-color: #09C;
     border-color: #09C;
     opacity: .7;
+}
+ol.carousel-indicators {
+	  margin-bottom : 5px;
+	  bottom : 10px;
 }
 .fade-carousel .carousel-indicators > li.active {
   width: 10px;
@@ -94,7 +107,7 @@ Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
 .hero p {
   overflow-y: hidden;
   height: 20vh ;
-  
+
 }
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
@@ -192,13 +205,13 @@ padding: 20px;
   <div class="carousel-inner">
     <?php foreach ($fiches as $fiche) : $nb++; ?>
     <div class="item slides <?php if ($nb == 1) echo 'active'; ?>">
-	
+
 
        <div class="hero col-sm-7">
         <?php if ($avecpage != 'oui') : ?>
                 <?php if ($sanstitre != 'oui') : ?>
                   <h1><a href="<?php echo $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>"><?php echo $fiche['bf_titre']; ?></a></h1>
-                
+
                 <?php endif; ?>
                 <?php if (isset($fiche['bf_description']) && $fiche['bf_description']!='' ) : ?>
                   <p><?php echo $fiche['bf_description']; ?></p>
