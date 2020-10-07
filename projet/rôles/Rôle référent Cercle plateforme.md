@@ -1,7 +1,7 @@
 # Rôle référent Cercle plateforme
 
 _Rôle valise pour l’instant ayant vocation à terme à être découpé (facilitation / animation / utilisation prise de décisions / communication avec autres cercles /
-veille temporelle / rapporteur) lors de l'augmentation de l'équipe)
+veille temporelle / rapporteur) lors de l'augmentation de l'équipe)_
 
 
 **Besoins / raison d'être** :
