@@ -2,6 +2,22 @@ var $formBuilderTextInput = $("#form-builder-text");
 var $formBuilderContainer = $("#form-builder-container");
 var formBuilder;
 
+// When user add manuall via wikiCode a list or a formId that does not exist, keep the value
+// so it can be added the select option list
+var listAndFormUserValues = {};
+// Fill the listAndFormUserValues
+var text = $formBuilderTextInput.val().trim();
+var textFields = text.split("\n");
+for (var i = 0; i < textFields.length; i++) {
+  var textField = textFields[i];
+  var fieldValues = textField.split("***");
+  if (fieldValues.length > 1) {
+    var wikiType = fieldValues[0];
+    if (['checkboxfiche', 'checkbox', 'liste', 'radio', 'listefiche', 'radiofiche'].indexOf(wikiType) > -1 && fieldValues[1] && !(fieldValues[1] in formAndListIds)) {
+      listAndFormUserValues[fieldValues[1]] = fieldValues[1];
+    }
+  }
+}
 // Custom fields to add to form builder
 var fields = [
   {
@@ -121,10 +137,10 @@ var selectConf = {
   },
   listeOrFormId: {
     label: "Choix de la liste/du formulaire",
-    options: { ...{ "": "" }, ...formAndListIds.lists, ...formAndListIds.forms }
+    options: { ...{ "": "" }, ...formAndListIds.lists, ...formAndListIds.forms, ...listAndFormUserValues }
   },
-  listId: { label: "", options: formAndListIds.lists },
-  formId: { label: "", options: formAndListIds.forms },
+  listId: { label: "", options: { ...formAndListIds.lists, ...listAndFormUserValues } },
+  formId: { label: "", options: { ...formAndListIds.forms, ...listAndFormUserValues } },
   defaultValue: {
     label: "Valeur par défaut",
   },
@@ -196,6 +212,8 @@ var typeUserAttrs = {
       value: "right",
       options: { left: "Gauche", center: "Centre", right: "Droite" }
     },
+    read: readConf,
+    write: writeconf,
     semantic: semanticConf
   },
   select: selectConf,
@@ -218,11 +236,15 @@ var typeUserAttrs = {
     },
     hint: { label: "Texte d'aide" },
     size: { label: "Largeur champ de saisie" },
+    read: readConf,
+    write: writeconf,
     semantic: semanticConf
   },
   file: {
     maxsize: { label: "Taille max" },
-    hint: { label: "Texte d'aide" },
+    hint: { label: "Texte d'aide" }, 
+    read: readConf,
+    write: writeconf,
     semantic: semanticConf
   },
   tags: {
@@ -291,7 +313,10 @@ var typeUserAttrs = {
       label: "Type de fiche liee",
       placeholder:
         "mettre checkbox ici si vos fiches liées le sont via un checkbox"
-    }
+    },
+    read: readConf,
+    write: writeconf,
+    semantic: semanticConf
   },
   custom: {
     param0: { label: "Param0"},
@@ -303,7 +328,12 @@ var typeUserAttrs = {
     param6: { label: "Param6"},
     param7: { label: "Param7"},
     param8: { label: "Param8"},
-    param9: { label: "Param9"}
+    param9: { label: "Param9"},
+    param10: { label: "Param10"},
+    param11: { label: "Param11"},
+    param12: { label: "Param12"},
+    param13: { label: "Param13"},
+    param14: { label: "Param14"}
   }
 };
 
@@ -536,9 +566,11 @@ function initializeFormbuilder(formAndListIds) {
     if ($formBuilderTextInput.is(":focus")) return;
     ensureFieldsNamesAreUnique();
 
-    var formData = formBuilder.actions.getData();
-    var wikiText = formatJsonDataIntoWikiText(formData);
-    if (wikiText) $formBuilderTextInput.val(wikiText);
+    if ($("#form-builder-container").is(':visible')) {
+      var formData = formBuilder.actions.getData();
+      var wikiText = formatJsonDataIntoWikiText(formData);
+      if (wikiText) $formBuilderTextInput.val(wikiText);
+    }
 
     // when selecting between data source lists or forms, we need to populate again the listOfFormId select with the
     // proper set of options
@@ -614,12 +646,12 @@ function initializeFormbuilder(formAndListIds) {
     $("a[type=edit].icon-pencil").attr("title", "Editer/Masquer");
   }, 300);
 
-  $formBuilderTextInput.change(initializeBuilderFromTextInput);
+  $("#formbuilder-link").click(initializeBuilderFromTextInput);
 }
 
 function initializeBuilderFromTextInput() {
-  var jsondData = parseWikiTextIntoJsonData($formBuilderTextInput.val());
-  formBuilder.actions.setData(JSON.stringify(jsondData));
+  var jsonData = parseWikiTextIntoJsonData($formBuilderTextInput.val());
+  formBuilder.actions.setData(JSON.stringify(jsonData));
 }
 
 // prevent user to create two fields with the same name
@@ -687,7 +719,6 @@ function formatJsonDataIntoWikiText(formData) {
 // into a json object "{ type: 'texte', name: 'bf_titre', label: 'Nom' .... }"
 function parseWikiTextIntoJsonData(text) {
   var result = [];
-  console.log(text);
   var text = text.trim();
   var textFields = text.split("\n");
   for (var i = 0; i < textFields.length; i++) {
@@ -696,7 +727,10 @@ function parseWikiTextIntoJsonData(text) {
     var fieldObject = {};
     if (fieldValues.length > 1) {
       var wikiType = fieldValues[0];
-      var fieldType = wikiType in yesWikiTypes ? yesWikiTypes[wikiType].type : 'custom';
+      var fieldType = wikiType in yesWikiTypes ? yesWikiTypes[wikiType].type : wikiType;
+      // check that the fieldType really exists in our form builder
+      if (!(fieldType in yesWikiMapping)) fieldType = 'custom'
+
       var mapping = yesWikiMapping[fieldType];
 
       fieldObject["type"] = fieldType;
