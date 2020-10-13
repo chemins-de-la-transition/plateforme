@@ -19,7 +19,7 @@
 
 **Périmètre / domaine d'action** :
 
- - page dédiée sur le sit vitrine : https://lescheminsdelatransition.org/les-technologies-utilisees-2/
+ - page dédiée sur le site vitrine : https://lescheminsdelatransition.org/les-technologies-utilisees-2/
  - GitHub : https://github.com/chemins-de-la-transition/plateforme/
  - Kanban projet V2 - SemApps : https://github.com/chemins-de-la-transition/plateforme/projects/2
  - Comptes-rendus : https://github.com/chemins-de-la-transition/plateforme/wiki/Wiki-de-la-platefome-Chemins-de-la-Transition

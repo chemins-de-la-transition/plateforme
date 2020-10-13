@@ -20,7 +20,7 @@
 **Périmètre / domaine d'action** :
 
  - plateforme V0.1 en YesWiki : https://lescheminsdelatransition.org/plateforme/
- - page dédiée sur le sit vitrine : https://lescheminsdelatransition.org/les-technologies-utilisees-2/
+ - page dédiée sur le site vitrine : https://lescheminsdelatransition.org/les-technologies-utilisees-2/
  - GitHub : https://github.com/chemins-de-la-transition/plateforme/
  - Kanban projet V0.1-CdlT-YesWiki : https://github.com/chemins-de-la-transition/plateforme/projects/1
  - Comptes-rendus : https://github.com/chemins-de-la-transition/plateforme/wiki/Wiki-de-la-platefome-Chemins-de-la-Transition
