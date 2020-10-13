@@ -106,6 +106,7 @@ var visibilityOptions = {
   " % ": "Propriétaire de la fiche et admins",
   "@admins": "Membre du groupe admin",
   "@moderateurs": "Membre du groupe moderateurs",
+  "!@moderateurs": "Non membre du groupe moderateurs",
   "% @moderateurs": "Membre du groupe moderateurs, propriétaire et admins",
   "@editeurs": "Membre du groupe éditeurs",
   "@Lieux": "Membre du groupe Lieux"
@@ -502,6 +503,11 @@ var yesWikiMapping = {
     7: "param7",
     8: "param8",
     9: "param9",
+    10: "param10",
+    11: "param11",
+    12: "param12",
+    13: "param13",
+    14: "param14",
   },
 };
 // Mapping betwwen yeswiki field type and standard field implemented by form builder
@@ -521,10 +527,11 @@ var yesWikiTypes = {
   "listefiche": { type: "select", subtype2: "form"},
   "radiofiche": { type: "radio-group", subtype2: "form"},
   "fichier": { type: "file", subtype: "file" },
-  "champs_cache": { type: "hidden" }
+  "champs_cache": { type: "hidden" }  
 }
 
 function initializeFormbuilder(formAndListIds) {
+
   // FormBuilder conf
   formBuilder = $formBuilderContainer.formBuilder({
     showActionButtons: false,
