@@ -53,14 +53,14 @@ Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
 /********************************/
 .fade-carousel {
     position: relative;
-    min-height: 30vh; height: auto;
+    min-height: 50vh ;
     padding-bottom: 25px;
 }
 .fade-carousel .carousel-inner {
 	 padding: 20px;
 }
 .fade-carousel .carousel-inner .item {
-    min-height: 30vh; height: auto;
+    min-height: 50vh ;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
@@ -96,7 +96,7 @@ ol.carousel-indicators {
               transform: translate3d(-50%,-50%,0);*/
 }
 .hero h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -172,6 +172,11 @@ height: 60vh;
 margin-left: 13vw;
 padding: 20px;
 }
+.slides .col-sm-5 a > img {
+	margin:3px;
+	max-height:176px;
+	max-width: 100% ;
+}
 </style>
 
 <?php if ($avecpage == 'oui') : ?>
@@ -218,10 +223,10 @@ padding: 20px;
       </div>
 	   <div class="col-sm-5">
 	    <?php if (!empty($fiche['imagebf_image'])) : ?>
-	      <a href="<?php echo $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>"><img class="slide-<?php echo $nb; ?>" src="<?php echo 'cache/image_'.$fiche['imagebf_image'];?>" width="100%;" style="margin:3px;"></a>
+	      <a href="<?php echo $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>"><img class="slide-<?php echo $nb; ?>" src="<?php echo 'cache/image_'.$fiche['imagebf_image'];?>"></a>
 	    <?php endif; ?>
                 <?php if (isset($fiche['bf_lien']) && $fiche['bf_lien']!='' ) : ?>
-                    <a class="btn btn-hero btn-lg" href="<?php echo $fiche['bf_lien']; ?>">Site internet</a>
+                    <a class="btn btn-hero" href="<?php echo $fiche['bf_lien']; ?>">Site internet</a>
                 <?php endif; ?>
 	   </div>
     </div>
