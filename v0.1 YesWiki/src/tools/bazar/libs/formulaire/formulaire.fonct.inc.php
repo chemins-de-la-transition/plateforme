@@ -1715,17 +1715,18 @@ function acls(&$formtemplate, $tableau_template, $mode, $valeurs_fiche)
         }
         if ($comment == 'user' or $comment == '#') {
             $comment = $valeurs_fiche['nomwiki'];
-        }
-        // hack pour que SavePage ne re-ecrit pas les droits avec les valeurs par défaut
-        $GLOBALS['wiki']->pageCache[$valeurs_fiche['id_fiche']]['body'] = $valeurs_fiche;
-        $GLOBALS['wiki']->pageCache[$valeurs_fiche['id_fiche']]['tag'] = $valeurs_fiche['id_fiche'];
-        $GLOBALS['wiki']->pageCache[$valeurs_fiche['id_fiche']]['owner'] = (isset($valeurs_fiche['nomwiki']) ? $valeurs_fiche['nomwiki'] : $valeurs_fiche['createur']);
-        $GLOBALS['wiki']->pageCache[$valeurs_fiche['id_fiche']]['comment_on'] = '';
+        }															   
 
         // on sauve les acls
-        $GLOBALS['wiki']->SaveAcl($valeurs_fiche['id_fiche'], 'read', $read);
-        $GLOBALS['wiki']->SaveAcl($valeurs_fiche['id_fiche'], 'write', $write);
-        $GLOBALS['wiki']->SaveAcl($valeurs_fiche['id_fiche'], 'comment', $comment);
+		if (empty($GLOBALS['wiki']->LoadAcl($valeurs_fiche['id_fiche'], 'read', false)['list'])){
+            $GLOBALS['wiki']->SaveAcl($valeurs_fiche['id_fiche'], 'read', $read);
+        }
+        if (empty($GLOBALS['wiki']->LoadAcl($valeurs_fiche['id_fiche'], 'write', false)['list'])){
+            $GLOBALS['wiki']->SaveAcl($valeurs_fiche['id_fiche'], 'write', $write);
+        }
+        if (empty($GLOBALS['wiki']->LoadAcl($valeurs_fiche['id_fiche'], 'comment', false)['list'])){
+            $GLOBALS['wiki']->SaveAcl($valeurs_fiche['id_fiche'], 'comment', $comment);
+        }
     }
 }
 
@@ -2125,10 +2126,6 @@ function listefiche(&$formtemplate, $tableau_template, $mode, $valeurs_fiche)
                 'keywords' => (!empty($tableau_template[13])) ? $tableau_template[13] : ''
             ]);
             foreach ($tab_result as $fiche) {
-                $valeurs_fiche_liste = json_decode($fiche["body"], true);
-                if (YW_CHARSET != 'UTF-8') {
-                    $valeurs_fiche_liste = array_map('utf8_decode', $valeurs_fiche_liste);
-                }
                 $select[$valeurs_fiche_liste['id_fiche']] = $valeurs_fiche_liste['bf_titre'];
             }
         } else {
@@ -2286,11 +2283,7 @@ function checkboxfiche(&$formtemplate, $tableau_template, $mode, $valeurs_fiche)
 
         $checkboxtab = array();
         foreach ($tab_result as $fiche) {
-            $valeurs_fiche_liste = json_decode($fiche["body"], true);
-            if (YW_CHARSET != 'UTF-8') {
-                $valeurs_fiche_liste = array_map('utf8_decode', $valeurs_fiche_liste);
-            }
-            $checkboxtab[$valeurs_fiche_liste['id_fiche']] = $valeurs_fiche_liste['bf_titre'];
+            $checkboxtab[$fiche['id_fiche']] = $fiche['bf_titre'];
         }
         if (count($checkboxtab) > 0) {
             asort($checkboxtab, SORT_NATURAL | SORT_FLAG_CASE);
