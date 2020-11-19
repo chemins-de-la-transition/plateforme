@@ -1,0 +1,22 @@
+titre***Actualite lieu {{bf_nom}}***Titre Automatique***
+texte***bf_nom***Titre***60***255*** *** ***text***1*** *** *** * *** * *** *** ***
+textelong***bf_description***Description***80***5*** *** ***wiki***0*** *** *** * *** * *** *** ***
+checkboxfiche***10***Thématique*** *** *** ***bf_thematique*** ***0*** *** *** * *** * *** *** ***
+checkboxfiche***5***Lieux concernés*** *** *** ***bf_lieu_actu***tags***0*** ***Taper quelques lettres pour avoir la proposition d'un lieu puis taper sur entrée*** * *** * *** *** ***
+listedatedeb***bf_date_debut_evenement***Début de l'évènement*** *** *** *** *** ***1*** *** *** * *** * *** *** ***
+listedatedeb***bf_date_fin_evenement***Fin de l'évènement*** *** *** *** *** ***1*** *** *** * *** * *** *** ***
+checkbox***ListeInformationsSurLesEvenements***Informations*** *** *** ***bf_infos*** ***0*** *** *** * *** * *** *** ***
+texte***bf_site_internet***Site Web***80***255*** *** ***text***0*** *** *** * *** * *** *** ***
+texte***bf_contact***Personne à contacter*** *** *** *** ***text***1*** *** *** * *** * *** *** ***
+champs_mail***bf_mail***Email*** *** *** ***form*** ***0*** *** *** * *** * *** *** ***
+texte***bf_tel***Téléphone***15***15*** *** ***text***0*** ***ATTENTION : donnée publique*** * *** * *** *** ***
+image***bf_image***Image (facultatif)***140***140***600***600***right***0*** *** *** * *** * *** *** ***
+fichier***fichier***Documents***20000000*** *** *** ***file***0*** *** *** * *** * *** *** ***
+texte***bf_adresse***Adresse***50***50*** *** ***text***0*** *** *** * *** * *** *** ***
+texte***bf_adresse1***Complément d'adresse***50***50*** *** ***text***0*** *** *** * *** * *** *** ***
+texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** *** * *** * *** *** ***
+texte***bf_ville***Ville***50***80*** *** ***text***0*** *** *** * *** * *** *** ***
+carte_google***bf_latitude***bf_longitude*** *** ***
+tags***bf_tags***Tags*** *** *** *** *** ***0*** *** *** * *** * *** *** ***
+acls*** * ***% @moderateurs*** * ***
+labelhtml***<h3>Il ne vous reste plus qu'à valider ! </h3>*** *** ***

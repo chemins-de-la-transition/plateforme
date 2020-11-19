@@ -1,0 +1,5 @@
+texte***bf_titre***Nom de l'organisation<br>*** *** *** *** ***text***1*** *** *** * *** * *** ***name,schema:name***
+image***bf_image***Logo***140***140***600***600***right***0*** *** *** * *** * *** *** ***
+textelong***bf_description***Description***5***5*** *** ***wiki***0*** *** *** * *** * *** *** ***
+lien_internet***bf_site_internet***Site Internet***40***255*** *** ***url***0*** *** *** * *** * *** ***url,schema:WebSite***
+checkbox***ListeTypeDePartenariat***Type de partenariat<br>*** *** *** *** *** ***0*** *** *** * *** * *** *** ***

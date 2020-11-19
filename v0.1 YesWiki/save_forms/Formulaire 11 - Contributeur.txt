@@ -1,0 +1,41 @@
+labelhtml***<i><span class="symbole_obligatoire"></span> : champs requis</i>*** *** ***
+labelhtml***<ul class="nav nav-tabs" role="tablist"><li role="presentation" class="active"><a href="#menu1Contact" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))">1. Informations de contact</a></li><li role="presentation"><a href="#menu2Questionnaire" role="tab" data-toggle="tab">2. Questionnaire</a></li></ul><div class="tab-content"><!--indique qu'il y aura 2 onglets-->*** *** ***
+labelhtml***<div role="tabpanel" class="tab-pane active" id="menu1Contact"><br><br><!--ouvre le premier onglet-->*** *** ***
+labelhtml***<h2 class="text-center">Contact</h2>*** *** ***
+titre***Fiche contributeur {{bf_prenom}} {{bf_nom}}***Titre Automatique***
+texte***bf_prenom***Prénom*** *** *** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** *** ***
+texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** *** ***
+image***bf_image***Portrait***210***140***300***200***right***0*** *** ***% @moderateurs*** * *** *** ***
+champs_mail***bf_email***Email*** *** *** *** *** ***1*** *** ***% @moderateurs*** * *** *** ***
+champs_mail***bf_gmail***Identifiant Gmail*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** *** ***
+texte***bf_tel***Téléphone***15***15*** *** ***text***0*** *** ***% @moderateurs*** * *** *** ***
+texte***bf_id_matrix***Identifiant matrix.org / Element*** *** *** *** ***text***1*** ***plus d'info sur https://element.io/ {en}***% @moderateurs*** * *** *** ***
+texte***bf_id_github***Identifiant GitHub*** *** *** *** ***text***0*** ***Plus d'info sur https://github.com/ {en}***% @moderateurs*** * *** *** ***
+labelhtml***<a class="btn btn-primary pull-right" href="https://www.helloasso.com/associations/les-chemins-de-la-transition/adhesions/cotisations/">Adhérer</a>*** *** ***
+listedatedeb***bf_date_adhesion***Date d'adhésion*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** *** ***
+liste***ListeOuiNon***J'accepte que mes informations soient diffusées au sein des Chemins de la Transition*** *** *** ***bf_partage_info*** ***1*** *** ***% @moderateurs*** * *** *** ***
+texte***bf_adresse***Adresse***50*** *** *** ***text***0*** *** ***% @moderateurs*** * *** *** ***
+texte***bf_complement_adresse***Adresse (complément)***50*** *** *** ***text***0*** *** ***% @moderateurs*** * *** *** ***
+texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** ***% @moderateurs*** * *** *** ***
+texte***bf_ville***Ville***25*** *** *** ***text***0*** *** ***% @moderateurs*** * *** *** ***
+carte_google***bf_latitude***bf_longitude*** *** ***
+labelhtml***<p>Dans le champ suivant  indiquez pour chaque organisation :<br><ul><li>Le périmètre d'intervention</li><li>Nombre de bénéficiaires : ........ dont ........ hommes et ........ femmes</li><li>Effectif salarié : ........ dont ........ hommes et ........ femmes</li><li>Effectif bénévole : ........ dont ........ hommes et ........ femmes</li></ul></p><br>*** *** ***
+textelong***bf_organisations***Organisation(s) représentée(s)***60***5*** *** ***wiki***0*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***<a class="btn btn-primary pull-right" href="#menu2Questionnaire" role="tab" data-toggle="tab">Onglet 2. Questionnaire<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour passer à l'onglet 2-->*** *** ***
+labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 1 --> <div role="tabpanel" class="tab-pane" id="menu2Questionnaire"><br><br><!-- ouvre l'onglet 2-->*** *** ***
+labelhtml***<h2 class="text-center">Questionnaire</h2>*** *** ***
+textelong***bf_connaissance***Comment ai-je connu Les Chemins de la Transition ?*** ***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***bf_rejoindre***Pourquoi rejoindre les Chemins de la Transition ?*** ***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***bf_attentes***Quelles sont mes attentes, sur quels sujets ai-je envie de m'impliquer ?*** ***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***bf_disponibilites***Quelles sont mes disponibilités ?*** ***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***bf_competences***Quelles sont mes compétences/Que puis-je apporter&nbsp;? (mini CV en 8 lignes max)*** ***8*** *** ***html***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***bf_autres_informations***Autres informations que je souhaite porter à la connaissance du collectif*** ***8*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+labelhtml*** *** *** ***
+labelhtml***<a class="btn btn-primary pull-left" href="#menu1Contact" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 1. Informations de contact</a><!--Affiche un bouton pour revenir à l'onglet 1-->*** *** ***
+labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 2 --> </div><!-- ferme l'ensemble des onglets -><style>#formulaire .form-actions { display:none; }</style><!--Efface les boutons Valider/Annuler en bas de chaque onglet-->*** *** ***
+labelhtml***<div class="moderation-a-afficher" style="display:none;">*** *** ***
+checkbox***ListeModerationContributeur***Moderation*** *** ***a_moderer***bf_moderation*** ***0*** *** ***@moderateurs*** * *** *** ***
+labelhtml***</div><div id="balise-de-test-moderation" style="display:none;">*** *** ***
+texte***text_test_moderateur***Test modérateur<br>*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** ***
+labelhtml***</div><script>var list_elements = document.getElementsByClassName("moderation-a-afficher") ; for (id_item in list_elements){if (document.querySelector("#balise-de-test-moderation>div") != null) {list_elements[id_item].style = ""}};/* Gestion affichage en cas d'erreur de saisie */ document.getElementsByTagName("body")[0].onload = function() { document.querySelector("form#formulaire .form-actions button.btn[type=submit]").onclick = function() { $('#formulaire .nav-tabs .active').removeClass('active');  $('#formulaire .tab-pane.active').removeClass('active');  $('#formulaire .tab-pane').addClass('active');    window.dispatchEvent(new Event('resize')); };};</script>*** *** ***
+acls***% @moderateurs***% @moderateurs***% @moderateurs***

@@ -1,0 +1,70 @@
+labelhtml***<i><span class="symbole_obligatoire"></span> : champs requis</i>*** *** ***
+labelhtml***<ul class="nav nav-tabs" role="tablist"><li role="presentation" class="active"><a href="#menu1Contact" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))">1. Contact</a></li><li role="presentation"><a href="#menu2MesEnvies" role="tab" data-toggle="tab">2. Mes envies</a></li><li role="presentation"><a href="#menu3MonParcours" role="tab" data-toggle="tab">3. Mon parcours</a></li><li role="presentation"><a href="#menu4Preferences" role="tab" data-toggle="tab">4. Informations utiles</a></li> </ul><div class="tab-content"><!--indique qu'il y aura 4 onglets-->*** *** ***
+labelhtml***<div role="tabpanel" class="tab-pane active" id="menu1Contact"><br><br><!--ouvre le premier onglet-->*** *** ***
+labelhtml***<h2 class="text-center">Contact</h2>*** *** ***
+titre***{{bf_prenom}} de {{bf_ville}}***Titre Automatique***
+texte***bf_prenom***Prénom*** *** *** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** *** ***
+texte***bf_nom***Nom*** *** *** *** ***text***1*** ***Votre nom ne sera pas visible publiquement.***% @moderateurs*** * *** *** ***
+image***bf_image***Photo***210***140***300***200***right***0*** ***ATTENTION : donnée publique*** * *** * *** *** ***
+listedatedeb***date_naissance***Date de naissance*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***<script>document.querySelector('select.form-control.select-allday[name=date_naissance_allday]').style.display = "none" ;</script>*** *** ***
+texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs*** * *** ***schema:telephone***
+champs_mail***bf_mail***Email de contact*** *** *** ***form*** ***1*** ***Un bouton contact s'affichera  votre adresse email ne sera pas visible publiquement.*** * *** * *** *** ***
+texte***bf_adresse***Adresse***50***80*** *** ***text***0*** *** ***% @moderateurs*** * *** ***schema:streetAddress***
+texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text***0*** *** ***% @moderateurs*** * *** *** ***
+texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** ***% @moderateurs*** * *** ***schema:postalCode***
+texte***bf_ville***Ville***50***80*** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** ***schema:addressLocality***
+carte_google***bf_latitude***bf_longitude*** *** ***
+labelhtml***<a class="btn btn-primary pull-right" href="https://www.helloasso.com/associations/les-chemins-de-la-transition/adhesions/cotisations/">Adhérer</a>*** *** ***
+listedatedeb***bf_date_adhesion***Date d'adhésion*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***<script>document.querySelector('select.form-control.select-allday[name=bf_date_adhesion_allday]').style.display = "none" ;</script>*** *** ***
+labelhtml***<a class="btn btn-primary pull-right" href="#menu2MesEnvies" role="tab" data-toggle="tab">Onglet 2. Mes envies<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour passer à l'onglet 2-->*** *** ***
+labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 1 --> <div role="tabpanel" class="tab-pane" id="menu2MesEnvies"><br><br><!-- ouvre l'onglet 2-->*** *** ***
+labelhtml***<h2 class="text-center">Mes envies</h2>*** *** ***
+checkbox***ListeTypeDeVoyageurs***Je suis...*** *** *** ***bf_type_voyageurs*** ***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***bf_connaissance***Comment ai-je connu Les Chemins de la Transition ?***600***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***bf_rejoindre***Pourquoi cheminer ?***600***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***bf_attentes***Quelles sont mes attentes ?***600***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***<a class="btn btn-primary pull-left" href="#menu1Contact" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 1. Contact</a><a class="btn btn-primary pull-right" href="#menu3MonParcours" role="tab" data-toggle="tab">Onglet 3. Mon parcours<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 1 et un bouton pour passer à l'onglet 3-->*** *** ***
+labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 2 --> <div role="tabpanel" class="tab-pane" id="menu3MonParcours"><br><br><!-- ouvre l'onglet 3-->*** *** ***
+labelhtml***<h2 class="text-center">Mon parcours</h2>*** *** ***
+labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
+checkbox***ListeTypeDAccueil***J'ai déjà participé à des apprentissages de type :*** *** *** ***type_accueil*** ***0*** ***Voir la description ci-dessous.***% @moderateurs*** * *** *** ***
+labelhtml***Une page d'aide permet d'avoir une <a href="?AideTypeDApprentissage" target="blank" class="modalbox">description détaillée des différents types d'apprentissages</a></div>*** *** ***
+labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
+checkboxfiche***6***Thématiques*** *** *** *** *** ***0*** ***Voir la description ci-dessous.***% @moderateurs*** * *** *** ***
+labelhtml***Nous vous invitons à cocher les thématiques que vous avez déjà abordées lors de précédents parcours. Une page d'aide permet d'avoir une <a href="?Aide_ParcoursThematiques" target="blank" class="modalbox">description détaillée des différentes thématiques couvertes par les parcours.</a> Vous pouvez en outre nous indiquer les thématiques non mentionnées ici dans le cadre ci-dessous. </div>*** *** ***
+labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
+tags***bf_tags***Thématiques supplémentaires - sous-domaines et compétences*** *** *** *** *** ***0*** *** *** * *** * *** *** ***
+labelhtml***Vous pouvez saisir dans la zone ci-dessus d'autres thématiques et tout mot clé lié. Appuyez sur Entrée pour valider chaque mot.</div>*** *** ***
+labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
+labelhtml***Lors de ces parcours ou par ailleurs  j'ai acquis la ou les compétences suivantes.*** *** ***
+checkboxfiche***8***Compétences*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***S'il en manque une&#44;  il est possible de l'ajouter avec le bouton suivant : <a href="?AjouterUneCompetence" target="blank" class="btn btn-primary">Ajouter une nouvelle compétence</a></div>*** *** ***
+labelhtml***<div id="checkboxListeTypeDAccueiltype_accueil_WoofingChantiers" style="display:none;">*** *** ***
+liste***ListeOuiNon***Dans le cas du woofing,  avez-vous des compétences ou expériences spécifiques ?*** *** *** ***bf_niveau_woofing_competences*** ***0*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***</div>*** *** ***
+labelhtml***<div id="listeListeOuiNonbf_niveau_mini_woofing_competences_oui" style="display:none;">*** *** ***
+textelong***bf_competences_woofing***Compétences/expériences spécifiques woofing*** ***3*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***</div>*** *** ***
+labelhtml***<a class="btn btn-primary pull-left" href="#menu2MesEnvies" role="tab" data-toggle="tab"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 2. Mes envies</a><a class="btn btn-primary pull-right" href="#menu4Preferences" role="tab" data-toggle="tab">Onglet 4. Informations utiles<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 2 et un bouton pour passer à l'onglet 4-->*** *** ***
+labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 3 --> <div role="tabpanel" class="tab-pane" id="menu4Preferences"><br><br><!-- ouvre l'onglet 4-->*** *** ***
+labelhtml***<h2 class="text-center">Informations utiles</h2>*** *** ***
+texte***bf_suivi***Fiche suivie en interne par*** *** *** *** ***text***0*** *** ***% @moderateurs***@moderateurs*** *** ***
+liste***ListeOuiNon***J'ai des demandes particulières concernant l'usage de mes données et de ma vie privée.*** *** *** ***bf_vie_privee*** ***1*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***<div id="listeListeOuiNonbf_vie_privee_oui" style="display:none;">*** *** ***
+texte***bf_details_donnes_personnelles***Quelles sont vos demandes concernant vos données personnelles ?*** *** *** *** ***text***0*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***</div>*** *** ***
+radio***ListeOuiNon***J'accepte que mes informations soient diffusées au sein de l'écosystème des Chemins de la Transition (pour créer mon parcours)*** *** *** ***radio_partage_info*** ***1*** *** ***% @moderateurs*** * *** *** ***
+liste***ListeOuiNon***J'accepte que l’on voie les lieux que j'aurai visités ?*** *** *** ***bf_acceptation_suivi_lieux*** ***1*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***<div></div>*** *** ***
+liste***ListeOuiNon***J'accepte que mes informations soient publiées sur la plateforme des Chemins de la Transition*** *** *** ***bf_publication_info*** ***1*** *** ***% @moderateurs*** * *** *** ***
+labelhtml***<div style="font-weight: bold; font-size: large;">Il ne vous reste plus qu'à valider ! </div>*** *** ***
+labelhtml***<a class="btn btn-primary pull-left" href="#menu3MonParcours" role="tab" data-toggle="tab"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 3. Mon parcours</a><!--Affiche un bouton pour revenir à l'onglet 3-->*** *** ***
+labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 4 --> </div><!-- ferme l'ensemble des onglets -><style>#formulaire .form-actions { display:none; }</style><!--Efface les boutons Valider/Annuler en bas de chaque onglet-->*** *** ***
+labelhtml***<div class="moderation-a-afficher" style="display:none;">*** *** ***
+checkbox***ListeModeration***Moderation*** *** ***a_moderer***bf_moderation*** ***0*** *** ***@moderateurs***@moderateurs*** *** ***
+labelhtml***</div><div id="balise-de-test-moderation" style="display:none;">*** *** ***
+texte***text_test_moderateur***Test modérateur*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** ***
+labelhtml***</div><script>var list_elements = document.getElementsByClassName("moderation-a-afficher") ; for (id_item in list_elements){if (document.querySelector("#balise-de-test-moderation>div") != null) {list_elements[id_item].style = ""}};/* Gestion affichage en cas d'erreur de saisie */ document.getElementsByTagName("body")[0].onload = function() { document.querySelector("form#formulaire .form-actions button.btn[type=submit]").onclick = function() { $('#formulaire .nav-tabs .active').removeClass('active');  $('#formulaire .tab-pane.active').removeClass('active');  $('#formulaire .tab-pane').addClass('active');    window.dispatchEvent(new Event('resize')); };};</script>*** *** ***
+acls***% @moderateurs***% @moderateurs***% @moderateurs***
