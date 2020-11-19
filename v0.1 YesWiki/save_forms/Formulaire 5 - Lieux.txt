@@ -48,12 +48,28 @@ texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** *** * ***
 texte***bf_ville***Ville***50***80*** *** ***text***1*** *** *** * ***% @moderateurs*** ***schema:addressLocality***
 liste***ListeDepartements***Département*** *** *** ***bf_department*** ***0*** *** *** * ***% @moderateurs*** *** ***
 carte_google***bf_latitude***bf_longitude*** *** ***
+textelong***textarea_1605712029235***Accès transports en commun*** ***5*** *** ***texte***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu2Coordonnees" role="tab" data-toggle="tab"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 2. Coordonnées</a><a class="btn btn-primary pull-right" href="#menu4Hebergement" role="tab" data-toggle="tab">Onglet 4. Accueil-hébergement<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 2 et un bouton pour passer à l'onglet 4-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 3 --> <div role="tabpanel" class="tab-pane" id="menu4Hebergement"><br><br><!-- ouvre l'onglet 4-->*** *** ***
 labelhtml***<h2 class="text-center">Type d'accueil et hébergement</h2>*** *** ***
 checkbox***ListeAccessibilite***Accessibilité*** *** *** *** *** ***0*** *** *** * ***% @moderateurs*** *** ***
+texte***bf_capacite_restauration***Capacité de restauration***0*** ***0*** ***number***0*** ***Nombre de couverts***% @moderateurs***% @moderateurs*** *** ***
 checkbox***ListeTypeDeLogement***Type de logement*** *** *** ***logement*** ***0*** *** *** * ***% @moderateurs*** *** ***
+labelhtml***<div id="checkboxListeTypeDeLogementlogement_chambre" style="display:none;">*** *** ***
+texte***bf_capacite_hebergement_chambre***Capacité d'hébergement en chambre individuelle***0*** ***0*** ***number***0*** ***Nombre de chambres***% @moderateurs***% @moderateurs*** *** ***
+labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_camping" style="display:none;">*** *** ***
+texte***bf_capacite_hebergement_camping***Capacité d'hébergement en camping***0*** ***0*** ***number***0*** ***Nombre d'emplacements***% @moderateurs***% @moderateurs*** *** ***
+labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_yourte_tipi" style="display:none;">*** *** ***
+texte***bf_capacite_hebergement_yourte_tipi***Capacité d'hébergement en yourte ou tipi***0*** ***0*** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
+labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_cabane_mobilhome" style="display:none;">*** *** ***
+texte***bf_capacite_hebergement_cabane_mobilhome***Capacité d'hébergement en cabane ou mobilhome***0*** ***0*** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
+labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_dortoir" style="display:none;">*** *** ***
+texte***bf_capacite_hebergement_dortoir***Capacité d'hébergement en dortoir***0*** ***0*** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
+labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_chezunvoisin" style="display:none;">*** *** ***
+texte***bf_capacite_hebergement_chezunvoisin***Capacité d'hébergement chez un voisin***0*** ***0*** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
+labelhtml***</div>*** *** ***
 checkbox***ListeTypeDeVoyageurs***Qui aimeriez-vous accueillir ?*** *** *** ***bf_type_voyageurs*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
+radio***ListeOuiNon***Sans expérience requise*** *** *** ***bf_sans_experience_requise_voyageurs*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** ***
 textelong***bf_mises_en_garde***Mises en garde, contraintes particulières d'accueil ?***255***5*** *** ***texte***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu3Localisation" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 3. Localisation</a><a class="btn btn-primary pull-right" href="#menu5Preferences" role="tab" data-toggle="tab">Onglet 5. Informations utiles<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 3 et un bouton pour passer à l'onglet 5-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 4 --> <div role="tabpanel" class="tab-pane" id="menu5Preferences"><br><br><!-- ouvre l'onglet 5-->*** *** ***
@@ -63,6 +79,7 @@ textelong***pref_contact***Préférences de contact*** ***3*** *** ***texte***0*
 labelhtml***Nous avons à cœur de préserver votre temps. Indiquez ci-dessus vos disponibilités pour être contacté (exemple : uniquement par e-mail en novembre&#44;  uniquement par téléphone entre 18h et 19h&#44;  etc...)*** *** ***
 radio***ListeOuiNon***Les chemineurs et chemineuses peuvent-ils vous contacter directement ?*** *** *** ***bf_contact_direct_voyageurs*** ***1*** *** *** * ***% @moderateurs*** *** ***
 radio***ListeOuiNon***Les&nbsp; chemineurs et chemineuses  peuvent-ils venir de façon spontanée ?*** *** *** ***bf_venue_spontanee_voyageurs*** ***1*** *** *** * ***% @moderateurs*** *** ***
+radio***ListeOuiNon***Acceptez-vous ou organisez-vous des visites ponctuelles ?*** *** *** ***bf_visite_ponctuelle_voyageurs*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** ***
 checkbox***ListeMois***Quelles sont les périodes propices à l'accueil ?*** *** *** ***bf_periodes_propices*** ***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***<div id="checkboxListeTypeDAccueiltype_accueil_WoofingChantiers" style="display:none;">*** *** ***
 liste***ListeOuiNon***Dans le cas du woofing,  avez-vous besoin de compétences ou d'expériences spécifiques ?*** *** *** ***bf_niveau_mini_woofing_competences*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
