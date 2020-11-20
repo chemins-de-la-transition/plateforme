@@ -37,12 +37,22 @@ if ($nomwiki) {
     if (empty($GLOBALS['_BAZAR_']['templates'])) {
         $GLOBALS['_BAZAR_']['templates'] = $GLOBALS['wiki']->config['default_bazar_template'];
     }
-
-    $tableau_dernieres_fiches = $bazarFiche->search(['user' => addslashes($nomwiki['name'])]);
+    
+    $id = $this->GetParameter("id");
+    if (empty($id)) {
+        $tableau_dernieres_fiches = $bazarFiche->search(['user' => addslashes($nomwiki['name'])]);
+    } else {
+        $id = is_numeric($id) ? $id : array_map('trim',explode(',',$id)) ;
+        $tableau_dernieres_fiches = $bazarFiche->search(['user' => addslashes($nomwiki['name']),
+            'formsIds' => $id ]);
+    }
+    $showNb = $this->GetParameter("shownb") !== "0" ;
     if (count($tableau_dernieres_fiches)>0) {
-        echo '<h2 class="titre_mes_fiches">'._t('BAZ_VOS_FICHES').'</h2>'."\n";
+        if ($this->GetParameter("notitle") !== "1") {
+            echo '<h2 class="titre_mes_fiches">'._t('BAZ_VOS_FICHES').'</h2>'."\n";
+        }
         // Recuperation de tous les parametres
         $params = getAllParameters($this);
-        echo displayResultList($tableau_dernieres_fiches, $params, true);
+        echo displayResultList($tableau_dernieres_fiches, $params, $showNb);
     }
 }
