@@ -48,9 +48,11 @@ if ($nomwiki) {
     }
     $showNb = $this->GetParameter("shownb") !== "0" ;
     if (count($tableau_dernieres_fiches)>0) {
-        if ($this->GetParameter("notitle") !== "1") {
-            echo '<h2 class="titre_mes_fiches">'._t('BAZ_VOS_FICHES').'</h2>'."\n";
+        if ($this->GetParameter("titre") !== "0") {
+            $titre = empty($this->GetParameter("titre")) ? _t('BAZ_VOS_FICHES') : $this->GetParameter("titre") ;
+            echo '<h2 class="titre_mes_fiches">'. $titre .'</h2>'."\n";
         }
+        
         // Recuperation de tous les parametres
         $params = getAllParameters($this);
         echo displayResultList($tableau_dernieres_fiches, $params, $showNb);
