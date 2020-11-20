@@ -179,7 +179,7 @@ var typeUserAttrs = {
     separator: { label: "" }, // separate important attrs from others
     replace_email_by_button: {
       label: "Remplacer l'email par un bouton contact",
-      options: { "": "Non", form: "Oui" }
+      options: { " ": "Non", form: "Oui" }
     },
     send_form_content_to_this_email: {
       label: "Envoyer le contenu du formulaire à cet email",

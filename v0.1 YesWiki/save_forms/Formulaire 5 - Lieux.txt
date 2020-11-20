@@ -31,7 +31,7 @@ labelhtml***</div><div id="listeListeOuiNonbf_text_presdecheznous_non" style="di
 texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***schema:telephone***
 champs_mail***bf_mail***Email*** *** *** ***form*** ***1*** *** *** * ***% @moderateurs*** *** ***
 texte***bf_contact_principal***Nom du contact principal*** *** *** *** ***text***1*** *** ***% @moderateurs***% @moderateurs*** *** ***
-checkbox***ListeOuiNon***Je suis en lien avec la structure : *** *** *** ***implication_structure*** ***0*** ***impliqué  salarié  en lien direct  ...***% @moderateurs***% @moderateurs*** *** ***
+radio***ListeOuiNon***Je suis en lien avec la structure : *** *** *** ***implication_structure*** ***0*** ***impliqué  salarié  en lien direct  ...***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 texte***denomination_raison_sociale***Dénomination / Raison sociale*** *** *** *** ***text***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***<a href="https://lescheminsdelatransition.org/plateforme/?Aide_DenominationRaisonSociale" class="modalbox">Aide sur la dénomination / raison sociale</a></div>*** *** ***
@@ -53,20 +53,20 @@ labelhtml***<a class="btn btn-primary pull-left" href="#menu2Coordonnees" role="
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 3 --> <div role="tabpanel" class="tab-pane" id="menu4Hebergement"><br><br><!-- ouvre l'onglet 4-->*** *** ***
 labelhtml***<h2 class="text-center">Type d'accueil et hébergement</h2>*** *** ***
 checkbox***ListeAccessibilite***Accessibilité*** *** *** *** *** ***0*** *** *** * ***% @moderateurs*** *** ***
-texte***bf_capacite_restauration***Capacité de restauration***0*** ***0*** ***number***0*** ***Nombre de couverts***% @moderateurs***% @moderateurs*** *** ***
+texte***bf_capacite_restauration***Capacité de restauration***0*** *** *** ***number***0*** ***Nombre de couverts***% @moderateurs***% @moderateurs*** *** ***
 checkbox***ListeTypeDeLogement***Type de logement*** *** *** ***logement*** ***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***<div id="checkboxListeTypeDeLogementlogement_chambre" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_chambre***Capacité d'hébergement en chambre individuelle***0*** ***0*** ***number***0*** ***Nombre de chambres***% @moderateurs***% @moderateurs*** *** ***
+texte***bf_capacite_hebergement_chambre***Capacité d'hébergement en chambre individuelle***0*** *** *** ***number***0*** ***Nombre de chambres***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_camping" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_camping***Capacité d'hébergement en camping***0*** ***0*** ***number***0*** ***Nombre d'emplacements***% @moderateurs***% @moderateurs*** *** ***
+texte***bf_capacite_hebergement_camping***Capacité d'hébergement en camping***0*** *** *** ***number***0*** ***Nombre d'emplacements***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_yourte_tipi" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_yourte_tipi***Capacité d'hébergement en yourte ou tipi***0*** ***0*** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
+texte***bf_capacite_hebergement_yourte_tipi***Capacité d'hébergement en yourte ou tipi***0*** *** *** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_cabane_mobilhome" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_cabane_mobilhome***Capacité d'hébergement en cabane ou mobilhome***0*** ***0*** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
+texte***bf_capacite_hebergement_cabane_mobilhome***Capacité d'hébergement en cabane ou mobilhome***0*** *** *** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_dortoir" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_dortoir***Capacité d'hébergement en dortoir***0*** ***0*** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
+texte***bf_capacite_hebergement_dortoir***Capacité d'hébergement en dortoir***0*** *** *** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_chezunvoisin" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_chezunvoisin***Capacité d'hébergement chez un voisin***0*** ***0*** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
+texte***bf_capacite_hebergement_chezunvoisin***Capacité d'hébergement chez un voisin***0*** *** *** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***</div>*** *** ***
 checkbox***ListeTypeDeVoyageurs***Qui aimeriez-vous accueillir ?*** *** *** ***bf_type_voyageurs*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
 radio***ListeOuiNon***Sans expérience requise*** *** *** ***bf_sans_experience_requise_voyageurs*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** ***
