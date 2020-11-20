@@ -74,7 +74,7 @@ textelong***bf_mises_en_garde***Mises en garde, contraintes particulières d'acc
 labelhtml***<a class="btn btn-primary pull-left" href="#menu3Localisation" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 3. Localisation</a><a class="btn btn-primary pull-right" href="#menu5Preferences" role="tab" data-toggle="tab">Onglet 5. Informations utiles<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 3 et un bouton pour passer à l'onglet 5-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 4 --> <div role="tabpanel" class="tab-pane" id="menu5Preferences"><br><br><!-- ouvre l'onglet 5-->*** *** ***
 labelhtml***<h2 class="text-center">Informations utiles</h2>*** *** ***
-texte***bf_suivi***Fiche suivie en interne par*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** ***
+texte***bf_suivi***Interlocutrice, interlocuteur privilégié aux Chemins de la Transition<br>*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** ***
 textelong***pref_contact***Préférences de contact*** ***3*** *** ***texte***0*** *** *** * ***@Lieux*** *** ***
 labelhtml***Nous avons à cœur de préserver votre temps. Indiquez ci-dessus vos disponibilités pour être contacté (exemple : uniquement par e-mail en novembre&#44;  uniquement par téléphone entre 18h et 19h&#44;  etc...)*** *** ***
 radio***ListeOuiNon***Les chemineurs et chemineuses peuvent-ils vous contacter directement ?*** *** *** ***bf_contact_direct_voyageurs*** ***1*** *** *** * ***% @moderateurs*** *** ***
@@ -86,8 +86,8 @@ liste***ListeOuiNon***Dans le cas du woofing,  avez-vous besoin de compétences 
 labelhtml***<div id="listeListeOuiNonbf_niveau_mini_woofing_competences_oui" style="display:none;">*** *** ***
 textelong***bf_competences_woofing***Compétences/expériences spécifiques woofing*** ***3*** *** ***texte***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***</div></div>*** *** ***
-radio***ListeOuiNon***Souhaitez-vous que les Chemins de la Transition prennent en charge les réservations ?*** *** *** ***bf_gestion_reservations*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
-radio***ListeOuiNon***Souhaitez-vous que les Chemins de la Transition prennent en charge l'accueil sur votre lieu ?*** *** *** ***bf_gestion_accueil*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
+radio***ListeOuiNon***Souhaiteriez-vous que les Chemins de la Transition prennent en charge les réservations ?*** *** *** ***bf_gestion_reservations*** ***0*** ***Nous évaluons en ce moment les possibilités de prendre en charge les réservations.***% @moderateurs***% @moderateurs*** *** ***
+radio***ListeOuiNon***Souhaiteriez-vous que les Chemins de la Transition prennent en charge l'accueil sur votre lieu ?*** *** *** ***bf_gestion_accueil*** ***0*** ***Nous évaluons en ce moment les possibilités de prendre en charge l'accueil.***% @moderateurs***% @moderateurs*** *** ***
 liste***ListeOuiNon***Avez-vous des demandes particulières concernant l'usage de vos données et de votre vie privée ?*** *** *** ***bf_vie_privee*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***<div id="listeListeOuiNonbf_vie_privee_oui" style="display:none;">*** *** ***
 texte***bf_details_donnes_personnelles***Quelles sont vos demandes concernant vos données personnelles ?*** *** *** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
