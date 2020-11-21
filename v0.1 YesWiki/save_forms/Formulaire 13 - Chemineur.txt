@@ -29,8 +29,8 @@ labelhtml***<a class="btn btn-primary pull-left" href="#menu1Contact" role="tab"
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 2 --> <div role="tabpanel" class="tab-pane" id="menu3MonParcours"><br><br><!-- ouvre l'onglet 3-->*** *** ***
 labelhtml***<h2 class="text-center">Mon parcours</h2>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-checkbox***ListeTypeDAccueil***J'ai déjà participé à des apprentissages de type :*** *** *** ***type_accueil*** ***0*** ***Voir la description ci-dessous.***% @moderateurs*** * *** *** ***
-labelhtml***Une page d'aide permet d'avoir une <a href="?AideTypeDApprentissage" target="blank" class="modalbox">description détaillée des différents types d'apprentissages</a></div>*** *** ***
+checkbox***ListeTypeDAccueil***J'ai déjà participé à des voyages de type :*** *** *** ***type_accueil*** ***0*** ***Voir la description ci-dessous.***% @moderateurs*** * *** *** ***
+labelhtml***Une page d'aide permet d'avoir une <a href="?AideTypeDeVoyage" target="blank" class="modalbox">description détaillée des différents types de voyage</a></div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 checkboxfiche***6***Thématiques*** *** *** *** *** ***0*** ***Voir la description ci-dessous.***% @moderateurs*** * *** *** ***
 labelhtml***Nous vous invitons à cocher les thématiques que vous avez déjà abordées lors de précédents parcours. Une page d'aide permet d'avoir une <a href="?Aide_ParcoursThematiques" target="blank" class="modalbox">description détaillée des différentes thématiques couvertes par les parcours.</a> Vous pouvez en outre nous indiquer les thématiques non mentionnées ici dans le cadre ci-dessous. </div>*** *** ***

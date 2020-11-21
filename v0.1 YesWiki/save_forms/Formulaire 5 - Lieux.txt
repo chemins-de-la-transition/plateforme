@@ -12,8 +12,8 @@ tags***bf_tags***Thématiques supplémentaires - sous-domaines*** *** *** *** **
 labelhtml***Vous pouvez saisir dans la zone ci-dessus les autres thématiques du lieu et tout mot clé lié. Appuyez sur Entrée pour valider chaque mot.</div>*** *** ***
 textelong***bf_description_courte***Courte description du lieu***5***5*** *** ***texte***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-checkbox***ListeTypeDAccueil***Type d'apprentissage*** *** *** ***type_accueil*** ***1*** ***Voir la description ci-dessous.*** * ***% @moderateurs*** *** ***
-labelhtml***Nous vous proposons de compléter des informations sur le type d'apprentissage que vous pouvez fournir. Une page d'aide permet d'avoir une <a href="?AideTypeDApprentissage" target="blank" class="modalbox">description détaillée des différents types d'apprentissages</a></div>*** *** ***
+checkbox***ListeTypeDAccueil***Type de voyage*** *** *** ***type_accueil*** ***1*** ***Voir la description ci-dessous.*** * ***% @moderateurs*** *** ***
+labelhtml***Nous vous proposons de compléter des informations sur le type de voyage que vous pouvez fournir. Une page d'aide permet d'avoir une <a href="?AideTypeDeVoyage" target="blank" class="modalbox">description détaillée des différents types de voyage</a></div>*** *** ***
 radio***ListeOuiNon***Tout ou une partie des formations proposées sont certifiantes*** *** *** ***formations_certifiantes_radio*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 labelhtml***Nous vous proposons de choisir une ou plusieurs compétences proposées à l'apprentissage dans les activités du lieu.*** *** ***
