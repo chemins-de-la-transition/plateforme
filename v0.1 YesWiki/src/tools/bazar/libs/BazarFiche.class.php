@@ -398,9 +398,16 @@ class BazarFiche
             $data = $this->convertFromSemanticData($previousData['id_typeannonce'], $data);
         }
 
-        if( $replace ) {
+        if ($replace) {
             $data['id_typeannonce'] = $previousData['id_typeannonce'];
         } else {
+            //HACK for checkbox et checkboxfiche because not replaced if empty
+            foreach($previousData as $key => $val){
+                if (strpos($key,"checkbox") === 0 && empty($data[$key])) {
+                    $previousData[$key] = '' ;
+                }
+            }
+            
             // If PATCH, overwrite previous data with new data
             $data = array_merge($previousData, $data);
         }
