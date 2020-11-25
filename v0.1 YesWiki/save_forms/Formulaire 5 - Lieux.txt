@@ -10,7 +10,10 @@ labelhtml***Nous vous invitons à cocher les thématiques qui vous concernent. S
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 tags***bf_tags***Thématiques supplémentaires - sous-domaines*** *** *** *** *** ***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***Vous pouvez saisir dans la zone ci-dessus les autres thématiques du lieu et tout mot clé lié. Appuyez sur Entrée pour valider chaque mot.</div>*** *** ***
+labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 textelong***bf_description_courte***Courte description du lieu***5***5*** *** ***texte***0*** *** *** * ***% @moderateurs*** *** ***
+tags***tags_1606130706319***Mots-clés*** *** *** *** *** ***0*** ***Validez par "Entrée" pour séparer les mots-clés*** * ***% @moderateurs*** *** ***
+labelhtml***Vous pouvez saisir dans la zone ci-dessus des mots-clés que vous associez à votre lieu. Appuyez sur Entrée pour valider chaque mot.</div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 checkbox***ListeTypeDAccueil***Type de voyage*** *** *** ***type_accueil*** ***1*** ***Voir la description ci-dessous.*** * ***% @moderateurs*** *** ***
 labelhtml***Nous vous proposons de compléter des informations sur le type de voyage que vous pouvez fournir. Une page d'aide permet d'avoir une <a href="?AideTypeDeVoyage" target="blank" class="modalbox">description détaillée des différents types de voyage</a></div>*** *** ***
@@ -36,6 +39,7 @@ labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">**
 texte***denomination_raison_sociale***Dénomination / Raison sociale*** *** *** *** ***text***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***<a href="https://lescheminsdelatransition.org/plateforme/?Aide_DenominationRaisonSociale" class="modalbox">Aide sur la dénomination / raison sociale</a></div>*** *** ***
 liste***ListeTypeDeStructure***Type de structure*** *** *** *** *** ***0*** *** *** * ***% @moderateurs*** *** ***
+texte***text_1606298091571***SIRET*** ***13*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***<div id="ListeTypeDeStructure_Autre" style="display:none;">*** *** ***
 texte***bf_autre_type_structure***Autre type de structure :*** *** *** *** ***text***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***</div>*** *** ***
@@ -74,11 +78,11 @@ textelong***bf_mises_en_garde***Mises en garde, contraintes particulières d'acc
 labelhtml***<a class="btn btn-primary pull-left" href="#menu3Localisation" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 3. Localisation</a><a class="btn btn-primary pull-right" href="#menu5Preferences" role="tab" data-toggle="tab">Onglet 5. Informations utiles<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 3 et un bouton pour passer à l'onglet 5-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 4 --> <div role="tabpanel" class="tab-pane" id="menu5Preferences"><br><br><!-- ouvre l'onglet 5-->*** *** ***
 labelhtml***<h2 class="text-center">Informations utiles</h2>*** *** ***
-texte***bf_suivi***Interlocutrice, interlocuteur privilégié aux Chemins de la Transition<br>*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** ***
+texte***bf_suivi***Interlocutrice, interlocuteur privilégié aux Chemins de la Transition*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** ***
 textelong***pref_contact***Préférences de contact*** ***3*** *** ***texte***0*** *** *** * ***@Lieux*** *** ***
 labelhtml***Nous avons à cœur de préserver votre temps. Indiquez ci-dessus vos disponibilités pour être contacté (exemple : uniquement par e-mail en novembre&#44;  uniquement par téléphone entre 18h et 19h&#44;  etc...)*** *** ***
-radio***ListeOuiNon***Les chemineurs et chemineuses peuvent-ils vous contacter directement ?*** *** *** ***bf_contact_direct_voyageurs*** ***1*** *** *** * ***% @moderateurs*** *** ***
-radio***ListeOuiNon***Les&nbsp; chemineurs et chemineuses  peuvent-ils venir de façon spontanée ?*** *** *** ***bf_venue_spontanee_voyageurs*** ***1*** *** *** * ***% @moderateurs*** *** ***
+radio***ListeOuiNon***Les voyageurs et voyageuses peuvent-ils vous contacter directement ?*** *** *** ***bf_contact_direct_voyageurs*** ***1*** *** *** * ***% @moderateurs*** *** ***
+radio***ListeOuiNon***Les&nbsp; voyageurs et voyageuses  peuvent-ils venir de façon spontanée ?*** *** *** ***bf_venue_spontanee_voyageurs*** ***1*** *** *** * ***% @moderateurs*** *** ***
 radio***ListeOuiNon***Acceptez-vous ou organisez-vous des visites ponctuelles ?*** *** *** ***bf_visite_ponctuelle_voyageurs*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** ***
 checkbox***ListeMois***Quelles sont les périodes propices à l'accueil ?*** *** *** ***bf_periodes_propices*** ***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***<div id="checkboxListeTypeDAccueiltype_accueil_WoofingChantiers" style="display:none;">*** *** ***
@@ -93,14 +97,14 @@ labelhtml***<div id="listeListeOuiNonbf_vie_privee_oui" style="display:none;">**
 texte***bf_details_donnes_personnelles***Quelles sont vos demandes concernant vos données personnelles ?*** *** *** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***</div>*** *** ***
 liste***ListeOuiNon***Accepteriez-vous que votre lieu / projet soit annoté, évalué, commenté ?*** *** *** ***bf_acceptation_notes*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** ***
-liste***ListeOuiNon***Accepteriez-vous que l’on voie combien de chemineuses et chemineurs ont visité votre lieu ? (fréquentation)*** *** *** ***bf_acceptation_frequentation*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** ***
+liste***ListeOuiNon***Accepteriez-vous que l’on voie combien de voyageuses et voyageurs ont visité votre lieu ? (fréquentation)*** *** *** ***bf_acceptation_frequentation*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***<div style="font-weight: bold; font-size: large;">Il ne vous reste plus qu'à valider ! </div>*** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu4Hebergement" role="tab" data-toggle="tab"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 4. Type d'accueil-hébergement</a><!--Affiche un bouton pour revenir à l'onglet 4-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 5 --> </div><!-- ferme l'ensemble des onglets -><style>#formulaire .form-actions { display:none; }</style><!--Efface les boutons Valider/Annuler en bas de chaque onglet-->*** *** ***
 labelhtml***<div class="moderation-a-afficher" style="display:none;">*** *** ***
 checkbox***ListeModeration***Moderation*** *** ***a_moderer***bf_moderation*** ***0*** *** ***@moderateurs*** * *** *** ***
 labelhtml***</div><div id="balise-de-test-moderation" style="display:none;">*** *** ***
-texte***text_test_moderateur***Test modérateur<br>*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** ***
+texte***text_test_moderateur***Test modérateur*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** ***
 labelhtml***</div><script>var list_elements = document.getElementsByClassName("moderation-a-afficher") ; for (id_item in list_elements){if (document.querySelector("#balise-de-test-moderation>div") != null) {list_elements[id_item].style = ""}};/* Gestion affichage en cas d'erreur de saisie */ document.getElementsByTagName("body")[0].onload = function() { document.querySelector("form#formulaire .form-actions button.btn[type=submit]").onclick = function() { $('#formulaire .nav-tabs .active').removeClass('active');  $('#formulaire .tab-pane.active').removeClass('active');  $('#formulaire .tab-pane').addClass('active');    window.dispatchEvent(new Event('resize')); };};</script>*** *** ***
 labelhtml***<script>defineAutoUpdateDepartment();</script>*** *** ***
 acls*** * ***% @moderateurs*** * ***

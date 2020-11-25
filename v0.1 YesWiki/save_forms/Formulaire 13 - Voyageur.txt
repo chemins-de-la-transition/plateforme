@@ -22,9 +22,11 @@ labelhtml***<a class="btn btn-primary pull-right" href="#menu2MesEnvies" role="t
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 1 --> <div role="tabpanel" class="tab-pane" id="menu2MesEnvies"><br><br><!-- ouvre l'onglet 2-->*** *** ***
 labelhtml***<h2 class="text-center">Mes envies</h2>*** *** ***
 checkbox***ListeTypeDeVoyageurs***Je suis...*** *** *** ***bf_type_voyageurs*** ***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***textarea_1606129253939***... et forcément plus que ça :*** ***3*** *** ***texte***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
 textelong***bf_connaissance***Comment ai-je connu Les Chemins de la Transition ?***600***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
-textelong***bf_rejoindre***Pourquoi cheminer ?***600***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***bf_rejoindre***Pourquoi emprunter les Chemins de la Transition ?***600***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
 textelong***bf_attentes***Quelles sont mes attentes ?***600***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
+textelong***textarea_1606217346583***Pourquoi utiliser une plateforme comme celle des Chemins de la Transition ?***600***5*** *** ***texte***0*** *** ***% @moderateurs*** * *** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu1Contact" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 1. Contact</a><a class="btn btn-primary pull-right" href="#menu3MonParcours" role="tab" data-toggle="tab">Onglet 3. Mon parcours<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 1 et un bouton pour passer à l'onglet 3-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 2 --> <div role="tabpanel" class="tab-pane" id="menu3MonParcours"><br><br><!-- ouvre l'onglet 3-->*** *** ***
 labelhtml***<h2 class="text-center">Mon parcours</h2>*** *** ***
