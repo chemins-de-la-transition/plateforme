@@ -17,5 +17,5 @@ labelhtml***<span style="font-weight:600;color: var(--primary-color);font-size:1
 textelong***bf_rapport_au_territoire***Rapport au territoire***255***5*** *** ***html***0*** *** *** * *** * *** *** ***
 textelong***bf_ameliorations***Quelles seraient les fonctionnalités que devrait proposer la plateforme&nbsp; ?*** *** *** *** ***html***0*** *** *** * *** * *** *** ***
 labelhtml***<span style="font-weight:600;color: var(--primary-color);font-size:1 em;">Avez-vous des besoins ou rencontrez-vous des difficultés que vous souhaiteriez nous communiquer ?</span>*** *** ***
-textelong***textarea_1606297720342***Besoins ou difficultés auxquelles nous pourrions répondre*** *** *** *** ***html***0*** *** *** * *** * *** *** ***
+textelong***bf_besoins***Besoins ou difficultés auxquelles nous pourrions répondre*** *** *** *** ***html***0*** *** *** * *** * *** *** ***
 acls*** * ***% @moderateurs*** * ***

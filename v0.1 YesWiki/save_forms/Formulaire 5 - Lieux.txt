@@ -6,13 +6,12 @@ texte***bf_titre***Nom du lieu*** *** *** *** ***text***1*** *** *** * ***% @mod
 image***bf_image***Logo***140***140***600***600***right***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 checkboxfiche***10***Thématique*** *** *** *** *** ***0*** ***Voir la description ci-dessous.*** * ***% @moderateurs*** *** ***
-labelhtml***Nous vous invitons à cocher les thématiques qui vous concernent. Si aucune ne vous concerne&#44; il vous faudra patienter jusqu'à l'apparition de la thématique manquante. Une page d'aide permet d'avoir une <a href="?Aide_ParcoursThematiques" target="blank" class="modalbox">description détaillée des différentes thématiques couvertes par les parcours.</a> Vous pouvez en outre nous indiquer les thématiques de votre lieu non mentionnées ici dans le cadre ci-dessous. </div>*** *** ***
-labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-tags***bf_tags***Thématiques supplémentaires - sous-domaines*** *** *** *** *** ***0*** *** *** * ***% @moderateurs*** *** ***
+labelhtml***Nous vous invitons à cocher les thématiques qui vous concernent. Si aucune ne vous concerne&#44; il vous faudra patienter jusqu'à l'apparition de la thématique manquante. Une page d'aide permet d'avoir une <a href="?Aide_ParcoursThematiques" target="blank" class="modalbox">description détaillée des différentes thématiques couvertes par les parcours.</a> Vous pouvez en outre nous indiquer les thématiques de votre lieu non mentionnées ici dans le champ ci-dessous.*** *** ***
+tags***bf_tags***Thématiques supplémentaires - sous-domaines*** *** *** *** *** ***0*** ***Validez par "Entrée" pour séparer les mots-clés*** * ***% @moderateurs*** *** ***
 labelhtml***Vous pouvez saisir dans la zone ci-dessus les autres thématiques du lieu et tout mot clé lié. Appuyez sur Entrée pour valider chaque mot.</div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 textelong***bf_description_courte***Courte description du lieu***5***5*** *** ***texte***0*** *** *** * ***% @moderateurs*** *** ***
-tags***tags_1606130706319***Mots-clés*** *** *** *** *** ***0*** ***Validez par "Entrée" pour séparer les mots-clés*** * ***% @moderateurs*** *** ***
+tags***bf_mostcles***Mots-clés*** *** *** *** *** ***0*** ***Validez par "Entrée" pour séparer les mots-clés*** * ***% @moderateurs*** *** ***
 labelhtml***Vous pouvez saisir dans la zone ci-dessus des mots-clés que vous associez à votre lieu. Appuyez sur Entrée pour valider chaque mot.</div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 checkbox***ListeTypeDAccueil***Type de voyage*** *** *** ***type_accueil*** ***1*** ***Voir la description ci-dessous.*** * ***% @moderateurs*** *** ***
@@ -39,7 +38,7 @@ labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">**
 texte***denomination_raison_sociale***Dénomination / Raison sociale*** *** *** *** ***text***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***<a href="https://lescheminsdelatransition.org/plateforme/?Aide_DenominationRaisonSociale" class="modalbox">Aide sur la dénomination / raison sociale</a></div>*** *** ***
 liste***ListeTypeDeStructure***Type de structure*** *** *** *** *** ***0*** *** *** * ***% @moderateurs*** *** ***
-texte***text_1606298091571***SIRET*** ***13*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
+texte***bf_SIRET***SIRET*** ***13*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** *** ***
 labelhtml***<div id="ListeTypeDeStructure_Autre" style="display:none;">*** *** ***
 texte***bf_autre_type_structure***Autre type de structure :*** *** *** *** ***text***0*** *** *** * ***% @moderateurs*** *** ***
 labelhtml***</div>*** *** ***
