@@ -1,7 +1,7 @@
 titre***Actualite lieu {{bf_nom}}***Titre Automatique***
 texte***bf_nom***Titre***60***255*** *** ***text***1*** *** *** * *** * *** *** ***
 textelong***bf_description***Description***80***5*** *** ***wiki***0*** *** *** * *** * *** *** ***
-checkboxfiche***10***Thématique*** *** *** ***bf_thematique*** ***0*** *** *** * *** * *** *** ***
+checkboxfiche***6***Thématique*** *** *** ***bf_thematique*** ***0*** *** *** * *** * *** *** ***
 checkboxfiche***5***Lieux concernés*** *** *** ***bf_lieu_actu***tags***0*** ***Taper quelques lettres pour avoir la proposition d'un lieu puis taper sur entrée*** * *** * *** *** ***
 listedatedeb***bf_date_debut_evenement***Début de l'évènement*** *** *** *** *** ***1*** *** *** * *** * *** *** ***
 listedatedeb***bf_date_fin_evenement***Fin de l'évènement*** *** *** *** *** ***1*** *** *** * *** * *** *** ***

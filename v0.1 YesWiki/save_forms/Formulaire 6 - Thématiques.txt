@@ -1,0 +1,4 @@
+texte***bf_titre***Thématique*** *** *** *** ***text***1*** *** *** * *** * *** ***schema:CategoryCode:name***
+textelong***bf_description***Exemple de description*** ***3*** *** ***wiki***0*** *** *** * *** * *** ***https://schema.org/description***
+radio***ListeOuiNon***Thématique officielle<br>*** *** ***non***bf_officiel*** ***0*** *** ***@moderateurs***@moderateurs*** *** ***
+acls*** * ***@moderateurs*** * ***

@@ -37,11 +37,11 @@ labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">**
 checkboxfiche***6***Thématiques*** *** *** *** *** ***0*** ***Voir la description ci-dessous.***% @moderateurs*** * *** *** ***
 labelhtml***Nous vous invitons à cocher les thématiques que vous avez déjà abordées lors de précédents parcours. Une page d'aide permet d'avoir une <a href="?Aide_ParcoursThematiques" target="blank" class="modalbox">description détaillée des différentes thématiques couvertes par les parcours.</a> Vous pouvez en outre nous indiquer les thématiques non mentionnées ici dans le cadre ci-dessous. </div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-tags***bf_tags***Thématiques supplémentaires - sous-domaines et compétences*** *** *** *** *** ***0*** *** *** * *** * *** *** ***
+tags***bf_tags***Mes mots-clés*** *** *** *** *** ***0*** *** *** * *** * *** *** ***
 labelhtml***Vous pouvez saisir dans la zone ci-dessus d'autres thématiques et tout mot clé lié. Appuyez sur Entrée pour valider chaque mot.</div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 labelhtml***Lors de ces parcours ou par ailleurs  j'ai acquis la ou les compétences suivantes.*** *** ***
-checkboxfiche***8***Compétences*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** *** ***
+checkboxfiche***8***Mes compétences*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** *** ***
 labelhtml***S'il en manque une&#44;  il est possible de l'ajouter avec le bouton suivant : <a href="?AjouterUneCompetence" target="blank" class="btn btn-primary">Ajouter une nouvelle compétence</a></div>*** *** ***
 labelhtml***<div id="checkboxListeTypeDAccueiltype_accueil_WoofingChantiers" style="display:none;">*** *** ***
 liste***ListeOuiNon***Dans le cas du woofing,  avez-vous des compétences ou expériences spécifiques ?*** *** *** ***bf_niveau_woofing_competences*** ***0*** *** ***% @moderateurs*** * *** *** ***
