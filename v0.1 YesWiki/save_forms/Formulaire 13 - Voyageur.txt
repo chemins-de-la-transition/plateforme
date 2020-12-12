@@ -6,7 +6,7 @@ titre***{{bf_prenom}} de {{bf_ville}}***Titre Automatique***
 texte***bf_prenom***Prénom*** *** *** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** *** ***
 texte***bf_nom***Nom*** *** *** *** ***text***1*** ***Votre nom ne sera pas visible publiquement.***% @moderateurs*** * *** *** ***
 image***bf_image***Photo***210***140***300***200***right***0*** ***ATTENTION : donnée publique*** * *** * *** *** ***
-listedatedeb***date_naissance***Date de naissance*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** *** ***
+listedatedeb***date_naissance***Date de naissance*** *** *** *** *** ***0*** ***Cliquez sur le mois en haut, pour remonter aux années, puis décennies***% @moderateurs*** * *** *** ***
 labelhtml***<script>document.querySelector('select.form-control.select-allday[name=date_naissance_allday]').style.display = "none" ;</script>*** *** ***
 texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs*** * *** ***schema:telephone***
 champs_mail***bf_mail***Email de contact*** *** *** ***form*** ***1*** ***Un bouton contact s'affichera  votre adresse email ne sera pas visible publiquement.*** * *** * *** *** ***
