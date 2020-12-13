@@ -13,11 +13,13 @@
 // |                                            ENTETE du PROGRAMME                                       |
 // +------------------------------------------------------------------------------------------------------+
 
+use YesWiki\Bazar\Service\FicheManager;
+
 if (!defined("WIKINI_VERSION")) {
     die("acc&egrave;s direct interdit");
 }
 
-global $bazarFiche;
+$ficheManager = $this->services->get(FicheManager::class);
 
 $this->AddJavascriptFile('tools/bazar/libs/bazar.js');
 
@@ -40,10 +42,10 @@ if ($nomwiki) {
     
     $id = $this->GetParameter("id");
     if (empty($id)) {
-        $tableau_dernieres_fiches = $bazarFiche->search(['user' => addslashes($nomwiki['name'])]);
+        $tableau_dernieres_fiches = $ficheManager->search(['user' => addslashes($nomwiki['name'])]);
     } else {
         $id = is_numeric($id) ? $id : array_map('trim',explode(',',$id)) ;
-        $tableau_dernieres_fiches = $bazarFiche->search(['user' => addslashes($nomwiki['name']),
+        $tableau_dernieres_fiches = $ficheManager->search(['user' => addslashes($nomwiki['name']),
             'formsIds' => $id ]);
     }
     $showNb = $this->GetParameter("shownb") !== "0" ;
