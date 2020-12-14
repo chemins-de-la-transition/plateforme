@@ -1,21 +1,21 @@
 titre***Enquete_Lieux_{{listefiche5bf_lieu}}_{{bf_prenom}}_{{bf_nom}}***Titre***
 labelhtml***<i><span class="symbole_obligatoire"></span> : champs requis</i>*** *** ***
-texte***bf_prenom***Prénom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** *** ***
-texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** *** ***
-checkboxfiche***5***Lieu*** *** *** ***bf_lieu***tags***1*** ***Taper les premières lettres du nom du lieu puis cliquer ou appuyer sur Entrée pour valider.*** * *** * *** *** ***
-textelong***bf_recommandations***Auriez-vous des acteurs / lieux de transition à nous recommander dans votre réseau ou près de chez vous ?***255***5*** *** ***texte***0*** *** *** * *** * *** *** ***
-checkbox***ListeTypeDeContribution***Aimeriez-vous contribuer aux Chemins de la Transition ? en devenant...*** *** *** ***bf_contribution*** ***0*** *** *** * *** * *** *** ***
-checkbox***ListeTypeDAttentes***Qu’attendez-vous des Chemins de la Transition ?*** *** *** ***bf_attentes_lieux*** ***0*** *** *** * *** * *** *** ***
+texte***bf_prenom***Prénom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** *** *** ***
+texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** *** *** ***
+checkboxfiche***5***Lieu*** *** *** ***bf_lieu***tags***1*** ***Taper les premières lettres du nom du lieu puis cliquer ou appuyer sur Entrée pour valider.*** * *** * *** *** *** ***
+textelong***bf_recommandations***Auriez-vous des acteurs / lieux de transition à nous recommander dans votre réseau ou près de chez vous ?***255***5*** *** ***nohtml***0*** *** *** * *** * *** *** *** ***
+checkbox***ListeTypeDeContribution***Aimeriez-vous contribuer aux Chemins de la Transition ? en devenant...*** *** *** ***bf_contribution*** ***0*** *** *** * *** * *** *** *** ***
+checkbox***ListeTypeDAttentes***Qu’attendez-vous des Chemins de la Transition ?*** *** *** ***bf_attentes_lieux*** ***0*** *** *** * *** * *** *** *** ***
 labelhtml***<div id="checkboxListeTypeDAttentesbf_attentes_lieux_autre" style="display:none;">*** *** ***
-texte***bf_autres_attentes***Autres attentes*** *** *** *** ***text***0*** *** *** * *** * *** *** ***
+texte***bf_autres_attentes***Autres attentes*** *** *** *** ***text***0*** *** *** * *** * *** *** *** ***
 labelhtml***</div> <!-- fin de la condition -->*** *** ***
 labelhtml***<span style="font-weight:600;color: var(--primary-color);font-size:1 em;">En quoi pourrions-nous vous être utiles ? Qu'attendez-vous d'une telle plateforme ? Quels services en particulier ?</span>*** *** ***
-textelong***bf_utlite***Vos attentes***255***5*** *** ***html***0*** *** *** * *** * *** *** ***
+textelong***bf_utlite***Vos attentes***255***5*** *** ***html***0*** *** *** * *** * *** *** *** ***
 labelhtml***<span style="font-weight:600;color: var(--primary-color);font-size:1 em;">Quelles plateformes utilisez-vous actuellement ?<br>Utilisez-vous d'autres services de ce type ? Si oui  lesquels ?<br>Êtes-vous ou aimeriez-vous être référencé sur la plateforme Transiscope / Près de chez nous ?</span>*** *** ***
-textelong***bf_plateforme_actuelle***Votre usage***255***5*** *** ***html***0*** *** *** * *** * *** *** ***
+textelong***bf_plateforme_actuelle***Votre usage***255***5*** *** ***html***0*** *** *** * *** * *** *** *** ***
 labelhtml***<span style="font-weight:600;color: var(--primary-color);font-size:1 em;">Quels seraient  selon vous  les leviers pour améliorer le dynamisme au niveau de votre territoire ?</span>*** *** ***
-textelong***bf_rapport_au_territoire***Rapport au territoire***255***5*** *** ***html***0*** *** *** * *** * *** *** ***
-textelong***bf_ameliorations***Quelles seraient les fonctionnalités que devrait proposer la plateforme&nbsp; ?*** *** *** *** ***html***0*** *** *** * *** * *** *** ***
+textelong***bf_rapport_au_territoire***Rapport au territoire***255***5*** *** ***html***0*** *** *** * *** * *** *** *** ***
+textelong***bf_ameliorations***Quelles seraient les fonctionnalités que devrait proposer la plateforme&nbsp; ?*** *** *** *** ***html***0*** *** *** * *** * *** *** *** ***
 labelhtml***<span style="font-weight:600;color: var(--primary-color);font-size:1 em;">Avez-vous des besoins ou rencontrez-vous des difficultés que vous souhaiteriez nous communiquer ?</span>*** *** ***
-textelong***bf_besoins***Besoins ou difficultés auxquelles nous pourrions répondre*** *** *** *** ***html***0*** *** *** * *** * *** *** ***
+textelong***bf_besoins***Besoins ou difficultés auxquelles nous pourrions répondre*** *** *** *** ***html***0*** *** *** * *** * *** *** *** ***
 acls*** * ***% @moderateurs*** * ***
