@@ -10,32 +10,27 @@ $user = $this->GetUserName();
 if (!($this->LoadUser($user))) {
     echo '<div class="alert alert-danger"><strong>'._t('CUSTOM_ACTION_IMPORTCDLT').' :</strong>&nbsp;'._t('CUSTOM_ACTION_IMPORTCDLT_ONLY_FOR_CONNECTED').'...</div>'."\n";
 } else {
-    function geocodagecdlt($adresse = '',$complementAdresse = '',$codePostal = '',$ville = '') {
-        $result = geocodagecdlttest($adresse . ' ' .$complementAdresse . ' ' .$codePostal . ' ' .$ville) ;
-        if (!$result) {
-           $result = geocodagecdlttest($adresse . ' ' .$codePostal . ' ' .$ville) ;
-            if (!$result) {           
-                $result = geocodagecdlttest($complementAdresse . ' ' .$codePostal . ' ' .$ville) ;
-                if (!$result) {           
-                    $result = geocodagecdlttest($codePostal . ' ' .$ville) ;
-                    if (!$result) {           
-                        $result = geocodagecdlttest($ville) ;
-                        if (!$result) {           
-                            $result = geocodagecdlttest($codePostal) ;
-                            if (!$result) {           
-                                $result = "|" ;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        
-        return $result ;
-    }
     
     function geocodagecdlttest($adresse) {
         return "" ;
+    }
+    function geocodagecdlt($adresse = '',$complementAdresse = '',$codePostal = '',$ville = '') {
+        $adresses = [
+                $adresse . ' ' .$complementAdresse . ' ' .$codePostal . ' ' .$ville ,
+                $adresse . ' '                           .$codePostal . ' ' .$ville ,
+                $adresse . ' '                           .$codePostal . ' ' .$ville ,
+                                $complementAdresse . ' ' .$codePostal . ' ' .$ville ,
+                                                          $codePostal . ' ' .$ville ,
+                                                                             $ville ,
+                                                          $codePostal               ,
+            ];
+        $i = 0 ;
+        $result = false ;
+        while ($i < count($adresses) && !result) {
+            $result = geocodagecdlttest($adresses[$i]) ;
+            $i++ ;
+        }        
+        return ($result) ?? "|" ;
     }
     
     $output = '';

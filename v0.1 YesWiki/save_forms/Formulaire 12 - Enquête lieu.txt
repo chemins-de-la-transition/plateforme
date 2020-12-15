@@ -1,4 +1,4 @@
-titre***Enquete_Lieux_{{listefiche5bf_lieu}}_{{bf_prenom}}_{{bf_nom}}***Titre***
+titre***Enquete_Lieux_{{checkboxfiche5bf_lieu}}_{{bf_prenom}}_{{bf_nom}}***Titre***
 labelhtml***<i><span class="symbole_obligatoire"></span> : champs requis</i>*** *** ***
 texte***bf_prenom***Prénom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** *** *** ***
 texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** *** *** ***
