@@ -20,7 +20,7 @@ radio***ListeOuiNon***Tout ou une partie des formations proposées sont certifia
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 labelhtml***Nous vous proposons de choisir une ou plusieurs compétences proposées à l'apprentissage dans les activités du lieu.*** *** ***
 checkboxfiche***8***Compétences proposées à l'apprentissage*** *** *** *** *** ***0*** *** *** * ***% @moderateurs*** *** *** ***
-labelhtml***S'il en manque une&#44;  vous pouvez l'ajouter avec le bouton suivant : <a href="?AjouterUneCompetence" target="blank" class="btn btn-primary modalbox">Ajouter une nouvelle compétence</a></div>*** *** ***
+labelhtml***S'il en manque une&#44;  vous pouvez l'ajouter avec le bouton suivant : <a href="?AjouterUneCompetence" target="blank" class="btn btn-primary">Ajouter une nouvelle compétence</a></div>*** *** ***
 labelhtml***<a class="btn btn-primary pull-right" href="#menu2Coordonnees" role="tab" data-toggle="tab">Onglet 2. Coordonnées<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour passer à l'onglet 2-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 1 --> <div role="tabpanel" class="tab-pane" id="menu2Coordonnees"><br><br><!-- ouvre l'onglet 2-->*** *** ***
 labelhtml***<h2 class="text-center">Coordonnées</h2>*** *** ***
