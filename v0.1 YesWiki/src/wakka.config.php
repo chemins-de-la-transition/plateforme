@@ -3,7 +3,7 @@ $wakkaConfig = array (
   'wakka_version' => '0.1.1',
   'wikini_version' => '0.5.0',
   'yeswiki_version' => 'doryphore',
-  'yeswiki_release' => '2020-09-03-1',
+  'yeswiki_release' => '2021-01-27-4',
   'debug' => 'no',
   'mysql_host' => 'XXXXXXXXX',
   'mysql_database' => 'XXXXXXXXX',
@@ -40,5 +40,4 @@ $wakkaConfig = array (
   'default_language' => 'fr',
   'db_charset' => 'utf8mb4',
   'baz_map_zoom' => '6',
-  'api_status' => 'off',
 );
