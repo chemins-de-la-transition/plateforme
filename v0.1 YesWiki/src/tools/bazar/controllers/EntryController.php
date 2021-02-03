@@ -63,7 +63,7 @@ class EntryController extends YesWikiController
         // if not found, try rendering a semantic template
         if (empty($renderedEntry) && !empty($customTemplateValues['html']['semantic'])) {
             try {
-                $customTemplateName = $this->getCustomSemanticTemplateName($customTemplateValues['html']['semantic']);
+                $customTemplateName = $this->getCustomSemanticTemplateName($customTemplateValues['html']['semantic'] ?? false);
                 if( $customTemplateName ) {
                     $renderedEntry = $templateEngine->render("@bazar/$customTemplateName", $customTemplateValues);
                 }
@@ -119,13 +119,26 @@ class EntryController extends YesWikiController
             "entry" => $entry,
             "entryId" => $entryId,
             "owner" => $owner,
-            "message" => $_GET['message'] ?? null,
+            "message" => $_GET['message'] ?? '',
             "showOwner" => $showOwner,
             "showFooter" => $showFooter && $this->wiki->HasAccess('write', $entryId),
             "canDelete" => $this->wiki->UserIsAdmin() or $this->wiki->UserIsOwner(),
             "renderedEntry" => $renderedEntry,
             "absoluteUrl" => getAbsoluteUrl()
         ]);
+    }
+
+    public function publish($entryId, $accepted)
+    {
+        $this->entryManager->publish($entryId, $accepted);
+
+        if( $accepted ) {
+            echo '<div class="alert alert-success"><a data-dismiss="alert" class="close" type="button">&times;</a>'._t('BAZ_FICHE_VALIDEE').'</div>';
+        } else {
+            echo '<div class="alert alert-success"><a data-dismiss="alert" class="close" type="button">&times;</a>'._t('BAZ_FICHE_PAS_VALIDEE').'</div>';
+        }
+
+        return $this->view($entryId);
     }
 
     public function create($formId, $redirectUrl = null)
