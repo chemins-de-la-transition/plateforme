@@ -1,0 +1,3 @@
+======Ajouter une fiche d'informations Contributeurs======
+
+{{bazar vue="saisir" id="11" voirmenu="0" redirecturl="?MesFiches"}}[[CommentCaMarche_Contributeur  ]]

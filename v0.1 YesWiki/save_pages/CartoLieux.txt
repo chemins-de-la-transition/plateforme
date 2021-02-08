@@ -1,0 +1,20 @@
+{{bazarliste id="5" template="map.tpl.html" height="600px" groups="checkboxListeTypeDAccueiltype_accueil,checkboxfiche6bf_thematique_officielle" titles="Type d'apprentissage,Thématique" groupsexpanded="true" cluster="true" spider="true" filterposition="right" query="checkboxListeModerationbf_moderation=affichable"}}
+{{button class="btn-primary decalage-ajout-lieu" icon="plus-circle" link="AjouterLieux_PasDAcces" title="Ajouter un lieu"}}[[AjouterLieux  ]][[AjouterLieux_PasDAcces  ]]""<div style="display:none;">""{{button class="test-decalage-ajout-lieu" link="AjouterLieux" nobtn="1" hideifnoaccess="true"}}""</div><style>
+.decalage-ajout-lieu{
+	position:absolute ;
+	right:10px;
+	top:550px;
+	z-index:1000;
+}
+.decalage-recherche-avancee{
+	margin-top : 5px;
+	position : relative;
+	
+}
+</style><script>document.querySelector("div.results-col>div.results").style.position = "relative" ;
+document.querySelector("div.results-col>div.results").append(document.querySelector("a.btn.decalage-ajout-lieu")) ;
+if (document.getElementsByClassName("test-decalage-ajout-lieu").length > 0) {
+	var previousLink = document.querySelector("a.btn.decalage-ajout-lieu").href ;
+	document.querySelector("a.btn.decalage-ajout-lieu").href = previousLink.replace("?AjouterLieux_PasDAcces","?AjouterLieux") ;
+}
+</script>""

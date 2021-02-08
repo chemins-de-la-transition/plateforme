@@ -1,0 +1,1 @@
+{"label":{"oui":"oui","non":"non"},"titre_liste":"Oui\/Non"}

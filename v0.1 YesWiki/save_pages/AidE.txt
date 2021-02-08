@@ -1,0 +1,8 @@
+======Aide======
+
+Différentes pages vous permettent de trouver de l'aide.
+ - [[Aide_FAQ FAQ]] : une Foire Aux Questions
+ - [[Aide_ParcoursThematiques Liste des parcours thématiques]]
+ - [[AideTypeDeVoyage Différents types de voyage]] pour comprendre notre classification des différents types de voyage
+ - [[ReglesDeFormatage Aide formatage]] pour savoir comment modifier et mettre en forme le contenu de ce site (dans les formulaires ou à la création d'une page)
+ - [[Aide_DocumentationYesWiki Documentation YesWiki]] pour trouver comment utiliser le logiciel faisant fonctionner ce site internet.

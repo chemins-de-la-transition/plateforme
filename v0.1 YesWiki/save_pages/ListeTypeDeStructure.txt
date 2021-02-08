@@ -1,0 +1,1 @@
+{"label":{"association":"Association","collectif":"Collectif, association de fait","SCIC":"SCIC","COOP":"COOP","SASU":"SASU","SAS":"SAS","SARL":"SARL","EURL":"EURL","micro":"Micro-entreprise","Collectivite":"Collectivit\u00e9 & organismes publics","MutuelleSyndicat":"Mutuelle, Syndicat","Fondation":"Fondation, fonds de dotation","Autre":"Autre"},"titre_liste":"Type de structure"}

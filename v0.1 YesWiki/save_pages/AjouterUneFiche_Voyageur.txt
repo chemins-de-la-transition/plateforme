@@ -1,0 +1,3 @@
+======Ajouter une fiche d'informations Voyageur======
+
+{{bazar vue="saisir" id="13" voirmenu="0"}}

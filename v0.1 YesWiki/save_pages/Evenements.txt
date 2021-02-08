@@ -1,0 +1,7 @@
+======Évènements======
+Plusieurs pages permettent de retrouver les informations sur les actualités et les évènements des lieux et des parcours :
+  - [[Evenements_VueActivite Actualités des lieux]]
+  - [[Evenements_Prochains_Voyages_Apprenants Prochains voyages apprenants organisés]]
+{{button link="Evenements_SaisirAgenda" text="Ajouter une actualité" hideifnoaccess="true" nobtn="1" }}  
+
+{{button link="Evenements_Ajouter_Voyages_Apprenants" text="Ajouter un voyage apprenant à l'agenda" hideifnoaccess="true" nobtn="1" }}

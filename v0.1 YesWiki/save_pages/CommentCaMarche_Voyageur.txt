@@ -1,0 +1,20 @@
+======Comment ça marche ? - Voyageur======
+
+Vous souhaitez découvrir les diverses initiatives de transition déjà à l’œuvre sur le territoire français ?
+Vous avez envie d’acquérir des compétences et des connaissances par le voyage et par le faire ?
+Vous pouvez alors rejoindre la communauté des voyageurs et voyageuses et partir ainsi à la rencontre des acteurs de la transition en vous créant un profil sur le site.
+{{section visibility="!+" id="zone_a_afficher_non_connecte"}}
+Tout d'abord, connectez-vous : {{login template="modal.tpl.html" nobtn="0" btnclass="btn-primary white"}} ou {{button link="ParametresUtilisateur" text="Créez votre compte" class="btn-primary"}}
+{{end elem="section"}}
+{{section visibility="+"}}
+{{button class="btn-primary" link="AjouterUneFiche_Voyageur" text="Créer une fiche voyageur"}}[[AjouterUneFiche_Voyageur  ]]
+{{end elem="section"}}
+
+Cela vous permettra de créer vos propres parcours et d’entrer en contact avec les personnes dont les projets vous animent. 
+
+Nous vous proposons de retrouver les lieux en choisissant le parcours ci-dessous.
+{{button class="modalbox" nobtn="1" link="ChartE" text="Découvrir la Charte"}}
+====Choisissez votre forme de voyage====
+{{include page="Carte_avec_Facettes"}}[[Carte_avec_Facettes  ]]
+
+{{button class="btn-primary" link="LaCarte_RechercheAvancee" text="Recherche avancée"}} [[LaCarte_RechercheAvancee  ]]

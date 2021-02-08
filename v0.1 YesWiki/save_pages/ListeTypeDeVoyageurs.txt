@@ -1,0 +1,1 @@
+{"label":{"etudes":"en \u00e9tude","insertion":"personne en insertion","reconversion":"personne en reconversion","transition":"professionnel en transition","autre":"autre profil"},"titre_liste":"Type de voyageurs"}

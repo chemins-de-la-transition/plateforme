@@ -1,0 +1,3 @@
+====== ======
+
+Avant de renseigner une fiche Lieux, nous vous invitons à {{button link="ParametresUtilisateur" text="créer votre compte" class="btn-primary"}} et à [[Contact_Email nous contacter directement]] pour obtenir un accès dédié.

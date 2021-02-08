@@ -1,0 +1,25 @@
+======Comment ça marche ?======
+
+=====Contributeur=====
+
+Être contributeur, c'est participer activement au développement du projet des Chemins de la Transition, y apporter vos compétences et votre énergie.
+
+Si vous souhaitez nous rejoindre, vous pouvez contacter l'équipe via le [[Contact_Email formulaire de contact]].
+
+Si vous êtes nouvellement contributeur ou contributrice, vous pouvez fournir vos informations aux membres des Chemins de la Transition pour faciliter la communication entre nous **Attention ceci est encore expérimental et ne remplace pas le processu habituel pour les fiches contributeurs.**:
+{{section visibility="!+" id="zone_a_afficher_non_connecte"}}
+Tout d'abord, connectez-vous : {{login template="modal.tpl.html" nobtn="0" btnclass="btn-primary white"}} ou {{button link="ParametresUtilisateur" text="Créez votre compte" class="btn-primary"}}
+{{end elem="section"}}
+{{section visibility="+"}}
+{{button class="btn-primary" link="AjouterUneFiche_Contributeur" text="Créer une fiche contributeur"}}
+{{end elem="section"}}
+
+Il vous est aussi possible de faire une demande d'abonnement à [[https://framalistes.org/sympa/subscribe/contributeurs_cdlt la lettre de diffusion destinée aux contributeurs.]]
+
+====Modérateur=====
+
+Être modérateur, c'est participer activement à la vie du site.
+Vous pouvez devenir modérateur et modératrice en en faisant la demande auprès des développeurs du site via le [[Contact_Email_Dev formulaire de contact]].
+Un espace dédié aux modérateurs est ensuite accessible. Le lien vers cet espace s'affiche ci-dessus seulement si vous êtes connecté en tant que modérateur.
+
+{{button class="btn-primary" hideifnoaccess="true" link="Espace_Moderateurs" text="Accès à l'espace Modérateurs" }}

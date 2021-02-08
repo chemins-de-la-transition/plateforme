@@ -1,0 +1,1 @@
+{"label":{"a_moderer":"A mod\u00e9rer (par d\u00e9faut)","affichable":"Fiche affichable","a_contacte":"Lieu \u00e0 contacter","attente":"En attente de r\u00e9ponse"},"titre_liste":"Moderation"}

@@ -1,0 +1,3 @@
+{{nav class="nav nav-pills" links="VoirFiches_Contributeurs_Trombinoscope, VoirFiches_Contributeurs_Annuaire, VoirFiches_Contributeurs_Carto" titles="Trombinoscope des contributeurs, Annuaire alphabétique des contributeurs, Carte des contributeurs"}}[[VoirFiches_Contributeurs_Trombinoscope  ]][[VoirFiches_Contributeurs_Annuaire  ]][[VoirFiches_Contributeurs_Carto  ]]
+
+{{bazarliste id="11" template="map.tpl.html" height="600px" groups="checkboxListeModerationContributeurbf_moderation" titles="Moderation"}}

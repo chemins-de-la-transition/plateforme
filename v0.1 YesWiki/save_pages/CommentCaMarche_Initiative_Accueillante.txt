@@ -1,0 +1,15 @@
+======Comment ça marche ? - Initiative accueillante======
+
+Vous êtes impliqués dans une initiative de transition et souhaitez partager votre mode de vie et votre savoir-faire ?
+Vous pouvez alors rejoindre les “initiatives accueillantes” et entrer ainsi dans l’écosystème des Chemins de la Transition en ajoutant une fiche détaillant l’expérience que vous souhaitez transmettre aux voyageuses et voyageurs.
+
+Cela leur permettra de voir votre lieu/profil lorsqu’ils construiront leurs parcours et d’entrer en contact avec vous ! 
+
+{{button class="modalbox" nobtn="1" link="ChartE" text="Découvrez notre Charte"}} et les quatre types de voyage que nous référençons {{button class="modalbox" link="AideTypeDeVoyage" text="ici" nobtn="1"}}.[[AideTypeDeVoyage  ]]
+
+{{section visibility="!@Lieux"}}
+{{include page="AjouterLieux_PasDAcces"}}
+{{end elem="section"}}
+{{section visibility="@Lieux"}}
+{{button class="btn-success" link="AjouterLieux" text="Ajouter un lieu"}}[[AjouterLieux  ]]
+{{end elem="section"}}

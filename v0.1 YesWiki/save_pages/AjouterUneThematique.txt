@@ -1,0 +1,2 @@
+{{bazar voirmenu="0" vue="saisir" id="6"}}
+""<p><i>Attention, si vous êtes en train de créer une fiche lieu, la nouvelle catégorie n'apparaitra qu'une fois que vous aurez validé la fiche du lieu. Il faudra alors revenir la modifier pour ajouter la nouvelle catégorie</i></p>""

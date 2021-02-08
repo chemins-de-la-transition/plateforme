@@ -1,0 +1,139 @@
+======LowTech======
+
+Paragraphe de présentation
+**Changer les droits d'accès à '*' une fois cete page terminée.**
+
+{{grid}}
+{{col size="3"}}
+""<div class="checkbox">
+ <label for="checkboxListeTypeDAccueiltype_accueilEcotourisme">""{{section class="alert alert-primary auto-resize-height" nocontainer="1"}}
+""<div class="lead auto-resize-height">""**Itinéraires écotouristiques**""</div>""Baladez-vous de lieu en lieu à la découverte du monde de la transition.
+{{button link="LaCarte_Ecotourisme" nobtn="1" class="modalbox white" text="Détails..."}}[[LaCarte_Ecotourisme  ]]
+{{end elem="section"}}""</label>
+</div>""
+{{end elem="col"}}
+{{col size="3"}}
+""<div class="checkbox">
+ <label for="checkboxListeTypeDAccueiltype_accueilVoyageApprenant">""{{section class="alert alert-primary auto-resize-height" nocontainer="1"}}
+""<div class="lead auto-resize-height">""**Voyage apprenant**""</div>""Envie de changer de vie ou de métier ? Explorez le champ des possibles !
+{{button link="LaCarte_VoyageApprenant" nobtn="1" class="modalbox white" text="Détails..."}}[[LaCarte_VoyageApprenant  ]]
+{{end elem="section"}}""</label>
+</div>""
+{{end elem="col"}}
+{{col size="3"}}
+""<div class="checkbox">
+ <label for="checkboxListeTypeDAccueiltype_accueilWoofingChantiers">""{{section class="alert alert-primary auto-resize-height" nocontainer="1"}}
+""<div class="lead auto-resize-height">""**Wwoofing & chantiers participatifs**""</div>""Développez vos savoir-faire au contact des acteurs de la transition.
+{{button link="LaCarte_Woofing" nobtn="1" class="modalbox white" text="Détails..."}}[[LaCarte_Woofing  ]]
+{{end elem="section"}}""</label>
+</div>""
+{{end elem="col"}}
+{{col size="3"}}
+""<div class="checkbox">
+ <label for="checkboxListeTypeDAccueiltype_accueilCompagnonnage">""{{section class="alert alert-primary auto-resize-height" nocontainer="1"}}
+""<div class="lead auto-resize-height">""**Compagnonnage**""</div>""Formez-vous aux enjeux et aux métiers de la transition en faisant et en voyageant.
+{{button link="LaCarte_Compagnonnage" nobtn="1" class="modalbox white" text="Détails..."}}[[LaCarte_Compagnonnage  ]]
+{{end elem="section"}}""</label>
+</div>""
+{{end elem="col"}}
+{{end elem="grid"}}
+{{grid}}
+{{col size="3"}}
+""<div class="checkbox">
+ <label for="checkboxListeTypeDAccueiltype_accueilEcotourisme">
+  <input class="filter-checkbox" type="checkbox" id="checkboxListeTypeDAccueiltype_accueilEcotourisme_other" name="checkboxListeTypeDAccueiltype_accueil_other" value="Ecotourisme"><span></span>
+  <span>
+  Écotourisme
+  </span>
+ </label>
+</div>""{{end elem="col"}}
+{{col size="3"}}""
+<div class="checkbox">
+ <label for="checkboxListeTypeDAccueiltype_accueilVoyageApprenant">
+  <input class="filter-checkbox" type="checkbox" id="checkboxListeTypeDAccueiltype_accueilVoyageApprenant_other" name="checkboxListeTypeDAccueiltype_accueil_other" value="VoyageApprenant"><span></span>
+  <span>
+  Voyage apprenant
+  </span>
+ </label>
+</div>""{{end elem="col"}}
+{{col size="3"}}""
+<div class="checkbox">
+ <label for="checkboxListeTypeDAccueiltype_accueilWoofingChantiers">
+  <input class="filter-checkbox" type="checkbox" id="checkboxListeTypeDAccueiltype_accueilWoofingChantiers_other" name="checkboxListeTypeDAccueiltype_accueil_other" value="WoofingChantiers"><span></span>
+  <span>
+  Wwoofing &amp; Chantiers participatifs
+  </span>
+ </label>
+</div>""{{end elem="col"}}
+{{col size="3"}}""
+<div class="checkbox">
+ <label for="checkboxListeTypeDAccueiltype_accueilCompagnonnage">
+  <input class="filter-checkbox" type="checkbox" id="checkboxListeTypeDAccueiltype_accueilCompagnonnage_other" name="checkboxListeTypeDAccueiltype_accueil_other" value="Compagnonnage"><span></span>
+  <span>
+  Compagnonnage
+ </span>
+ </label>
+</div>""{{end elem="col"}}
+{{end elem="grid"}}
+{{bazarliste id="5" template="map.tpl.html" height="600px" groups="checkboxListeTypeDAccueiltype_accueil" titles="Type d'apprentissage" groupsexpanded="undefined" cluster="true" spider="true" filterposition="right" query="checkboxfiche6bf_thematique_officielle=LowtechLabFabLabRecyclerie2"}}
+""<style>
+div.lead.auto-resize-height{
+	margin-bottom : initial ;
+}
+@media(min-width: 900px) {
+	.col-md-3 {
+		width: 25%;
+		float: left;
+	}
+}
+</style><script>
+document.getElementById("checkboxListeTypeDAccueiltype_accueilEcotourisme").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
+document.getElementById("checkboxListeTypeDAccueiltype_accueilVoyageApprenant").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
+document.getElementById("checkboxListeTypeDAccueiltype_accueilWoofingChantiers").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
+document.getElementById("checkboxListeTypeDAccueiltype_accueilCompagnonnage").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
+document.getElementById("checkboxListeTypeDAccueiltype_accueilEcotourisme").parentElement.parentElement.parentElement.parentElement.setAttribute("style","display:none;") ;
+function localFuncUpdateCheckbox(id,checked) {
+	document.querySelector("input#"+id+"_other").checked = checked ;
+}
+/*var listInput = document.querySelectorAll("input[type=checkbox].filter-checkbox") ;
+var i ;
+for (i=0;i<listInput.length;i++){
+	listInput[i].checked = true ;
+}*/
+document.getElementsByTagName("body")[0].onload = defer() ;
+function defer() {
+    if (window.jQuery) {
+   	function autoResizeHeight(){
+			var minHeightLead = 0 ;
+			$("div.lead.auto-resize-height").each(function(){
+				$(this).css("min-height","initial") ;
+				if ($(this).height() > minHeightLead){
+					minHeightLead = $(this).height() ;
+				}
+			}) ;
+			if ($(window).width() > 900){
+				$("div.lead.auto-resize-height").each(function(){
+					$(this).css("min-height",minHeightLead + "px") ;
+				}) ;
+			}
+			var minSectionHeight = 0 ;
+			$("section.auto-resize-height").each(function(){
+				$(this).css("min-height","initial") ;
+				if ($(this).height() > minSectionHeight){
+					minSectionHeight = $(this).height() ;
+				}
+			}) ;
+			if ($(window).width() > 900){
+				$("section.auto-resize-height").each(function(){
+					$(this).css("min-height",minSectionHeight + "px") ;
+				}) ;
+			}
+		}
+   	autoResizeHeight();
+   	$(window).resize(autoResizeHeight);
+   	/*changeURLParameter('facette','');*/
+    } else {
+        setTimeout(function() { defer() }, 20);
+    }
+}
+</script>""

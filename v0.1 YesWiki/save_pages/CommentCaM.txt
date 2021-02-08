@@ -1,0 +1,13 @@
+//Face aux enjeux sociétaux et écologiques de notre époque, la Transition se fait languir. Des îlots d’alternatives existent pourtant, mais ils sont bien souvent invisibilisés et isolés. Via la création de Chemins de la Transition, ces îlots pourront être repeuplés, démultipliés et connectés en Archipels. Agissons ensemble pour participer à la découverte, la formation et la mise en réseau des personnes souhaitant s’engager dans la Transition. Afin que le rêve de voir éclore, mûrir et s’entrelacer des mondes solidaires et écologiques s’enracine dans notre réalité.//
+{{button class="modalbox" link="QuiSommesNous" text="En savoir plus ..." nobtn="1"}}[[QuiSommesNous   ]]
+
+
+{{grid}}
+{{col size="6"}}
+""<div style="text-align: center;margin:5px;">""{{button class="btn-secondary-1 btn-lg" link="CommentCaMarche_Voyageur" text="Je veux voyager"}}""</div>""
+{{end elem="col"}}
+{{col size="6"}}
+""<div style="text-align: center;margin:5px;">""{{button class="btn-secondary-1 btn-lg" link="CommentCaMarche_Initiative_Accueillante" title="Vous vous impliquez dans une initiative de transition et souhaitez partager ce que vous faites ? Vous souhaitez vous inscrire sur un parcours thématique et permettre à des personnes de découvrir ce qui fait votre passion " text="Je veux accueillir"}}""</div>""
+{{end elem="col"}}
+{{end elem="grid"}}
+[[CommentCaMarche_Initiative_Accueillante  ]][[CommentCaMarche_Voyageur  ]]

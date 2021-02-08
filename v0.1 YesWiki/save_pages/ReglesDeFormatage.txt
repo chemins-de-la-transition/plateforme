@@ -1,0 +1,180 @@
+Cette page est customisable en suivant ce lien ReglesDeFormatage
+{{grid}}
+{{col size="6"}}
+{{accordion}}
+{{panel title=" Rappel des règles de formatage du texte" class="panel-secondary-2"}}
+===Accentuation===
+""<pre>""**""**Gras**""**
+//""//Italique//""//
+__""__Souligné__""__
+@@""@@Barré@@""@@""</pre>""
+===Titres===
+""<pre>""======""======Titre 1======""======
+=====""=====Titre 2=====""=====
+====""====Titre 3====""====
+===""===Titre 4===""===
+==""==Titre 5==""==""</pre>""
+===Liens===
+""<pre>[[http://www.exemple.com Texte qui s'affichera pour le lien externe]]""
+""[[PageDeCeWiki Texte qui s'affichera pour le lien interne]]""
+""[[mailto:name@example.com Pour envoyer un mail à name@example.com]]</pre>""
+{{end elem="panel"}}
+{{end elem="accordion"}}
+===Listes===
+""<pre> - Liste à puce niveau 1
+ - Puce niveau 1
+  - Puce niveau 2
+  - Puce niveau 2
+ - Puce niveau 1
+
+ 1) Liste énumérée
+ 1) Liste énumérée
+ 1) Liste énumérée</pre>""
+===Insérer une ligne===
+%%----%%
+===Insérer un iframe===""<a href="https://yeswiki.net/?DocumentationIntegrerDuHtml" target="_blank" class="btn btn-primary btn-xs">Doc en ligne</a>""
+//Inclure un autre site, ou un pad, ou une vidéo youtube, etc...//
+%%""<iframe width=100% height="1250" src="http://exemple.com" frameborder="0" allowfullscreen></iframe>""%%
+===Lien qui force l'ouverture vers une page extérieure===
+%%""<a href="http://exemple.com" target="_blank">ton texte</a>""%%
+===Images===""<a href="https://yeswiki.net/?DemoAttach" target="_blank" class="btn btn-primary btn-xs">Doc en ligne</a>""
+//""<pre>Pour télécharger une image, utiliser le bouton Joindre/insérer un fichier</pre>""//
+===Tableaux===
+""<pre>
+[|
+| **Nom** | **prénom** | **Couleurs préférées** |
+| Lagaffe     | Gaston     | jaune     |
+| Lapalice    | Jean    | vert   |
+|]
+</pre>""
+===Boutons wiki=== ""<a href="https://yeswiki.net/?DemoButton" target="_blank" class="btn btn-primary btn-xs">Doc en ligne</a>""
+""<pre>{{button class="btn btn-danger" link="lienverspage" icon="plus icon-white" text="votre texte"}}</pre>""
+===Créer un bouton qui ouvre son contenu dans un nouvel onglet===
+%%""<a href="votrelien" target="_blank" class="btn btn-primary btn-xs">votre texte</a>""%%
+===Ecrire en html===
+""<pre>si vous déposez du html dans la page wiki, 
+il faut l'entourer de &quot;&quot; <bout de html> &quot;&quot; 
+pour qu'il soit interprété</pre>""
+===Placer du code en commentaire sur la page===
+%%""<!-- en utilisant ce code on peut mettre du texte qui n’apparaît pas sur la page... ce qui permet de laisser des explications par exemple ou même d'écrire du texte en prépa d'une publication future -->""%%
+{{end elem="col"}}
+{{col size="6"}}
+===Texte en couleur===
+%%""<span style="color:#votrecodecouleur;">votre texte à colorer</span>""%%//Quelques codes couleur => mauve : #990066 / vert : #99cc33 / rouge : #cc3333 / orange : #ff9900 / bleu : #006699//
+//Voir les codes hexa des couleurs : [[http://fr.wikipedia.org/wiki/Liste_de_couleurs http://fr.wikipedia.org/wiki/Liste_de_couleurs]]//
+===Icônes Emoji 👍🏾===
+Il est possible de copier des icônes dans des sites sources puis de les coller dans votre wiki. ""<a href="http://getemoji.com" target="_blank" class="btn btn-primary btn-xs">Par exemple sur ce site</a>""
+===Mise en page par colonne===""<a href="https://yeswiki.net/?DemoGrid" target="_blank" class="btn btn-primary btn-xs">Doc en ligne</a>""
+//le total des colonnes doit faire 12 (ou moins)//
+%%{{grid}}
+{{col size="6"}}
+===Titre de la colonne 1===
+Texte colonne 1
+{{end elem="col"}}
+{{col size="6"}}
+===Titre de la colonne 2===
+Texte colonne 2
+{{end elem="col"}}
+{{end elem="grid"}}%%
+===Créer des onglets dans une page===""<a href="https://yeswiki.net/?DocumentationMiseEnPageOnglet" target="_blank" class="btn btn-primary btn-xs">Doc en ligne</a>""
+Il est possible de créer des onglets au sein d'une page wiki en utilisant l'action {{nav}}. La syntaxe est (elle est à répéter sur toutes les pages concernée par la barre d'onglet)
+""<pre>{{nav links="NomPage1, NomPage2, NomPage3Personne" titles="TitreOnglet1, TitreOnglet2, TitreOnglet3"}}</pre>""
+===Créer un cadre dépliable / accordéon===""<a href="https://yeswiki.net/?DemoAccordion" target="_blank" class="btn btn-primary btn-xs">Doc en ligne</a>""
+%%
+{{accordion}}
+{{panel title=" Titre de votre cadre" class="panel-warning"}}
+contenu de votre cadre
+{{end elem="panel"}}
+{{end elem="accordion"}}%%
+===Inclure une page dans une autre===
+%%{{include page="NomPageAInclure"}} %%
+Pour inclure une page d'un autre yeswiki : ( Noter le pipe ""|"" après les premiers ""[["" ) %%[[|http://lesite.org/nomduwiki PageAInclure]]%%
+===Image de fond avec du texte par dessus===""<a href="https://yeswiki.net/?BackgroundimagE" target="_blank" class="btn btn-primary btn-xs">Doc en ligne</a>""
+//Avec possibilité de mettre du texte par dessus//
+%%{{backgroundimage height="150" file="monbandeau.jpg" class="white text-center doubletitlesize"}}
+=====Texte du titre=====
+description
+{{endbackgroundimage}}%%
+===Couleur de fond avec du texte par dessus===
+//Avec possibilité de mettre du texte par dessus//
+%%{{backgroundimage height="150" bgcolor="#2BB34A" class="white text-center doubletitlesize"}}
+=====Texte du titre=====
+description
+{{endbackgroundimage}}%%//Quelques codes couleur => mauve : #990066 / vert : #99cc33 / rouge : #cc3333 / orange : #ff9900 / bleu : #006699//
+//Voir les codes hexa des couleurs : [[http://fr.wikipedia.org/wiki/Liste_de_couleurs http://fr.wikipedia.org/wiki/Liste_de_couleurs]]//
+{{end elem="col"}}
+{{end elem="grid"}}
+{{accordion}}
+{{panel title="Codes à copier / coller pour améliorer le look" class="panel-secondary-2"}}
+{{section class="well"}}
+Quelques bouts de codes à copier coller pour faire de jolies mises en forme
+
+Pour chacun de ces codes vous pourrez dans la "partie" class 
+ - jouer sur les couleurs default, primary, success, warning, danger
+ - jouer sur l'alignement du texte : text-center, text-justify, text-right, text-left
+ - jouer sur la couleur du texte : text-default, text-primary, text-success, text-warning, text-danger
+{{end elem="section"}}
+
+====Labels====
+%%{{label}}Mon label{{end elem="label"}}%% donne
+{{label}}Mon label{{end elem="label"}}   {{label class="label-primary"}}label-primary{{end elem="label"}}   {{label class="label-success"}}label-success{{end elem="label"}}   {{label class="label-warning"}}label-warning{{end elem="label"}}  {{label class="label-danger"}}label-danger{{end elem="label"}}
+
+
+====Alert====
+%%{{section class="alert alert-warning" nocontainer="1"}}
+Attention ! Voici votre message.
+{{end elem="section"}}%% donne
+{{section class="alert alert-warning" nocontainer="1"}}
+Attention ! Voici votre message.
+{{end elem="section"}}
+{{section class="alert alert-danger" nocontainer="1"}}
+Attention ! Voici votre message.
+{{end elem="section"}}
+{{section class="alert alert-success" nocontainer="1"}}
+Attention ! Voici votre message.
+{{end elem="section"}}
+{{section class="alert alert-primary" nocontainer="1"}}
+Attention ! Voici votre message.
+{{end elem="section"}}
+{{section class="alert alert-default" nocontainer="1"}}
+Attention ! Voici votre message.
+{{end elem="section"}}
+
+====Panel====
+%%{{panel title="Titre du panel"}}
+Contenu du panel.
+{{end elem="panel"}}%% donne
+{{panel title="Titre du panel"}}
+Contenu du panel.
+{{end elem="panel"}}
+{{end elem="panel"}}
+{{panel title="Codes à copier / coller associés à bazar le gestionnaire de base de données" class="panel-secondary-2"}}
+{{section class="well"}}
+Quelques bouts de codes à copier coller pour utiliser bazar, le gestionnaire de bases de données
+
+Pour pouvoir utiliser ces codes, il faudra avoir créé un formulaire. Il aura alors un numéro d'identifiant (ID) ""<a href="https://yeswiki.net/?BazarCreationFormulaire" target="_blank" class="btn btn-primary btn-xs">Doc en ligne</a>""
+ - dans les exemples suivant, le formulaire aura l'identifiant n° 1 : id="1"
+{{end elem="section"}}
+{{grid}}
+{{col size="6"}}
+====afficher le formulaire de saisie====
+%%{{bazar id="1" voirmenu="0" vue="saisir"}}%%
+====afficher les fiches associées sous forme d'accordéons====
+%%{{bazarliste id="1"}}%%
+====afficher les fiches associées sous forme d'accordéons avec un moteur de recherche====
+%%{{bazar id="1" voirmenu="0" vue="consulter"}}%%
+====afficher les fiches associées sous forme de calendrier====
+==Si votre formulaire contient un champ date==
+%%{{calendrier id="1"}}%%
+{{end elem="col"}}
+{{col size="6"}}
+====afficher les fiches associées sous forme de carte====
+==si votre formulaire contient un champ adresse==
+%%{{bazarliste id="1" template="map.tpl.html"}}%%
+====afficher les fiches associées sous forme de trombinoscope====
+==si votre formulaire contient un champ image==
+%%{{bazarliste id="1" template="trombinoscope.tpl.html"}}%%
+{{end elem="col"}}
+{{end elem="grid"}}
+{{end elem="panel"}}
+{{end elem="accordion"}}

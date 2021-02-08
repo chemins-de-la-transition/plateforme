@@ -1,0 +1,5 @@
+Si vous cliquez sur "éditer cette page" ou double-cliquez simplement sur la page,
+ - vous pourrez écrire dans cette page comme bon vous semble,
+ - puis en cliquant sur "sauver" vous pourrez enregistrer vos modifications.
+Une aide simple est aisément accessible en cliquant sur le bouton "?".
+=> envie d'un mini parcours de découverte autonome ? RDV sur la ferme yeswiki et créer un yeswikitour

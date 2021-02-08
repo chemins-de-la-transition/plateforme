@@ -1,0 +1,5 @@
+======Témoignages======
+
+{{nav links="Blog_Temoignages, Blog_saisir" titles="Les articles, Déposer un post" class="nav nav-pills"}}[[Blog_saisir  ]]
+
+{{bazarliste id="3" template="blog.tpl.html" header="no"}}

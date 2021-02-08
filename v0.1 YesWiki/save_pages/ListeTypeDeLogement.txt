@@ -1,0 +1,1 @@
+{"label":{"chambre":"chambre","camping":"camping","yourte_tipi":"yourte\/tipi","cabane_mobilhome":"cabane\/mobilhome","dortoir":"dortoir","chezunvoisin":"chez un voisin"},"titre_liste":"Type de logement"}

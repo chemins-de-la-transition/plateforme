@@ -1,0 +1,1 @@
+{"label":{"janvier":"janvier","fevrier":"f\u00e9vrier","mars":"mars","avril":"avril","mai":"mai","juin":"juin","juillet":"juillet","aout":"ao\u00fbt","septembre":"septembre","octobre":"octobre","novembre":"novembre","d\u00e9cembre":"d\u00e9cembre"},"titre_liste":"Mois"}

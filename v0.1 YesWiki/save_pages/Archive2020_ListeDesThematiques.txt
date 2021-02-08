@@ -1,0 +1,12 @@
+=====Les thématiques couvertes par les Chemins de la Transition =====
+
+ - **Agriculture** (soutenable, locale, permaculture, viticulture, apiculture, micro-brasserie) ;
+ - **Énergie** (production renouvelable, performance énergétique,  autonomie, territoire à énergie positive) ;
+ - **Habitat** (partagé, éco-construction, rénovation énergétique) ; 
+ - **Artisanat et Industrie** (makerspaces, fablabs, artisanat local, économie circulaire, technologies numériques, éco-conception, recyclage, réparation et deuxième vie, écosystèmes industriels) ; 
+ - **Modes de vie, sobriété, consom’action** (circuits courts, bio, consomme moins et mieux, oasis, mouvement “slow”, développement personnel) ; 
+ - **Mobilités** (mode de transport doux, fabrication & matériaux, dernier kilomètre) ;
+ - **Gouvernance et mode d’organisation** (systèmes de gouvernance alternatifs, coopératifs, espaces de travail communs, régies, gestion publique innovante, méthodes agiles) ;
+ - **Développement territorial** (Agenda 21, services partagés,  budget participatifs, démocratie et territoires, démarches de transition, monnaies complémentaires) ; 
+ - **Éducation, formation, insertion** (pédagogies alternatives, insertion des publics en difficulté, mouvement d’éducation populaire) ; 
+ - **Engagement citoyen** (associations locales, aide aux personnes en difficulté, implication sur les projets locaux, élaboration d’évènements).

@@ -1,0 +1,3 @@
+**//Question// : Qu'est-ce que la dénomination ou la raison sociale ?**
+//Réponse :// La dénomination sociale ou la raison sociale est le nom qui permet l'identification de l'entité juridique principalement auprès des clients, des fournisseurs, des administrations et du grand public. Elle figurera également sur l’extrait K-bis ou le certificat d'immatriculation. Elle est à différencier du nom commercial, de l'enseigne ou de la marque. 
+{{button link="https://www.infogreffe.fr/informations-et-dossiers-entreprises/dossiers-thematiques/creation-entreprise/la-denomination-sociale.html" text="En savoir plus sur infogreffe.fr" class="btn btn-link"}}

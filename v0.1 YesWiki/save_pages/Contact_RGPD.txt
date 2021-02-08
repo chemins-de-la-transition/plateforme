@@ -1,0 +1,4 @@
+======Pour contacter le délégué ou la déléguée à la Protection des Données de ce site======
+{{contact mail="name@example.com"}}
+
+{{button link="?RGPD"text="En savoir plus sur l’utilisation de mes données personnelles..." class="modalbox" nobtn="1"}}

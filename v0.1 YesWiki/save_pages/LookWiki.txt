@@ -1,0 +1,123 @@
+======Tester les thèmes ""YesWiki""======
+{{grid}}
+{{col size="4"}}
+=====Titre 1=====
+	Bla blabla blablabla bla [[AccueiL Retour a la page d'accueil]].
+
+	Etiam a {{label class="label-primary"}}pri_ffr{{end elem="label"}} sagittis justo. Aliquam vel egestas eros. Quisque eget dolor ornare, accumsan sem et, rhoncus diam. Morbi sodales neque vitae lorem ultrices, sit amet sollicitudin lectus tempor.** Donec quis mauris quis sem blandit faucibus** ut elementum lacus. //Orci varius natoque// penatibus et __magnis dis parturient__ montes, nascetur ridiculus mus. Interdum et malesuada @@fames ac ante ipsum primis @@in faucibus. Suspendisse vitae egestas nisi. **//__Pellentesque faucibus a elit vitae luctus__//**. Mauris condimentum vitae diam ut egestas. Etiam sed dui et lorem luctus pulvinar vel nec diam. 
+{{end elem="col"}}
+{{col size="4"}}
+	=====Titre 2=====
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue magna at dapibus facilisis. Suspendisse nisi ante, vehicula vel dolor non, laoreet eleifend ante. Aenean augue elit, cursus nec urna et, tincidunt commodo augue. Maecenas sed ex rhoncus, vehicula mauris sit amet, laoreet libero. Aliquam egestas ac risus sit amet cursus. Pellentesque vestibulum elit in dolor aliquam, quis molestie risus fermentum. Etiam non sem accumsan, faucibus est in, hendrerit nisi. Vivamus auctor in dui et egestas. Duis non ante sit amet risus euismod pulvinar. Suspendisse potenti. Duis sit amet malesuada lectus. 
+{{end elem="col"}}
+{{col size="4"}}
+{{section class="well" nocontainer="1"}}
+	====Choisir le thème, styles et squelettes associés====
+	{{themeselector}}
+{{end elem="section"}}
+{{end elem="col"}}
+{{end elem="grid"}}
+
+{{section class="full-width white" bgcolor="var(--secondary-color-1)" height="250"}}
+	======Insertion de pad ou de vidéo======
+	Il est possible d'incruster dans son wiki des pads, des vidéos, des lignes du temps...
+{{end elem="section"}}
+
+{{grid}}
+{{col size="6"}}
+=====Incrustation d'un pad=====
+""<!--iframe name="embed_readwrite" src="https://pad.coop.tools/p/pad-wikidebase?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false" width=100% height=400></iframe-->""
+{{end elem="col"}}
+{{col size="6"}}
+=====Incrustation d'une vidéo=====
+""<iframe width="100%" height="315" sandbox="allow-same-origin allow-scripts" src="https://video.coop.tools/videos/embed/e5add04e-d195-41af-8a60-095f8b215fa1" frameborder="0" allowfullscreen></iframe>""
+Ceci est aussi possible à partir des plateformes youtbe/vimeo/dailymotion...
+{{end elem="col"}}
+
+{{end elem="grid"}}
+
+
+{{section class="full-width white" bgcolor="var(--secondary-color-2)" height="250"}}
+	======Composants graphiques======
+	Des petits composants pour rendre vos pages plus conviviales 
+	Ceci en est déjà un en vous permettant de créer une bande de couleur sur la largeur de la page ;-)
+{{end elem="section"}}
+
+====Labels====
+{{label}}Label-default{{end elem="label"}}
+{{label class="label-primary"}}label-primary{{end elem="label"}}   
+{{label class="label-secondary-1"}}label-secondary-1{{end elem="label"}}   
+{{label class="label-secondary-2"}}label-secondary-2{{end elem="label"}}
+{{label class="label-success"}}label-success{{end elem="label"}}  
+{{label class="label-info"}}label-info{{end elem="label"}}  
+{{label class="label-warning"}}label-warning{{end elem="label"}}  
+{{label class="label-danger"}}label-danger{{end elem="label"}}
+
+====Alerts====
+{{section class="alert alert-default" nocontainer="1"}}
+Attention ! Voici votre message. alert-default
+{{end elem="section"}}
+{{section class="alert alert-primary" nocontainer="1"}}
+Attention ! Voici votre message. alert-primary
+{{end elem="section"}}
+{{section class="alert alert-secondary-1" nocontainer="1"}}
+Attention ! Voici votre message. alert-secondary-1
+{{end elem="section"}}
+{{section class="alert alert-secondary-2" nocontainer="1"}}
+Attention ! Voici votre message. alert-secondary-2
+{{end elem="section"}}
+{{section class="alert alert-success" nocontainer="1"}}
+Attention ! Voici votre message. alert-success
+{{end elem="section"}}
+{{section class="alert alert-info" nocontainer="1"}}
+Attention ! Voici votre message. alert-info
+{{end elem="section"}}
+{{section class="alert alert-warning" nocontainer="1"}}
+Attention ! Voici votre message. alert-warning
+{{end elem="section"}}
+{{section class="alert alert-danger" nocontainer="1"}}
+Attention ! Voici votre message. alert-danger
+{{end elem="section"}}
+
+====Panels====
+{{panel title="Titre default" type="collapsed"}}
+Contenu panel-default
+{{end elem="panel"}}
+{{panel class="panel-primary" title="Titre primary" type="collapsible"}}
+Contenu panel-primary
+{{end elem="panel"}}
+{{panel class="panel-secondary-1" title="Titre secondary-1"}}
+Contenu panel-secondary-1
+{{end elem="panel"}}
+{{panel class="panel-secondary-2" title="Titre secondary-2"}}
+Contenu panel-secondary-2
+{{end elem="panel"}}
+
+====Accordion====
+{{accordion}}
+{{panel class="panel-success" title="Titre success"}}
+Contenu panel-success
+{{end elem="panel"}}
+{{panel class="panel-warning" title="Titre warning"}}
+Contenu panel-warning
+{{end elem="panel"}}
+{{panel class="panel-danger" title="Titre danger"}}
+Contenu panel-danger
+{{end elem="panel"}}
+{{end elem="accordion"}}
+
+====Boutons====
+{{button link="AccueiL" class="btn btn-default" text="btn-default"}}
+{{button link="AccueiL" class="btn btn-primary" text="btn-primary"}}
+{{button link="AccueiL" class="btn btn-secondary-1" text="btn-secondary-1"}}
+{{button link="AccueiL" class="btn btn-secondary-2" text="btn-secondary-2"}}
+{{button link="AccueiL" class="btn btn-success" text="btn-success"}}
+{{button link="AccueiL" class="btn btn-info" text="btn-info"}}
+{{button link="AccueiL" class="btn btn-warning" text="btn-warning"}}
+{{button link="AccueiL" class="btn btn-danger" text="btn-danger"}}
+
+====Navs====
+
+{{nav class="nav nav-tabs" links="LookWiki, GererDroits, GererThemes, GererUtilisateurs, GererMisesAJour" titles="Gestion du site, Droits d'accès aux pages, Thèmes graphiques, Utilisateurs et groupes, Mises à jour / extensions"}}
+
+{{nav class="nav nav-pills" links="LookWiki, GererDroits, GererThemes, GererUtilisateurs, GererMisesAJour" titles="Gestion du site, Droits d'accès aux pages, Thèmes graphiques, Utilisateurs et groupes, Mises à jour / extensions"}}

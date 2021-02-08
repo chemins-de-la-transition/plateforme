@@ -1,0 +1,8 @@
+======L'écosystème des Chemins de la Transition======
+
+{{bazarliste id="9" template="liste_liens_direct.tpl.html" query="checkboxListeTypeDePartenariat=part_ecosysteme" correspondance="bf_lien=bf_site_internet"}}
+
+
+======Nos partenaires financiers======
+
+{{bazarliste id="9" template="liste_liens_direct.tpl.html" query="checkboxListeTypeDePartenariat=part_financier" correspondance="bf_lien=bf_site_internet"}}

@@ -1,0 +1,24 @@
+=====Données à caractère personnel CNIL/RGPD=====
+
+Nous attachons une grande importance à la protection et confidentialité de votre vie privée et à la gestion de vos données conformément à la réglementation en vigueur concernant la protection des données personnelles. À cet égard, cette présente Politique de Confidentialité des données personnelles vous permet de comprendre quelles données à caractère personnel nous collectons et ce que nous en faisons, ainsi que les droits dont vous disposez et la manière dont vous pouvez les exercer.
+
+Les **informations recueillies dans les formulaires de contact** sont destinées exclusivement à une utilisation interne, afin de suivre et répondre votre demande.Ces informations ne seront transmises en aucun cas à des tiers. 
+Les informations de contact collectées sont vos : Nom, Prénom, Email, Téléphone, Adresse et le sujet concerné.
+Elles sont conservées de manière sécurisée le temps de vous répondre et au maximum 6 mois.
+
+Les **informations recueillies dans le formulaire Voyageur** sont destinées à assurer, en interne, le suivi de votre parcours et à remplir votre profil qui est rendu visible aux personnes inscrites. Une infobulle indique que le champs comportera une donnée publique (par exemple : Prénom, Commune). Ces informations ne seront pas délibérément transmises à des tiers sauf pour le suivi de votre parcours auprès des lieux concernés.
+Les données sont conservées tant que votre fiche existe et jusqu'à un an après suppression de celle-ci dans le fichier de sauvegarde.
+
+Les **informations recueillies dans les autres formulaires (Contributeur, Lieux)** sont destinées à vous identifier, mieux vous connaître, assurer le suivi de nos interactions. Ces informations ne seront transmises en aucun cas à des tiers et restent internes à l'association des Chemins de la Transition. 
+Les informations de contact collectées sont vos : Nom, Prénom, Email, Téléphone, Adresse, Projets personnels, Implications dans des organisations.
+Elles sont conservées de manière sécurisée sur ce site pendant toute leur publication et conservées de manière sécurisée dans les sauvegardes au maximum 1 an après leur suppression.
+
+Les **informations recueillies lors de la modification d'une page** sont destinées à assurer le suivi des modifications et prévenir des messages indésirables. Ces informations ne seront transmises en aucun cas à des tiers mais elles sont accessibles à tous (sauf l'adresse e-mail).
+Les informations collectées sont le nom de votre compte sur ce site, l'adresse e-mail associée ou à défaut de connexion, votre adresse IP.
+Elles sont conservées de manière publique sur ce site pendant toute leur publication et conservées de manière sécurisée dans les sauvegardes au maximum 1 an.
+
+Vous disposez d’un droit d’accès, de modification, de rectification, de portabilité, de limitation, d’opposition et d’effacement des données qui vous concernent conformément à l’art. 34 de la loi Informatique et Libertés et à l’art. 15 du RGPD. 
+Pour l’exercer, adressez-vous par courrier postal à : Association des Chemins de la Transition, 9 rue de la Marquise de Sévigné, 31200 Toulouse
+Ou par courrier électronique à name@example.com
+
+Délégué à la Protection des Données : [[Contact_RGPD contacter Lucie par formulaire]]

@@ -1,0 +1,3 @@
+{{UserSettings}}""<script>
+document.getElementsByName("revisioncount")[0].parentElement.parentElement.style.display = "none";
+</script>""

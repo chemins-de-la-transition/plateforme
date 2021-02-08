@@ -1,0 +1,1 @@
+{"label":{"journee":"en journ\u00e9e","week-end":"week-end","moins7j":"moins d'une semaine","1-2sem":"1-2 semaines","3-4":"3-4 semaines","plus1mois":"plus d'un mois"},"titre_liste":"Dur\u00e9e de s\u00e9jour"}

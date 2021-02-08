@@ -1,0 +1,9 @@
+======Mes fiches======
+{{bazaruserpagecdlt id="11" ordre="desc" champ="date_creation_fiche" shownb="0" titre="Fiches : Contributeur - contributrice"}}
+{{bazaruserpagecdlt id="13" ordre="desc" champ="date_creation_fiche" shownb="0" titre="Fiches : Voyageur - voyageuse"}}
+{{bazaruserpagecdlt id="5" ordre="desc" champ="date_creation_fiche" shownb="0" titre="Fiches : Initiatives accueillantes"}}
+{{bazaruserpagecdlt id="12" ordre="desc" champ="date_creation_fiche" shownb="0" titre="Fiches : Sondage Lieux"}}
+{{bazaruserpagecdlt id="8" ordre="desc" champ="date_creation_fiche" shownb="0" titre="Fiches : Compétences"}}
+{{bazaruserpagecdlt id="2" ordre="desc" champ="date_creation_fiche" shownb="0" titre="Fiches : Actualités des lieux"}}
+{{bazaruserpagecdlt id="1" ordre="desc" champ="date_creation_fiche" shownb="0" titre="Fiches : Agenda des voyages apprenants"}}
+{{bazaruserpagecdlt id="3" ordre="desc" champ="date_creation_fiche" shownb="0" titre="Fiches : Blog"}}

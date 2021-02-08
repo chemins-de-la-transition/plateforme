@@ -1,0 +1,5 @@
+======L'équipe======
+
+""<small>La page ci-dessous est une incrustation du site institutionnel. La navigation y est donc différente, ne vous perdez pas.</small>""
+
+""<iframe width=100% height="1250" src="https://lescheminsdelatransition.org/le-conseil-dadministration/" frameborder="0" allowfullscreen></iframe>""

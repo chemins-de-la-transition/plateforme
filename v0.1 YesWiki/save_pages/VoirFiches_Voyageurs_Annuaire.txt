@@ -1,0 +1,3 @@
+{{nav class="nav nav-pills" links="VoirFiches_Voyageurs_Trombinoscope, VoirFiches_Voyageurs_Annuaire, VoirFiches_Voyageurs_Carto" titles="Trombinoscope des voyageurs, Annuaire alphabétique des voyageurs, Carte des voyageurs"}}[[VoirFiches_voyageurs_Trombinoscope  ]][[VoirFiches_voyageurs_Annuaire  ]][[VoirFiches_voyageurs_Carto  ]]
+
+{{bazarliste id="13" template="annuaire_alphabetique.tpl.html" correspondance="bf_titre=bf_prenom" groups="checkboxListeModerationContributeurbf_moderation" titles="Moderation"}}

@@ -1,0 +1,1 @@
+{"label":{"gratuit":"gratuit","payant":"payant","participation_libre":"participation libre","en_famille":"en famille","sur_inscription":"sur inscription\/r\u00e9servation","interneCdlT":"interne aux Chemins de la Transition"},"titre_liste":"Informations sur les \u00e9v\u00e8nements"}

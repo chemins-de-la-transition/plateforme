@@ -1,0 +1,6 @@
+======Liste des voyageurs mineurs======
+
+(à contacter donc pour vérifier s'il n'y a pas une erreur dans la date de naissance)
+
+{{bazarlistm18cdlt id="13" datefield="date_naissance"}}
+""<!-- add displayIfNoDate="true" to display no date -->""

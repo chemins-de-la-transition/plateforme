@@ -1,0 +1,86 @@
+/* Configuration thème Margot */
+:root {
+   --primary-color: rgb(13, 131, 115); /* initial yellow #F8C400; */
+   --secondary-color-1: #a4c0bb;
+   --secondary-color-2:#a2ecb0;
+   --neutral-color:#4E5056;
+   --neutral-soft-color:#b0b1b3;
+   --neutral-light-color:#fff;
+
+   --success-color: #3cab3b;
+   --danger-color: #d8604c;
+   --warning-color: #D78958;
+
+  --main-text-color:var(--neutral-color);
+  --main-text-fontsize: 17px;
+  --main-text-fontfamily:'Nunito', sans-serif;
+  --main-bg-color:var(--neutral-light-color);
+  --main-container-bg-color:var(--neutral-light-color);
+}
+
+/* Configuration pour l'icone Page Titre */
+@media (max-width: 460px){
+	img.no-icon {
+		display:none;
+	}
+}
+
+/* Configuration des icones à fond blanc*/
+img.icon-bg-white {
+	background: var(--neutral-light-color);
+	border: 4px solid var(--neutral-light-color);
+	color: var(--primary-color) !important;
+	border-radius: 25px;
+}
+/* Personnalisation pas titre */
+.displayed-min-800 {
+	display:none ;	
+}
+@media(max-width: 800px){
+	.displayed-min-800 {
+		display:initial ;	
+	}
+}
+
+/* Personnalisation du comportement de la navbar */
+#yw-topnav .container .navbar-nav {
+  flex-wrap: nowrap;
+}
+
+#yw-topnav .btn-default, #yw-topnav .btn-default:hover, #yw-topnav .btn-default:focus {
+	background: var(--neutral-light-color);
+	border: 1px solid var(--neutral-light-color);
+	color: var(--primary-color) !important;
+}
+
+@media(max-width: 800px){
+	#yw-topnav .btn-default, #yw-topnav .btn-default:hover, #yw-topnav .btn-default:focus {
+	   background: transparent;
+	   border: none;
+	   color: var(--neutral-light-color) !important;
+	}
+	#yw-topnav div>a[href="#LoginModal"] {
+		display:none ;
+	}
+}
+#yw-topnav div>a[href="#LoginModal"] {
+	color: var(--navbar-link-color) ;
+}
+
+/* Correctif bug label leaflet container */
+.leaflet-container a.label {
+    color: #fff;
+}
+
+/* Configuration de l'affichage du calendrier : réglage pour ce site */
+div#calendar1:not(.minical) >div.fc-view-container  td.fc-event-container>a>div.fc-content>span.fc-title { white-space:normal;} 
+
+/* Debug mise en forme de Margot depuis 10 octobre 2020 */
+.form-group:not(.file):not(.checkbox) .control-label, .form-group.wrapper.checkbox .control-label {
+    bottom: calc(100% - 8px);
+}
+@media (max-width: 940px){
+	.form-group:not(.file):not(.checkbox) .control-label, .form-group.wrapper.checkbox .control-label {
+    position: relative;
+   }
+}

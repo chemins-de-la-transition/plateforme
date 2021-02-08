@@ -1,0 +1,4 @@
+======Pour contacter les Chemins de la Transition======
+{{contact mail="name@example.com"}}
+
+{{button link="?RGPD"text="En savoir plus sur l’utilisation de mes données personnelles..." class="modalbox" nobtn="1"}}

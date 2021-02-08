@@ -1,0 +1,25 @@
+{{nav links="TableauDeBord, TableauDeBord_PagesOrphelines, TableauDeBord_PlanSite, TableauDeBord_LookWiki" titles="Tableau de bord, Pages Orphelines, Plan du site, Look Wiki"}}[[TableauDeBord  ]][[TableauDeBord_PagesOrphelines  ]][[TableauDeBord_PlanSite  ]][[TableauDeBord_LookWiki  ]]
+======Tableau de bord======
+{{mailperiod}}
+{{grid}}
+{{col size="4"}}
+====Derniers comptes utilisateurs ====
+{{Listusers}}
+------
+====Dernières pages modifiées ====
+{{recentchanges}}
+------
+==== Pages orphelines ====
+{{OrphanedPages}}
+------
+{{end elem="col"}}
+{{col size="4"}}
+==== Index des fiches bazar ====
+{{bazarrecordsindex}}
+{{end elem="col"}}
+{{col size="4"}}
+==== Index des pages seules ====
+{{pageonlyindex}}
+------
+{{end elem="col"}}
+{{end elem="grid"}}

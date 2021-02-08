@@ -1,0 +1,25 @@
+======Mentions légales======
+
+=====Propriétaire=====
+
+Dénomination : 
+Adresse : 
+Courriel : name@example.com
+SIRET : 
+Identification RNA : 
+Responsable de la publication : 
+
+=====Droits d’auteurs=====
+
+//En cours de définition//
+
+Le propriétaire du site avise les internautes que certains éléments de ce site sont protégés par la législation sur le droit d’auteur, il s’agit notamment des photographies, des articles, des documents attachés …
+À ce titre, sauf mention contraire explicite, toute reproduction, représentation, utilisation, adaptation, modification, incorporation, traduction, commercialisation, partielles ou intégrales, sans l’autorisation écrite préalable du responsable de la publication, sont interdites.
+
+=====Hébergeur du site=====
+
+Le site utilise la technologie [[http://www.yeswiki.net/ YesWiki]] et est hébergé par OVH.
+Le nom de domaine du site **lescheminsdelatransition.org/** est la propriété de l'association les Chemins de la Transition.
+Contact technique : [[Contact_technique contacter Jérémy par formulaire]]
+
+{{include page="RGPD"}}[[RGPD  ]]

@@ -1,0 +1,40 @@
+======Espace Modérateurs======
+
+Cet espace dédié aux modérateurs et modératrices vous permet de retrouver les liens utiles en complément de ceux présents dans l'AidE.
+
+**Plusieurs actions s'offrent à vous**:
+
+ - Des **initiatives accueillantes** peuvent avoir créées leur fiche. Il faut vérifier que tout est en ordre avant de publier leur fiche : [[Espace_Moderateurs_Lieux_a_moderer_Carte Voir les fiches Lieux à modérer]]
+ - Il peut être intéressant d'inviter ces initiatives accueillantes à compléter un **sondage**. En voici [[Lieux_Sondage le lien vers ce sondage]]
+ - Pour importer des fiches lieux depuis un tableau CSV correctement formaté [[Espace_Moderateurs_Import suivre ce lien]]
+------
+ - Quand un nouveau **parcours** est créé, vous pouvez l'ajouter dans cette liste pour qu'il s'affiche : [[AjouterUneThematique Ajouter un nouveau nom de parcours thématique]]
+ - Enfin pour animer le site en ajoutant un **voyage apprenant** qui concerne plusieurs lieux, vous pouvez utiliser ce lien [[Evenements_Ajouter_Voyages_Apprenants Ajouter un voyage apprenant à l'agenda]]
+------
+ - Pour assurer le suivi des **contributeurs** et de leur fiche vous pouvez :
+   - [[AjouterUneFiche_Contributeur ajouter une fiche contributeur]]
+	- Voir la liste des **contributrices et contributeurs** :
+		- [[VoirFiches_Contributeurs_Trombinoscope sous forme de trombinoscope]]
+		- [[VoirFiches_Contributeurs_Annuaire sous forme d'annuaire]]
+		- [[VoirFiches_Contributeurs_Carto sous forme de carte]]
+		- [[VoirFiches_Contributeurs_mineurs liste des mineurs]]
+------
+ - Pour assurer le suivi des **voyageurs et voyageuses** et de leur fiche vous pouvez :
+   - [[AjouterUneFiche_Voyageur ajouter une fiche voyageur]]
+	- Voir la liste des **voyageurs et voyageuses** :
+		- [[VoirFiches_Voyageurs_Trombinoscope sous forme de trombinoscope]]
+		- [[VoirFiches_Voyageurs_Annuaire sous forme d'annuaire]]
+		- [[VoirFiches_Voyageurs_Carto sous forme de carte]]
+		- [[VoirFiches_Voyageurs_mineurs liste des mineurs]]
+
+
+Le rôle des **modérateurs** et **modératrices** est de : 
+	 - s'assurer que l'inscription des contributeurs, contributrices, voyageurs, voyageuses s'est bien déroulée. 
+	 - relire et/ou valider les fiches pour qu'elles puissent être visible sur le site  
+	 - vérifier et confirmer que les nouveaux membres respectent bien **la philosophie, le code social et la charte des Chemins de la Transition** afin de pouvoir les intégrer et les accueillir à la communauté.
+------
+ - Pour assurer le modération du **blog**, faites un petit tour de temps en temps sur la page dédiée : [[Blog_Temoignages Blog]]
+------
+ - Des mots-clés peuvent être saisis sur différents formulaires. Pour en suivre la quantité et éventuellement identifier les doublons, rendez-vous sur GererMotsCles.
+
+//A tout moment, vous pouvez voir la liste des fiches que vous avez créées : MesFiches//

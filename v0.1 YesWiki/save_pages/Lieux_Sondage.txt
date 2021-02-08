@@ -1,0 +1,11 @@
+{{bazar voirmenu="0" vue="saisir" id="12" redirecturl="?MesFiches"}}
+""<script> 
+/* Ajout du clic pour les tooltips des formulaires */
+document.getElementsByTagName("body")[0].onload = function(){
+$(document).ready(function(){
+	$("span.form-help").each(function() {
+		$(this).attr("onclick","$(this).tooltip('toggle')") ;
+	  });
+	});
+};
+</script>""

@@ -1,0 +1,3 @@
+{{nav links="Evenements_Prochains_Voyages_Apprenants, Evenements_Prochains_Voyages_Apprenants_Vue_Agenda" titles="Voir les prochains voyages apprenants organisés, Agenda des voyages apprenants"}}[[Evenements_Prochains_Voyages_Apprenants  ]][[Evenements_Prochains_Voyages_Apprenants_Vue_Agenda  ]]
+
+{{bazarliste id="1" template="calendar.tpl.html" groups="checkboxfiche10bf_thematique,checkboxfiche5bf_lieu_actu,checkboxListeInformationsSurLesEvenementsbf_infos" titles="Thématique,Lieux concernés,Informations" groupsexpanded="undefined" correspondance="bf_titre=bf_nom"}}

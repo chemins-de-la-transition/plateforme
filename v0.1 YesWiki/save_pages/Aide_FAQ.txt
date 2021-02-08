@@ -1,0 +1,52 @@
+======Foire Aux Questions======
+
+
+
+{{accordion}}
+
+====Quelques balises sur le Chemin...====
+
+{{panel title="<span class='glyphicon glyphicon-certificate'></span> Qu'est-ce qu'un Open Badge ?</span> " class="panel-primary" id="acc1"}}
+C'est une forme de badges numériques vérifiables, infalsifiables et détaillés, indiquant les expériences, réalisations, compétences, engagement, valeurs ou aspirations d’une personne.... [[Aide_OpenBadges la suite ici]].
+{{end elem="panel"}}
+{{panel title="<span class='glyphicon glyphicon-euro'></span> Qu'est-ce qu'une Participation consciente ?" class="panel-primary" id="acc2"}}
+La participation consciente est une autre façon d’envisager la rémunération d’une activité telle qu’un atelier ou une intervention. Ce mode de valorisation participatif, transparent et solidaire, a notamment été développé par l’Université du Nous, un espace d’expérimentation pour les acteurs de la transition sociale.
+
+La participation consciente change la règle établie. Elle ouvre une voie de questionnements dans notre rapport à l’argent et notre façon d’échanger nos richesses. Cette forme de rémunération nécessite de la conscience autant pour être proposée que pratiquée. Elle offre potentiellement un chemin de transformation individuelle et collective.
+
+La participation consciente permet notamment à des personnes disposant de faibles revenus de participer à une activité. [[http://www.bouddhisme-action.net/la-participation-consciente/ Source]] . [[https://www.ekopedia.fr/wiki/Participation_consciente  Participation consciente sur Ekopédia]]
+{{end elem="panel"}}
+
+====... et sur la Plateforme====
+
+{{panel title="<span class='glyphicon glyphicon-question-sign'></span> C'est quoi YesWiki ?" class="panel-info" id="acc3"}}
+YesWiki est le "moteur" qui permet de faire tourner la plateforme. Logiciel libre et open-source, tout ce que vous avez toujours voulu savoir sans jamais oser le demander se trouvera sur la [[Aide_DocumentationYesWiki  documentation YesWiki]].
+{{end elem="panel"}}
+{{panel title="<span class='glyphicon glyphicon-font'></span> Comment mettre en forme mon texte ?" class="panel-info" id="acc4"}}
+Lors de la création d'une page, vous aurez en général une barre d'outil présentant les différentes possibilités de mise en forme. Pour aller plus loin, vous pouvez aussi consulter l' [[ReglesDeFormatage  aide sur le formatage]].
+{{end elem="panel"}}
+{{panel title="<span class='glyphicon glyphicon-cog'></span> Je ne comprends pas l'utilité du menu qui apparait avec la roue crantée." class="panel-info" id="acc5"}}
+La roue crantée permet de se connecter, de vérifier si l'on est connecté et aussi d'atteindre les menus avancés pour les modérateurs et administrateurs de ce site.
+{{end elem="panel"}}
+{{panel title="<span class='glyphicon glyphicon-trash'></span> Comment supprimer une fiche ?" class="panel-info" id="acc6"}}
+La suppression d'une fiche est possible uniquement en ayant la propriété de cette fiche.
+À la création d'une fiche, il n'y a pas de propriétaire.
+Il est possible de s'approprier une fiche //sans propriétaire// en :
+ 1. se connectant grâce à la roue crantée l'où on retrouve ce bouton : {{login template="modal.tpl.html" nobtn="0"}}
+ 2. se rendant sur la fiche en question
+ 3. cliquant sur le texte similaire à ceci en bas de la fiche : {{button nobtn="1" icon="fa fa-unlock-alt" text="Pas de propriétaire - Appropriation" link="AccueiL"class="link-acls"}}
+ 4. Ensuite, le bouton //Supprimer// devrait apparaître
+ - **Si la fiche a déjà un ou une propriétaire**, seuls les administrateurs peuvent s'approprier cette fiche.
+ Envoyer alors votre demande d'appropriation à l'aide du formulaire suivant : [[Contact_technique contacter un concepteur de ce site]]. Penser à donner le nom de la fiche concernée.
+{{end elem="panel"}}
+
+====Divers====
+""<span id="RaisonSociale"></span>""
+{{panel title="<span class='glyphicon glyphicon-list-alt'></span> Qu'est-ce que la dénomination ou la raison sociale ?" class="panel-info" id="acc7"}}
+//Réponse :// La dénomination sociale ou la raison sociale est le nom qui permet l'identification de l'entité juridique principalement auprès des clients, des fournisseurs, des administrations et du grand public. Elle figurera également sur l’extrait K-bis ou le certificat d'immatriculation. Elle est à différencier du nom commercial, de l'enseigne ou de la marque. 
+{{button link="https://www.infogreffe.fr/informations-et-dossiers-entreprises/dossiers-thematiques/creation-entreprise/la-denomination-sociale.html" text="En savoir plus sur infogreffe.fr" class="btn btn-link"}}
+{{end elem="panel"}}
+{{end elem="accordion"}}
+
+
+[[Aide_DenominationRaisonSociale  ]]

@@ -1,0 +1,5 @@
+====Nuage des mots clés====
+//Cliquez sur un mot clé pour identifier les pages associées et les modifier manuellement si besoin.//
+
+{{nuagetag}}
+{{admintagcdlt}}

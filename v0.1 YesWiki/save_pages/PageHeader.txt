@@ -1,0 +1,5 @@
+{{section class="text-right"}}
+{{login template="modal.tpl.html" nobtn="1"}}   
+{{button link="https://www.facebook.com/groups/lescheminsdelatransition" icon="fab fa-facebook"  nobtn="1"}}  
+{{button link="https://twitter.com/CdlT_Occitanie" icon="fab fa-twitter" nobtn="1"}}
+{{end elem="section"}}

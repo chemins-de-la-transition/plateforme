@@ -1,0 +1,14 @@
+{{moteurrecherche template="moteurrecherche_button.tpl.html"}}
+{{buttondropdown icon="cog" caret="0"}}
+ - {{login template="modal.tpl.html" nobtn="1"}}
+ - {{button nobtn="1" icon="fa fa-folder-open" text="Mes fiches" link="MesFiches" hideifnoaccess="true" }}
+ - {{button hideifnoaccess="true" link="Espace_Moderateurs" nobtn="1" icon="fa fa-check" text="Accès à l'espace Modérateurs" }}
+ - ------
+ - {{button nobtn="1" icon="fa fa-question" text="Aide" link="AidE"}}
+ - ------
+ - {{button nobtn="1" icon="fa fa-wrench" text="Gestion du site" link="GererSite" hideifnoaccess="true" }}
+ - {{button nobtn="1" icon="fa fa-tachometer-alt" text="Tableau de bord" link="TableauDeBord" hideifnoaccess="true" }}
+ - {{button nobtn="1" icon="fa fa-briefcase" text="Base de données" link="BazaR" hideifnoaccess="true" }}
+{{end elem="buttondropdown"}}
+""<!--La partie ci-dessous est pour identifier les pages comme non orphelines-->""
+[[RechercheTexte  ]][[PageLogin  ]][[AidE  ]][[BazaR  ]][[TableauDeBord  ]][[GererSite  ]][[MesFiches  ]]

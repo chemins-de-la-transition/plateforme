@@ -1,0 +1,8 @@
+**Votre ajout / modification de fiche lieu a été prise en compte.**
+Si la fiche n'est pas déjà affichée, une lecture de la fiche sera faite avant affichage. Vous pourriez être contacté lors de cette modération.
+
+Nous souhaitons en connaître davantage sur votre lien avec les Chemins de la Transition.
+Accepteriez-vous de compléter le sondage suivant ?
+{{button class="btn-primary" text="Accéder au sondage" link="Lieux_Sondage"}}[[Lieux_Sondage  ]]
+
+{{bazaruserpagecdlt id="5" ordre="desc" champ="date_creation_fiche" titre="Mes fiches lieux"}}

@@ -1,0 +1,1 @@
+{"label":{"pmr":"PMR","sans_gluten":"Alimentation sans gluten","vegan_friendly":"Vegan friendly","vegetarian_friendly":"Vegetarian friendly"},"titre_liste":"Accessibilit\u00e9"}

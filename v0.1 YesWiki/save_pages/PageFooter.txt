@@ -1,0 +1,4 @@
+{{section class="text-center"}}
+{{yeswikiversion}}
+{{button text="Mentions légales" link="MentionsLegales" class="modalbox" nobtn="1"}}[[MentionsLegales  ]]
+{{end elem="section"}}

@@ -1,0 +1,7 @@
+=====Parcours thématiques déjà couverts par les Chemins de la Transition =====
+
+{{bazarliste id="6" query="radioListeOuiNonbf_officiel=oui"}}
+
+=====Parcours thématiques prochainement couverts par les Chemins de la Transition =====
+
+{{bazarliste id="6" query="radioListeOuiNonbf_officiel=non"}}

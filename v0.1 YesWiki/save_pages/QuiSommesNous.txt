@@ -1,0 +1,23 @@
+======Qui sommes-nous ?======
+
+Les [[https://lescheminsdelatransition.org/ Chemins de la Transition]], une association loi 1901, sont à l'origine d'un écosystème composé d'une vingtaine de {{button nobtn="1" link="https://lescheminsdelatransition.org/lequipe/" text="contributeurs actifs"}}, de 12 [[https://lescheminsdelatransition.org/le-conseil-dadministration/ administrateurs]] et d'une {{button class="modalbox" link="EcosytemeCdlT" text="quinzaine d'organisations partenaires" nobtn="1"}}.[[EcosytemeCdlT   ]]
+
+**//Retrouvez la liste complète des membres en cliquant sur les liens dans le paragraphe précedent.//**
+
+=====Histoire=====
+
+Les [[https://lescheminsdelatransition.org/ Chemins de la Transition]] sont nés en 2014 à la suite d’une réflexion en parcourant les Chemins de Saint-Jacques de Compostelle. Alors que les pèlerins y sont mus par un imaginaire chrétien, ne serait-il pas possible de provoquer une mise en mouvement en mobilisant l’imaginaire de la transition ? 
+
+Ainsi naquirent les Chemins de la Transition, dont l’objectif principal est de mettre en synergie et relier différents **lieux et** **acteurs s’inscrivant dans le champ des transitions écologique, énergétique, culturelle, sociale, économique et technologique.** Notre association permet aux divers acteurs de la transition d’être référencés sur la carte présente sur le site, de développer et mettre en avant les activités qu’ils proposent (écotourisme, formation, etc...), de partager, mutualiser des ressources et des compétences .
+En utilisant la plateforme, les utilisateurs peuvent alors partir à la rencontre d'initiatives et de lieux alternatifs, se sensibiliser, découvrir et se former à de nombreuses compétences utiles à la transition. 
+
+{{include page="AideTypeDeVoyage"}}[[AideTypeDeVoyage  ]]
+
+{{include page="Aide_ParcoursThematiques"}}[[Aide_ParcoursThematiques  ]]
+
+{{grid}}
+{{col size="12" class="text-center"}}
+{{button link="Contact" text="Nous contacter" class="btn btn-link"}}[[Contact  ]]
+
+{{button link="https://lescheminsdelatransition.org/" text="En savoir plus sur le site vitrine des Chemins de la Transition" class="btn btn-link"}}{{end elem="col"}}
+{{end elem="grid"}}

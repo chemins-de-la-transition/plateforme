@@ -1,0 +1,53 @@
+{{grid}}
+{{col size="2" class="alert alert-primary"}}
+""<img src="https://lescheminsdelatransition.org/plateforme/?AccueiL/download&file=AccueiL_LCDLT_Logotype10x10cm150DPI_20200805005015_20200805005127.png" alt="image logo_colibris_blanc_light.png (1.4kB)" style="flex:0 1 auto;" height="50" class="no-icon">""  Test 1
+{{end elem="col"}}
+{{col size="1"}}
+{{end elem="col"}}
+{{col size="2" class="alert alert-primary"}}
+""<img src="https://lescheminsdelatransition.org/plateforme/?AccueiL/download&file=AccueiL_LCDLT_Logotype10x10cm150DPI_20200805005015_20200805005127.png" alt="image logo_colibris_blanc_light.png (1.4kB)" style="flex:0 1 auto;" height="50" class="no-icon icon-bg-white">""  Test 2
+{{end elem="col"}}
+{{col size="1"}}
+{{end elem="col"}}
+{{col size="2" class="alert alert-primary"}}
+""<img src="https://lescheminsdelatransition.org/plateforme/?AccueiL/download&file=AccueiL_LCDLT_Logotype10x10cm150DPI_20200805005015_20200805005127.png" alt="image logo_colibris_blanc_light.png (1.4kB)" style="flex:0 1 auto;" height="60" class="no-icon icon-bg-white-2"><style>img.icon-bg-white-2 {
+	background: var(--neutral-light-color);
+	border: 9px solid var(--neutral-light-color);
+	color: var(--primary-color) !important;
+	border-radius: 60px;
+}</style>""  Test 3
+{{end elem="col"}}
+{{col size="1"}}
+{{end elem="col"}}
+{{col size="2" class="alert alert-primary"}}
+""<img src="https://lescheminsdelatransition.org/plateforme/files/PageTitre_LCDLT_Logotype512pxBlanc_202009021109_vignette_97_97_20200901174615_20200902111631.png" alt="image LCDLT_Logotype512pxBlanc_202009021109.png (25.4kB)" style="flex:0 1 auto;" height="50" class="no-icon">""  Test 4
+{{end elem="col"}}
+{{end elem="grid"}}
+{{grid}}
+{{col size="2" class="alert alert-primary navbar-brand-style"}}
+""<img src="https://lescheminsdelatransition.org/plateforme/?AccueiL/download&file=AccueiL_LCDLT_Logotype10x10cm150DPI_20200805005015_20200805005127.png" alt="image logo_colibris_blanc_light.png (1.4kB)" style="flex:0 1 auto;" height="50" class="no-icon">""  Titre 1
+{{end elem="col"}}
+{{col size="1"}}
+{{end elem="col"}}
+{{col size="2" class="alert alert-primary navbar-brand-style"}}
+""<img src="https://lescheminsdelatransition.org/plateforme/?AccueiL/download&file=AccueiL_LCDLT_Logotype10x10cm150DPI_20200805005015_20200805005127.png" alt="image logo_colibris_blanc_light.png (1.4kB)" style="flex:0 1 auto;" height="50" class="no-icon icon-bg-white">""  Titre 2
+{{end elem="col"}}
+{{col size="1"}}
+{{end elem="col"}}
+{{col size="2" class="alert alert-primary navbar-brand-style"}}
+""<img src="https://lescheminsdelatransition.org/plateforme/?AccueiL/download&file=AccueiL_LCDLT_Logotype10x10cm150DPI_20200805005015_20200805005127.png" alt="image logo_colibris_blanc_light.png (1.4kB)" style="flex:0 1 auto;" height="60" class="no-icon icon-bg-white-2"><style>img.icon-bg-white-2 {
+	background: var(--neutral-light-color);
+	border: 9px solid var(--neutral-light-color);
+	color: var(--primary-color) !important;
+	border-radius: 60px;
+}</style>""  Titre 3
+{{end elem="col"}}
+{{col size="1"}}
+{{end elem="col"}}
+{{col size="2" class="alert alert-primary navbar-brand-style"}}
+""<img src="https://lescheminsdelatransition.org/plateforme/files/PageTitre_LCDLT_Logotype512pxBlanc_202009021109_vignette_97_97_20200901174615_20200902111631.png" alt="image LCDLT_Logotype512pxBlanc_202009021109.png (25.4kB)" style="flex:0 1 auto;" height="50" class="no-icon"><style>.navbar-brand-style{
+font-size: 1.5rem;
+font-weight: bold;
+}</style>""  Titre 4
+{{end elem="col"}}
+{{end elem="grid"}}

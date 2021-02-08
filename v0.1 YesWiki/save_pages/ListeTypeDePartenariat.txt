@@ -1,0 +1,1 @@
+{"label":{"part_financier":"Partenaire financier","part_ecosysteme":"Partenaire \u00e9cosyst\u00e8me"},"titre_liste":"Type de partenariat"}

@@ -1,0 +1,1 @@
+{"label":{"ambassadeur":"ambassadeur","referent":"r\u00e9f\u00e9rent local"},"titre_liste":"Type de contribution"}

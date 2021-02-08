@@ -1,0 +1,3 @@
+{{bazar voirmenu="0" vue="saisir" id="5" redirecturl="?AjouterLieux_Reussite"}}[[AjouterUneCompetence  ]][[AjouterLieux_Reussite  ]]
+
+[[AjouterLieux_PasDAcces  ]]
