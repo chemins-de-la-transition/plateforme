@@ -1,6 +1,6 @@
 <?php
 
-use YesWiki\Bazar\Service\FicheManager;
+use YesWiki\Bazar\Service\EntryManager;
 
 if (!defined("WIKINI_VERSION")) {
     die("acc&egrave;s direct interdit");
@@ -211,7 +211,7 @@ if (!($this->LoadUser($user))) {
                                         $tab_id = array();
                                         $idfiche = str_replace($type_champ[$c], '', $nom_champ[$c]);
                                         if (!isset($allentries[$idfiche])) {
-                                            $fa = $GLOBALS['wiki']->services->get(FicheManager::class)->search();
+                                            $fa = $GLOBALS['wiki']->services->get(EntryManager::class)->search();
                                             $tabfa = array();
                                             foreach ($fa as $valfa) {
                                                 $tabfa[$valfa['id_fiche']] = $valfa['bf_titre'];
@@ -420,7 +420,7 @@ if (!($this->LoadUser($user))) {
                 $fiche = array_map('strval', $fiche);
 
                 $fiche['antispam'] = 1;
-                $fiche = $GLOBALS['wiki']->services->get(FicheManager::class)->create($id, $fiche);
+                $fiche = $GLOBALS['wiki']->services->get(EntryManager::class)->create($id, $fiche);
 
                 ++$nb;
                 $importList .= ' '.$nb.') [['.$fiche['id_fiche'].' '. $fiche['bf_titre'].']]'."\n";
