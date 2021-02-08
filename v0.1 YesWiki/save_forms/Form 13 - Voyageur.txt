@@ -3,20 +3,20 @@ labelhtml***<ul class="nav nav-tabs" role="tablist"><li role="presentation" clas
 labelhtml***<div role="tabpanel" class="tab-pane active" id="menu1Contact"><br><br><!--ouvre le premier onglet-->*** *** ***
 labelhtml***<h2 class="text-center">Contact</h2>*** *** ***
 titre***{{bf_prenom}} de {{bf_ville}}***Titre Automatique***
-texte***bf_prenom***Prénom*** *** *** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** *** *** ***
-texte***bf_nom***Nom*** *** *** *** ***text***1*** ***Votre nom ne sera pas visible publiquement.***% @moderateurs*** * *** *** *** ***
-image***bf_image***Photo***210***140***300***200***right***0*** ***ATTENTION : donnée publique*** * *** * *** *** *** ***
-listedatedeb***date_naissance***Date de naissance*** *** *** *** *** ***0*** ***Cliquez sur le mois en haut pour remonter aux années, puis décennies***% @moderateurs*** * *** *** *** ***
+texte***bf_prenom***Prénom*** *** *** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** ***name,schema:givenName*** ***
+texte***bf_nom***Nom*** *** *** *** ***text***1*** ***Votre nom ne sera pas visible publiquement.***% @moderateurs*** * *** ***name,schema:name*** ***
+image***bf_image***Photo***210***140***300***200***right***0*** ***ATTENTION : donnée publique*** * *** * *** ***image,schema:image*** ***
+listedatedeb***date_naissance***Date de naissance*** *** *** *** *** ***0*** ***Cliquez sur le mois en haut pour remonter aux années  puis décennies***% @moderateurs*** * *** ***schema:birthDate*** ***
 labelhtml***<script>document.querySelector('select.form-control.select-allday[name=date_naissance_allday]').style.display = "none" ;</script>*** *** ***
-texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs*** * *** ***schema:telephone*** ***
+texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs*** * *** ***url,schema:telephone*** ***
 champs_mail***bf_mail***Email de contact*** *** *** ***form*** ***1*** ***Un bouton contact s'affichera  votre adresse email ne sera pas visible publiquement.*** * *** * *** *** *** ***
-texte***bf_adresse***Adresse***50***80*** *** ***text***0*** *** ***% @moderateurs*** * *** ***schema:streetAddress*** ***
-texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text***0*** *** ***% @moderateurs*** * *** *** *** ***
-texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** ***% @moderateurs*** * *** ***schema:postalCode*** ***
-texte***bf_ville***Ville***50***80*** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** ***schema:addressLocality*** ***
+texte***bf_adresse***Adresse***50***80*** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:streetAddress*** ***
+texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:streetAddress*** ***
+texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:postalCode*** ***
+texte***bf_ville***Ville***50***80*** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** ***location,schema:addressLocality*** ***
 carte_google***bf_latitude***bf_longitude*** *** ***
 labelhtml***<a class="btn btn-primary pull-right" href="https://www.helloasso.com/associations/les-chemins-de-la-transition/adhesions/cotisations/">Adhérer</a>*** *** ***
-listedatedeb***bf_date_adhesion***Date d'adhésion*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** *** *** ***
+listedatedeb***bf_date_adhesion***Date d'adhésion*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** ***startTime,schema:startDate*** ***
 labelhtml***<script>document.querySelector('select.form-control.select-allday[name=bf_date_adhesion_allday]').style.display = "none" ;</script>*** *** ***
 labelhtml***<a class="btn btn-primary pull-right" href="#menu2FaireConnaissance" role="tab" data-toggle="tab">Onglet 2. Faire connaissance<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour passer à l'onglet 2-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 1 --> <div role="tabpanel" class="tab-pane" id="menu2FaireConnaissance"><br><br><!-- ouvre l'onglet 2-->*** *** ***
@@ -52,7 +52,7 @@ labelhtml***</div>*** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu2FaireConnaissance" role="tab" data-toggle="tab"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 2. Faire connaissance</a><a class="btn btn-primary pull-right" href="#menu4Preferences" role="tab" data-toggle="tab">Onglet 4. Informations utiles<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 2 et un bouton pour passer à l'onglet 4-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 3 --> <div role="tabpanel" class="tab-pane" id="menu4Preferences"><br><br><!-- ouvre l'onglet 4-->*** *** ***
 labelhtml***<h2 class="text-center">Informations utiles</h2>*** *** ***
-texte***bf_suivi***Fiche suivie en interne par*** *** *** *** ***text***0*** *** ***% @moderateurs***@moderateurs*** *** *** ***
+texte***bf_suivi***Fiche suivie en interne par*** *** *** *** ***text***0*** *** ***% @moderateurs***@moderateurs*** ***Person:name,schema:Person:name*** ***
 liste***ListeOuiNon***J'ai des demandes particulières concernant l'usage de mes données et de ma vie privée.*** *** *** ***bf_vie_privee*** ***1*** *** ***% @moderateurs*** * *** *** *** ***
 labelhtml***<div id="listeListeOuiNonbf_vie_privee_oui" style="display:none;">*** *** ***
 texte***bf_details_donnes_personnelles***Quelles sont vos demandes concernant vos données personnelles ?*** *** *** *** ***text***0*** *** ***% @moderateurs*** * *** *** *** ***

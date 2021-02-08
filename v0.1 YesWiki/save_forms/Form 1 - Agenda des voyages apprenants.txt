@@ -1,18 +1,18 @@
 titre***Voyage Apprenant {{bf_nom}}***Titre Automatique***
-texte***bf_nom***Titre***60***255*** *** ***text***1*** *** *** * *** * *** *** ***
-textelong***bf_description***Description***80***5*** *** ***wiki***0*** *** *** * *** * *** *** ***
-checkboxfiche***6***Thématique*** *** *** ***bf_thematique*** ***0*** *** *** * *** * *** *** ***
-checkboxfiche***5***Lieux concernés*** *** *** ***bf_lieu_actu*** ***0*** ***Taper quelques lettres pour avoir la proposition d'un lieu puis taper sur entrée*** * *** * *** *** ***
-listedatedeb***bf_date_debut_evenement***Début du parcours*** *** *** *** *** ***1*** *** *** * *** * *** *** ***
-listedatefin***bf_date_fin_evenement***Fin du parcours*** *** *** *** *** ***1*** *** *** * *** * *** *** ***
-checkbox***ListeInformationsSurLesEvenements***Informations*** *** *** ***bf_infos*** ***0*** *** *** * *** * *** *** ***
-texte***bf_site_internet***Site Web***80***255*** *** ***text***0*** *** *** * *** * *** *** ***
-texte***bf_contact***Personne à contacter*** *** *** *** ***text***1*** *** *** * *** * *** *** ***
-champs_mail***bf_mail***Email*** *** *** ***form*** ***0*** *** *** * *** * *** *** ***
-texte***bf_tel***Téléphone***15***15*** *** ***text***0*** ***ATTENTION : donnée publique*** * *** * *** *** ***
-image***bf_image***Image (facultatif)***140***140***600***600***right***0*** *** *** * *** * *** *** ***
-fichier***fichier***Documents***20000000*** *** *** ***file***0*** *** *** * *** * *** *** ***
-checkbox***ListeDepartements***Départements concernés*** *** *** ***bf_departements***tags***0*** *** *** * *** * *** *** ***
-tags***bf_tags***Tags*** *** *** *** *** ***0*** *** *** * *** * *** *** ***
+texte***bf_nom***Titre***60***255*** *** ***text***1*** *** *** * *** * *** ***name,schema:name*** ***
+textelong***bf_description***Description***80***5*** *** ***wiki***0*** *** *** * *** * *** ***schema:description*** ***
+checkboxfiche***6***Thématique*** *** *** ***bf_thematique*** ***0*** *** *** * *** * *** *** *** ***
+checkboxfiche***5***Lieux concernés*** *** *** ***bf_lieu_actu*** ***0*** ***Taper quelques lettres pour avoir la proposition d'un lieu puis taper sur entrée*** * *** * *** *** *** ***
+listedatedeb***bf_date_debut_evenement***Début du parcours*** *** *** *** *** ***1*** *** *** * *** * *** ***startTime,schema:startDate*** ***
+listedatedeb***bf_date_fin_evenement***Fin du parcours*** *** *** *** *** ***1*** *** *** * *** * *** ***endTime,schema:endDate*** ***
+checkbox***ListeInformationsSurLesEvenements***Informations*** *** *** ***bf_infos*** ***0*** *** *** * *** * *** *** *** ***
+texte***bf_site_internet***Site Web***80***255*** *** ***text***0*** *** *** * *** * *** ***url,schema:url*** ***
+texte***bf_contact***Personne à contacter*** *** *** *** ***text***1*** *** *** * *** * *** ***person,schema:person*** ***
+champs_mail***bf_mail***Email*** *** *** ***form*** ***0*** *** *** * *** * *** ***url,schema:email*** ***
+texte***bf_tel***Téléphone***15***15*** *** ***text***0*** ***ATTENTION : donnée publique*** * *** * *** ***url,schema:telephone*** ***
+image***bf_image***Image (facultatif)***140***140***600***600***right***0*** *** *** * *** * *** ***image,schema:image*** ***
+fichier***fichier***Documents***20000000*** *** *** ***file***0*** *** *** * *** * *** ***document,schema:digitalDocument*** ***
+checkbox***ListeDepartements***Départements concernés*** *** *** ***bf_departements***tags***0*** *** *** * *** * *** *** *** ***
+tags***bf_tags***Tags*** *** *** *** *** ***0*** *** *** * *** * *** *** *** ***
 labelhtml***<h3>Il ne vous reste plus qu'à valider ! </h3>*** *** ***
 acls*** * ***@moderateurs*** * ***

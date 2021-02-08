@@ -1,9 +1,0 @@
-image***bf_image***Image***400***300***1200***900***right***0*** *** *** * *** * *** *** *** ***
-texte***bf_titre***Titre***80***255*** *** ***text***1*** *** *** * *** * *** *** *** ***
-textelong***bf_chapeau***Résumé***40***3*** *** ***nohtml***1*** *** *** * *** * *** *** *** ***
-textelong***bf_description***Corps de l'article***40***9*** *** ***html***1*** *** *** * *** * *** *** *** ***
-labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-checkbox***ListeCategoriesDuBlog***Catégorie*** *** *** ***categorie*** ***1*** *** *** * *** * *** *** *** ***
-tags***bf_tags***Ajouter un tag*** *** *** *** *** ***0*** ***pour plusieurs tags  validez par "Entrée" après chaque saisie*** * *** * *** *** *** ***
-labelhtml***</div>*** *** ***
-acls*** * ***% @moderateurs*** * ***

@@ -3,14 +3,14 @@ labelhtml***<ul class="nav nav-tabs" role="tablist"><li role="presentation" clas
 labelhtml***<div role="tabpanel" class="tab-pane active" id="menu1Presentation"><br><br><!--ouvre le premier onglet-->*** *** ***
 labelhtml***<h2 class="text-center">Présentation</h2>*** *** ***
 texte***bf_titre***Nom du lieu*** *** *** *** ***text***1*** *** *** * ***% @moderateurs*** ***name,schema:name*** ***
-image***bf_image***Logo***140***140***600***600***right***0*** *** *** * ***% @moderateurs*** *** *** ***
+image***bf_image***Logo***140***140***600***600***right***0*** *** *** * ***% @moderateurs*** ***image,schema:image*** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 checkboxfiche***6***Thématique*** *** *** ***bf_thematique_officielle*** ***0*** ***Thématique officielle déjà couverte par un parcours*** * ***% @moderateurs*** *** ***radioListeOuiNonbf_officiel=oui***
 checkboxfiche***6***Autres thématiques*** *** *** ***bf_autre_thematiques*** ***0*** ***Thématique prochainement couverte par un parcours*** * ***% @moderateurs*** *** ***radioListeOuiNonbf_officiel=non***
 labelhtml***Une page d'aide permet d'avoir une <a href="?Aide_ParcoursThematiques" target="blank" class="modalbox">description détaillée des différentes thématiques couvertes par les parcours.</a> Vous pouvez en outre nous indiquer les thématiques et les sous-domaines de votre lieu non mentionnées ici dans le champ Mots clés ci-dessous.*** *** ***
 labelhtml***</div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-textelong***bf_description_courte***Courte description du lieu***5***5*** *** ***nohtml***0*** *** *** * ***% @moderateurs*** *** *** ***
+textelong***bf_description_courte***Courte description du lieu***5***5*** *** ***nohtml***0*** *** *** * ***% @moderateurs*** ***schema:description*** ***
 tags***bf_motscles***Mots-clés*** *** *** *** *** ***0*** ***Validez par "Entrée" pour séparer les mots-clés*** * ***% @moderateurs*** *** *** ***
 labelhtml***Vous pouvez saisir dans la zone ci-dessus des mots-clés que vous associez à votre lieu. Appuyez sur Entrée pour valider chaque mot.</div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
@@ -24,15 +24,15 @@ labelhtml***S'il en manque une&#44;  vous pouvez l'ajouter avec le bouton suivan
 labelhtml***<a class="btn btn-primary pull-right" href="#menu2Coordonnees" role="tab" data-toggle="tab">Onglet 2. Coordonnées<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour passer à l'onglet 2-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 1 --> <div role="tabpanel" class="tab-pane" id="menu2Coordonnees"><br><br><!-- ouvre l'onglet 2-->*** *** ***
 labelhtml***<h2 class="text-center">Coordonnées</h2>*** *** ***
-lien_internet***bf_site_internet***Site Internet***40***255*** *** ***url***0*** *** *** * ***% @moderateurs*** ***url,schema:WebSite*** ***
+lien_internet***bf_site_internet***Site Internet***40***255*** *** ***url***0*** *** *** * ***% @moderateurs*** ***url,schema:WebPage*** ***
 lien_internet***text_facebook***Page Facebook***40***255*** *** ***url***0*** *** *** * ***% @moderateurs*** ***url,schema:url*** ***
 liste***ListeOuiNon***Êtes-vous référencé sur la carte Près de chez nous ?*** *** *** ***bf_text_presdecheznous*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
 labelhtml***<div id="listeListeOuiNonbf_text_presdecheznous_oui" style="display:none;">*** *** ***
 lien_internet***text_presdecheznous***Fiche Près de chez nous***40***255*** *** ***url***0*** *** ***% @moderateurs***% @moderateurs*** ***url,schema:url*** ***
 labelhtml***</div><div id="listeListeOuiNonbf_text_presdecheznous_non" style="display:none;"><a href="https://presdecheznous.fr/elements/add" target="blank">Créez votre fiche Près de chez nous</a></div>*** *** ***
-texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***schema:telephone*** ***
-champs_mail***bf_mail***Email*** *** *** ***form*** ***1*** *** *** * ***% @moderateurs*** *** *** ***
-texte***bf_contact_principal***Nom du contact principal*** *** *** *** ***text***1*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***url,schema:telephone*** ***
+champs_mail***bf_mail***Email*** *** *** ***form*** ***1*** *** *** * ***% @moderateurs*** ***url,schema:email*** ***
+texte***bf_contact_principal***Nom du contact principal*** *** *** *** ***text***1*** *** ***% @moderateurs***% @moderateurs*** ***Person:name,schema:Person:name*** ***
 radio***ListeOuiNon***Je suis en lien avec la structure : *** *** *** ***implication_structure*** ***0*** ***impliqué  salarié  en lien direct  ...***% @moderateurs***% @moderateurs*** *** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 texte***denomination_raison_sociale***Dénomination / Raison sociale*** *** *** *** ***text***0*** *** *** * ***% @moderateurs*** *** *** ***
@@ -45,10 +45,10 @@ labelhtml***</div>*** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu1Presentation" role="tab" data-toggle="tab"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 1. Présentation</a><a class="btn btn-primary pull-right" href="#menu3Localisation" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))">Onglet 3. Localisation<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 1 et un bouton pour passer à l'onglet 3-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 2 --> <div role="tabpanel" class="tab-pane" id="menu3Localisation"><br><br><!-- ouvre l'onglet 3-->*** *** ***
 labelhtml***<h2 class="text-center">Localisation</h2>*** *** ***
-texte***bf_adresse***Adresse***50***80*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***schema:streetAddress*** ***
-texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
-texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** *** * ***% @moderateurs*** ***schema:postalCode*** ***
-texte***bf_ville***Ville***50***80*** *** ***text***1*** *** *** * ***% @moderateurs*** ***schema:addressLocality*** ***
+texte***bf_adresse***Adresse***50***80*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***location,schema:streetAddress*** ***
+texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***location,schema:streetAddress*** ***
+texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** *** * ***% @moderateurs*** ***location,schema:postalCode*** ***
+texte***bf_ville***Ville***50***80*** *** ***text***1*** *** *** * ***% @moderateurs*** ***location,schema:addressLocality*** ***
 liste***ListeDepartements***Département*** *** *** ***bf_department*** ***0*** *** *** * ***% @moderateurs*** *** *** ***
 carte_google***bf_latitude***bf_longitude*** *** ***
 textelong***textarea_1605712029235***Accès transports en commun*** ***5*** *** ***nohtml***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
@@ -77,7 +77,7 @@ textelong***bf_mises_en_garde***Mises en garde, contraintes particulières d'acc
 labelhtml***<a class="btn btn-primary pull-left" href="#menu3Localisation" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 3. Localisation</a><a class="btn btn-primary pull-right" href="#menu5Preferences" role="tab" data-toggle="tab">Onglet 5. Informations utiles<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 3 et un bouton pour passer à l'onglet 5-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 4 --> <div role="tabpanel" class="tab-pane" id="menu5Preferences"><br><br><!-- ouvre l'onglet 5-->*** *** ***
 labelhtml***<h2 class="text-center">Informations utiles</h2>*** *** ***
-texte***bf_suivi***Interlocutrice, interlocuteur privilégié aux Chemins de la Transition*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** *** ***
+texte***bf_suivi***Interlocutrice, interlocuteur privilégié aux Chemins de la Transition*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** ***Person:name,schema:Person:name*** ***
 textelong***pref_contact***Préférences de contact*** ***3*** *** ***nohtml***0*** *** *** * ***@Lieux*** *** *** ***
 labelhtml***Nous avons à cœur de préserver votre temps. Indiquez ci-dessus vos disponibilités pour être contacté (exemple : uniquement par e-mail en novembre&#44;  uniquement par téléphone entre 18h et 19h&#44;  etc...)*** *** ***
 radio***ListeOuiNon***Les voyageurs et voyageuses peuvent-ils vous contacter directement ?*** *** *** ***bf_contact_direct_voyageurs*** ***1*** *** *** * ***% @moderateurs*** *** *** ***

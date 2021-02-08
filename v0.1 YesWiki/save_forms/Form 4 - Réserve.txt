@@ -1,0 +1,5 @@
+texte***bf_titre***titre*** *** *** *** ***text***1*** *** *** * *** * *** *** *** ***
+texte***bf_adresse***Adresse*** *** *** *** ***text***0*** *** *** * *** * *** *** *** ***
+texte***bf_codepostal***Code postal*** *** *** *** ***text***0*** *** *** * *** * *** *** *** ***
+texte***bf_ville***Ville*** *** *** *** ***text***0*** *** *** * *** * *** *** *** ***
+carte_google***bf_latitude***bf_longitude*** *** ***1***

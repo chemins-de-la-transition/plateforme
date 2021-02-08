@@ -1,8 +1,8 @@
 titre***Enquete_Lieux_{{checkboxfiche5bf_lieu}}_{{bf_prenom}}_{{bf_nom}}***Titre***
 labelhtml***<i><span class="symbole_obligatoire"></span> : champs requis</i>*** *** ***
-texte***bf_prenom***Prénom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** *** *** ***
-texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** *** *** ***
-checkboxfiche***5***Lieu*** *** *** ***bf_lieu***tags***1*** ***Taper les premières lettres du nom du lieu puis cliquer ou appuyer sur Entrée pour valider.*** * *** * *** *** *** ***
+texte***bf_prenom***Prénom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** ***name,schema:givenName*** ***
+texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** ***name,schema:name*** ***
+checkboxfiche***5***Lieu*** *** *** ***bf_lieu***tags***1*** ***Taper les premières lettres du nom du lieu puis cliquer ou appuyer sur Entrée pour valider.*** * *** * *** ***organization,schema:organization*** ***
 textelong***bf_recommandations***Auriez-vous des acteurs / lieux de transition à nous recommander dans votre réseau ou près de chez vous ?***255***5*** *** ***nohtml***0*** *** *** * *** * *** *** *** ***
 checkbox***ListeTypeDeContribution***Aimeriez-vous contribuer aux Chemins de la Transition ? en devenant...*** *** *** ***bf_contribution*** ***0*** *** *** * *** * *** *** *** ***
 checkbox***ListeTypeDAttentes***Qu’attendez-vous des Chemins de la Transition ?*** *** *** ***bf_attentes_lieux*** ***0*** *** *** * *** * *** *** *** ***
