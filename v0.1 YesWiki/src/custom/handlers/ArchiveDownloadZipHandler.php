@@ -165,8 +165,6 @@ class ArchiveDownloadZipHandler extends YesWikiHandler
      *            string $value     The attributes
      * }
      *
-     * this function inspired from BjSZipper.php
-     * @author NeoBurn (Bjørn Singer, neoburn@gmx.de)
      */
     private function GetHeader($name, $size, $time, $hash, $extraData = [])
     {
@@ -222,8 +220,6 @@ class ArchiveDownloadZipHandler extends YesWikiHandler
      * @param string $comment   An optional file comment
      * @param int    $disk      The index of the disk the file is on
      *
-     * this function inspired from BjSZipper.php
-     * @author NeoBurn (Bjørn Singer, neoburn@gmx.de)
      */
     private function GetCentralDirEntry($name, $size, $time, $hash, $offset, $extraData = [], $comment = '', $disk = 0)
     {
@@ -288,8 +284,6 @@ class ArchiveDownloadZipHandler extends YesWikiHandler
      * @param string $comment   An optional comment for the ZIP file
      *
      *
-     * this function inspired from BjSZipper.php
-     * @author NeoBurn (Bjørn Singer, neoburn@gmx.de)
      */
     private function GetEndOfCentralDir($fileCount, $size, $offset, $totalFileCount = null, $disk = 0, $startDisk = 0, $comment = '')
     {
