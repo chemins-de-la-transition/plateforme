@@ -2,5 +2,5 @@
 ""<div class="well">""Pour afficher une fiche sur la carte principale, il faut la modififier en tant qu'administrateur et cocher la case "Affichable". Une fois que a modération est faite, il suffit de décocher "A modérer".""</div>""
 {{nav class="nav nav-pills" links="Espace_Moderateurs_Lieux_a_moderer_Carte, Espace_Moderateurs_Lieux_a_moderer_Liste, AjouterLieux" titles="Cartographie de TOUS les lieux, Liste de TOUS les lieux, Ajouter un lieu"}}[[Espace_Moderateurs_Lieux_a_moderer_Carte  ]][[Espace_Moderateurs_Lieux_a_moderer_Liste  ]][[AjouterLieux  ]]
 
-{{bazarliste id="5" template="annuaire_alphabetique.tpl.html" groups="checkboxListeModerationbf_moderation,checkboxListeTypeDAccueiltype_accueil,checkboxfiche6bf_thematique_officielle" titles="Modération,Type d'apprentissage,Parcours thématique" groupsexpanded="undefined" filterposition="right"}}
+{{bazarliste id="5" template="annuaire_alphabetique.tpl.html" groups="radioListeModerationbf_moderation,checkboxListeTypeDAccueiltype_accueil,checkboxfiche6bf_thematique_officielle" titles="Modération,Type d'apprentissage,Parcours thématique" groupsexpanded="undefined" filterposition="right"}}
 {{button class="btn-primary decalage-recherche-avancee" link="LaCarte_RechercheAvancee" title="Recherche avancée" text="Recherche avancée"}}[[LaCarte_RechercheAvancee  ]]

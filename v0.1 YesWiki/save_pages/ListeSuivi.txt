@@ -1,0 +1,1 @@
+{"titre_liste":"Suivi","label":{"attente":"en attente de r\u00e9ponse","a_contacte":"\u00e0 contacter"}}
