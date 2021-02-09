@@ -141,7 +141,7 @@ class BazarCartoAction extends YesWikiAction
     function run()
     {
         $this->arguments['template'] = 'map.tpl.html';
-        $this->arguments['barregestion'] = false;
+        // $this->arguments['barregestion'] = false;
 
         return $this->callAction('bazarliste', $this->arguments);
     }
