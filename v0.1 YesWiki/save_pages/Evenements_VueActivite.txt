@@ -1,3 +1,3 @@
-{{nav hideifnoaccess="true" links="Evenements_VueActivite, Evenements_VueAgenda, Evenements_VueCarte, Evenements_SaisirAgenda" titles="Voir les prochaines activités, Voir l'agenda, Voir sur une carte, Proposer une activité"}}[[Evenements_VueActivite  ]][[Evenements_VueAgenda  ]][[Evenements_SaisirAgenda  ]][[Evenements_VueCarte  ]]
+{{nav hideifnoaccess="true" links="Evenements_VueActivite, Evenements_VueAgenda, Evenements_VueCarte, Evenements_SaisirAgenda" titles="Voir les prochaines activités, Voir l'agenda, Voir sur une carte, Proposer une activité"}}
 
 {{bazarliste template="agenda.tpl.html" id="2" agenda="futur" groups="checkboxfiche10bf_thematique,checkboxfiche5bf_lieu_actu,checkboxListeInformationsSurLesEvenementsbf_infos" titles="Thématique,Lieux concernés,Informations" groupsexpanded="undefined" correspondance="bf_titre=bf_nom"}}

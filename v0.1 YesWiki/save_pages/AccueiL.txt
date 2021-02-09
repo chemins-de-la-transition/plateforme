@@ -7,13 +7,13 @@
 {{grid}}
 {{col size="12"}}
 {{attach file="CDLT_panneau.png" desc="image CDLT_panneau.png (0.1MB)" width="400" class="left"  nofullimagelink="1"}}
-{{include page="CommentCaM" class="big_fonts"}}[[CommentCaM  ]]
+{{include page="CommentCaM" class="big_fonts"}}
 {{end elem="col"}} 
 {{end elem="grid"}}
 
 =====Les lieux : construisez votre chemin=====
 
-{{include page="Carte_avec_Facettes"}}[[Carte_avec_Facettes  ]]
+{{include page="Carte_avec_Facettes"}}
 
 
 =====[[Blog_Temoignages Ils ont participé, ils nous partagent leur expérience]]=====

@@ -1,4 +1,4 @@
-{{nav links="TableauDeBord, TableauDeBord_PagesOrphelines, TableauDeBord_PlanSite, TableauDeBord_LookWiki" titles="Tableau de bord, Pages Orphelines, Plan du site, Look Wiki"}}[[TableauDeBord  ]][[TableauDeBord_PagesOrphelines  ]][[TableauDeBord_PlanSite  ]][[TableauDeBord_LookWiki  ]]
+{{nav links="TableauDeBord, TableauDeBord_PagesOrphelines, TableauDeBord_PlanSite, TableauDeBord_LookWiki" titles="Tableau de bord, Pages Orphelines, Plan du site, Look Wiki"}}
 ======Pages orphelines======
 {{OrphanedPages}}
 

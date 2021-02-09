@@ -11,4 +11,4 @@
  - {{button nobtn="1" icon="fa fa-briefcase" text="Base de données" link="BazaR" hideifnoaccess="true" }}
 {{end elem="buttondropdown"}}
 ""<!--La partie ci-dessous est pour identifier les pages comme non orphelines-->""
-[[RechercheTexte  ]][[PageLogin  ]][[AidE  ]][[BazaR  ]][[TableauDeBord  ]][[GererSite  ]][[MesFiches  ]]
+[[RechercheTexte  ]][[PageLogin  ]]

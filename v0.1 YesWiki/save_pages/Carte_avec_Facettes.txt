@@ -3,7 +3,7 @@
 ""<div class="checkbox">
  <label for="checkboxListeTypeDAccueiltype_accueilEcotourisme">""{{section class="alert alert-primary auto-resize-height" nocontainer="1"}}
 ""<div class="lead auto-resize-height">""**Itinéraires écotouristiques**""</div>""Baladez-vous de lieu en lieu à la découverte du monde de la transition.
-{{button link="LaCarte_Ecotourisme" nobtn="1" class="modalbox white" text="Détails..."}}[[LaCarte_Ecotourisme  ]]
+{{button link="LaCarte_Ecotourisme" nobtn="1" class="modalbox white" text="Détails..."}}
 {{end elem="section"}}""</label>
 </div>""
 {{end elem="col"}}
@@ -11,7 +11,7 @@
 ""<div class="checkbox">
  <label for="checkboxListeTypeDAccueiltype_accueilVoyageApprenant">""{{section class="alert alert-primary auto-resize-height" nocontainer="1"}}
 ""<div class="lead auto-resize-height">""**Voyage apprenant**""</div>""Envie de changer de vie ou de métier ? Explorez le champ des possibles !
-{{button link="LaCarte_VoyageApprenant" nobtn="1" class="modalbox white" text="Détails..."}}[[LaCarte_VoyageApprenant  ]]
+{{button link="LaCarte_VoyageApprenant" nobtn="1" class="modalbox white" text="Détails..."}}
 {{end elem="section"}}""</label>
 </div>""
 {{end elem="col"}}
@@ -19,7 +19,7 @@
 ""<div class="checkbox">
  <label for="checkboxListeTypeDAccueiltype_accueilWoofingChantiers">""{{section class="alert alert-primary auto-resize-height" nocontainer="1"}}
 ""<div class="lead auto-resize-height">""**Wwoofing & chantiers participatifs**""</div>""Développez vos savoir-faire au contact des acteurs de la transition.
-{{button link="LaCarte_Woofing" nobtn="1" class="modalbox white" text="Détails..."}}[[LaCarte_Woofing  ]]
+{{button link="LaCarte_Woofing" nobtn="1" class="modalbox white" text="Détails..."}}
 {{end elem="section"}}""</label>
 </div>""
 {{end elem="col"}}
@@ -27,7 +27,7 @@
 ""<div class="checkbox">
  <label for="checkboxListeTypeDAccueiltype_accueilCompagnonnage">""{{section class="alert alert-primary auto-resize-height" nocontainer="1"}}
 ""<div class="lead auto-resize-height">""**Compagnonnage**""</div>""Formez-vous aux enjeux et aux métiers de la transition en faisant et en voyageant.
-{{button link="LaCarte_Compagnonnage" nobtn="1" class="modalbox white" text="Détails..."}}[[LaCarte_Compagnonnage  ]]
+{{button link="LaCarte_Compagnonnage" nobtn="1" class="modalbox white" text="Détails..."}}
 {{end elem="section"}}""</label>
 </div>""
 {{end elem="col"}}
@@ -69,7 +69,7 @@
  </span>
  </label>
 </div>""{{end elem="col"}}
-{{end elem="grid"}}{{include page="CartoLieux"=}}""<style>
+{{end elem="grid"}}{{include page="CartoLieux"}}""<style>
 div.lead.auto-resize-height{
 	margin-bottom : initial ;
 }
@@ -84,7 +84,7 @@ document.getElementById("checkboxListeTypeDAccueiltype_accueilEcotourisme").setA
 document.getElementById("checkboxListeTypeDAccueiltype_accueilVoyageApprenant").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
 document.getElementById("checkboxListeTypeDAccueiltype_accueilWoofingChantiers").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
 document.getElementById("checkboxListeTypeDAccueiltype_accueilCompagnonnage").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
-document.getElementById("checkboxListeTypeDAccueiltype_accueilEcotourisme").parentElement.parentElement.parentElement.parentElement.setAttribute("style","display:none;") ;
+document.querySelector(".panel.panel-default.checkboxListeTypeDAccueiltype_accueil").setAttribute("style","display:none;") ;
 function localFuncUpdateCheckbox(id,checked) {
 	document.querySelector("input#"+id+"_other").checked = checked ;
 }

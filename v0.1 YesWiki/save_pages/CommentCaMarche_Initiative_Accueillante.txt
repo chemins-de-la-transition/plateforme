@@ -5,11 +5,11 @@ Vous pouvez alors rejoindre les “initiatives accueillantes” et entrer ainsi 
 
 Cela leur permettra de voir votre lieu/profil lorsqu’ils construiront leurs parcours et d’entrer en contact avec vous ! 
 
-{{button class="modalbox" nobtn="1" link="ChartE" text="Découvrez notre Charte"}} et les quatre types de voyage que nous référençons {{button class="modalbox" link="AideTypeDeVoyage" text="ici" nobtn="1"}}.[[AideTypeDeVoyage  ]]
+{{button class="modalbox" nobtn="1" link="ChartE" text="Découvrez notre Charte"}} et les quatre types de voyage que nous référençons {{button class="modalbox" link="AideTypeDeVoyage" text="ici" nobtn="1"}}.
 
 {{section visibility="!@Lieux"}}
 {{include page="AjouterLieux_PasDAcces"}}
 {{end elem="section"}}
 {{section visibility="@Lieux"}}
-{{button class="btn-success" link="AjouterLieux" text="Ajouter un lieu"}}[[AjouterLieux  ]]
-{{end elem="section"}}
+{{button class="btn-success" link="AjouterLieux" text="Ajouter un lieu"}}
+{{end elem="section"}}[[AjouterLieux_PasDAcces  ]]

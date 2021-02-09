@@ -1,4 +1,2 @@
-{{nav links="TableauDeBord, TableauDeBord_PagesOrphelines, TableauDeBord_PlanSite, TableauDeBord_LookWiki" titles="Tableau de bord, Pages Orphelines, Plan du site, Look Wiki"}}[[TableauDeBord  ]][[TableauDeBord_PagesOrphelines  ]][[TableauDeBord_PlanSite  ]][[TableauDeBord_LookWiki  ]]
-{{include page="LookWiki"}}[[LookWiki  ]]
-
-[[LookCDLTest  ]]
+{{nav links="TableauDeBord, TableauDeBord_PagesOrphelines, TableauDeBord_PlanSite, TableauDeBord_LookWiki" titles="Tableau de bord, Pages Orphelines, Plan du site, Look Wiki"}}
+{{include page="LookWiki"}}

@@ -1,5 +1,5 @@
 {{bazarliste id="5" template="map.tpl.html" height="600px" groups="checkboxListeTypeDAccueiltype_accueil,checkboxfiche6bf_thematique_officielle" titles="Type d'apprentissage,Thématique" groupsexpanded="true" cluster="true" spider="true" filterposition="right" query="checkboxListeModerationbf_moderation=affichable"}}
-{{button class="btn-primary decalage-ajout-lieu" icon="plus-circle" link="AjouterLieux_PasDAcces" title="Ajouter un lieu"}}[[AjouterLieux  ]][[AjouterLieux_PasDAcces  ]]""<div style="display:none;">""{{button class="test-decalage-ajout-lieu" link="AjouterLieux" nobtn="1" hideifnoaccess="true"}}""</div><style>
+{{button class="btn-primary decalage-ajout-lieu" icon="plus-circle" link="AjouterLieux_PasDAcces" title="Ajouter un lieu"}}""<div style="display:none;">""{{button class="test-decalage-ajout-lieu" link="AjouterLieux" nobtn="1" hideifnoaccess="true"}}""</div><style>
 .decalage-ajout-lieu{
 	position:absolute ;
 	right:10px;

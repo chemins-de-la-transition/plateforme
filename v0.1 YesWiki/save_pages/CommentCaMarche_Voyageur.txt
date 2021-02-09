@@ -7,7 +7,7 @@ Vous pouvez alors rejoindre la communauté des voyageurs et voyageuses et partir
 Tout d'abord, connectez-vous : {{login template="modal.tpl.html" nobtn="0" btnclass="btn-primary white"}} ou {{button link="ParametresUtilisateur" text="Créez votre compte" class="btn-primary"}}
 {{end elem="section"}}
 {{section visibility="+"}}
-{{button class="btn-primary" link="AjouterUneFiche_Voyageur" text="Créer une fiche voyageur"}}[[AjouterUneFiche_Voyageur  ]]
+{{button class="btn-primary" link="AjouterUneFiche_Voyageur" text="Créer une fiche voyageur"}}
 {{end elem="section"}}
 
 Cela vous permettra de créer vos propres parcours et d’entrer en contact avec les personnes dont les projets vous animent. 
@@ -15,6 +15,6 @@ Cela vous permettra de créer vos propres parcours et d’entrer en contact avec
 Nous vous proposons de retrouver les lieux en choisissant le parcours ci-dessous.
 {{button class="modalbox" nobtn="1" link="ChartE" text="Découvrir la Charte"}}
 ====Choisissez votre forme de voyage====
-{{include page="Carte_avec_Facettes"}}[[Carte_avec_Facettes  ]]
+{{include page="Carte_avec_Facettes"}}
 
-{{button class="btn-primary" link="LaCarte_RechercheAvancee" text="Recherche avancée"}} [[LaCarte_RechercheAvancee  ]]
+{{button class="btn-primary" link="LaCarte_RechercheAvancee" text="Recherche avancée"}}

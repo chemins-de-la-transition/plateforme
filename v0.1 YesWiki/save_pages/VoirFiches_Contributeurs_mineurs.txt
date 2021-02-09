@@ -3,4 +3,4 @@
 (à contacter donc pour vérifier s'il n'y a pas une erreur dans la date de naissance)
 
 {{bazarlistm18cdlt id="11" groups="checkboxListeModerationContributeurbf_moderation" titles="Moderation" datefield="date_naissance"}}
-""<!-- add displayIfNoDate="true" to display no date -->""
+{{comment text="add displayIfNoDate="true" to display no date"}}
