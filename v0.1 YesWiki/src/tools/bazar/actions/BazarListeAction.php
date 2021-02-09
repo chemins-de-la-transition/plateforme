@@ -325,9 +325,8 @@ class BazarListeAction extends YesWikiAction
 
                 
                 // reorder $filters
-                $orderedFilters = [] ;
 
-                $orderedFilters = uasort($filters,function ($a,$b){
+                uasort($filters,function ($a,$b){
                         if (isset($a['index']) && isset($b['index'])) {
                             if ($a['index'] == $b['index']) {
                                 return 0 ;
