@@ -35,11 +35,7 @@ class CleanDataField extends BazarField
                 if ($key[0] == self::PREFIX 
                     || $key == 'fields-to-remove' 
                     || $key == 'checkboxListeModerationbf_moderation' 
-                    || substr_compare($key,"Vous pouvez",0,strlen("Vous pouvez")) == 0
-                    || substr_compare($key,"Nous vous",0,strlen("Nous vous")) == 0
-                    || substr_compare($key,"Une page",0,strlen("Une page")) == 0
-                    || substr_compare($key,"Nous avons",0,strlen("Nous avons")) == 0
-                    || substr_compare($key,"S'il",0,strlen("S'il")) == 0
+                    || $key == 'datastr' 
                     ){
                     $fields_to_remove[] = $key;
                 }
