@@ -118,7 +118,13 @@ class EntryManager
 
         // si une personne a ete precisee, on limite la recherche sur elle
         if (!empty($params['user'])) {
-            $requete .= ' AND owner = _utf8\''.mysqli_real_escape_string($this->wiki->dblink, $params['user']).'\'';
+            $params['user'] = $this->dbService->escape(
+                preg_replace('/^"(.*)"$/', '$1', json_encode($params['user']))
+            );
+            // WTF : https://stackoverflow.com/questions/13287145/mysql-querying-for-unicode-entities#13327605
+            $params['user'] = str_replace('\\u00', '\\\\\u00', $params['user']);
+
+            $requete .= ' AND owner = _utf8\''.$params['user'].'\'';
         }
 
         $requete .= ' AND tag IN ('.$requete_pages_wiki_bazar_fiches.')';
@@ -334,6 +340,12 @@ class EntryManager
             $ignoreAcls = $this->params->get('bazarIgnoreAcls');
         }
 
+        // extract $data['sendmail'] before save
+        if (isset($data['sendmail'])) {
+            $sendmail = $data['sendmail'] ;
+            unset($data['sendmail']);
+        }
+
         // on sauve les valeurs d'une fiche dans une PageWiki, retourne 0 si succès
         $saved = $this->wiki->SavePage(
             $data['id_fiche'],
@@ -370,6 +382,18 @@ class EntryManager
             if (!empty($olduser)) {
                 $this->wiki->SetUser($olduser, 1);
             }
+        }
+
+        
+        // If sendmail field exist, send an email
+        if ($sendmail) {
+            $emailsLabels = explode(',', $sendmail);
+            foreach ($emailsLabels as $emailLabel) {
+                if (!empty($data[$emailLabel])) {
+                    $this->mailer->notifyEmail($data[$emailLabel], $data);
+                }
+            }
+            unset($sendmail);
         }
 
         if ($this->params->get('BAZ_ENVOI_MAIL_ADMIN')) {
@@ -412,8 +436,25 @@ class EntryManager
 
         $data = $this->formatDataBeforeSave($data);
 
+        // extract $data['sendmail'] before save
+        if (isset($data['sendmail'])) {
+            $sendmail = $data['sendmail'] ;
+            unset($data['sendmail']);
+        }
+
         // on sauve les valeurs d'une fiche dans une PageWiki, pour garder l'historique
         $this->wiki->SavePage($data['id_fiche'], json_encode($data));
+
+        // If sendmail field exist, send an email
+        if ($sendmail) {
+            $emailsLabels = array_unique(explode(',', $sendmail));
+            foreach ($emailsLabels as $emailLabel) {
+                if (!empty($data[$emailLabel])) {
+                    $this->mailer->notifyEmail($data[$emailLabel], $data);
+                }
+            }
+            unset($sendmail);
+        }
 
         if ($this->params->get('BAZ_ENVOI_MAIL_ADMIN')) {
             // Envoi d'un mail aux administrateurs
@@ -533,14 +574,6 @@ class EntryManager
             }
         }
         $data['date_maj_fiche'] = date('Y-m-d H:i:s', time());
-
-        // If sendmail field exist, send an email
-        if (isset($data['sendmail'])) {
-            if (isset($data[$data['sendmail']]) && $data[$data['sendmail']] != '') {
-                $this->mailer->notifyEmail($data[$data['sendmail']], $data);
-            }
-            unset($data['sendmail']);
-        }
 
         // on enleve les champs hidden pas necessaires a la fiche
         unset($data['valider']);
