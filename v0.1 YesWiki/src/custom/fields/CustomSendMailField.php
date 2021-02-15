@@ -41,8 +41,9 @@ class CustomSendMailField extends EnumField
         $output = $this->render('@custom/inputs/customSendMailRadio.twig', [
             'options' => $this->options,
             'value' => $this->getValue($entry),
+            'idForOption' => ($this->askForCurrentSave) ? $this->idForOption : null
         ]);
-        if ($this->askForCurrentSave){
+        if ($this->askForCurrentSave) {
             // extract value before temp changes
             $value = $this->getValue($entry) ;
             // temp values
@@ -52,7 +53,7 @@ class CustomSendMailField extends EnumField
             // render
             $output .= $this->render('@custom/inputs/customSendMailSelect.twig', [
                 'options' => $this->options,
-                'value' => $value 
+                'value' => $value
             ]);
             // reset values for field
             $this->label = $oldLabel;
@@ -94,7 +95,7 @@ class CustomSendMailField extends EnumField
 
             // check if we must sendmail
             if (($value == self::KEY_FOR_YES && !$this->askForCurrentSave) ||
-                    ($this->askForCurrentSave && isset($entry[$this->idForOption]) && 
+                    ($this->askForCurrentSave && isset($entry[$this->idForOption]) &&
                     $entry[$this->idForOption] == self::KEY_FOR_YES)) {
                 foreach ($linkedLabels as $linkedLabel) {
                     if (!empty($entry[$linkedLabel])) {

@@ -5,7 +5,13 @@
         {% for key, option in options %}
         <div class="radio">
             <label for="{{ field.propertyName ~ key }}">
-                <input type="radio" id="{{ field.propertyName ~ key }}" value="{{ key }}" name="{{ field.propertyName }}" {% if value == key %}checked{% endif %} />
+                <input 
+                    type="radio" 
+                    id="{{ field.propertyName ~ key }}" 
+                    value="{{ key }}" 
+                    name="{{ field.propertyName }}" 
+                    {% if value == key %}checked{% endif %} 
+                    {%- if idForOption %} onclick="$('#{{idForOption}}>option[value={{key}}]').prop('selected',true);"{% endif %} />
                 <span>{{ option|raw }}</span>
             </label>
         </div>
