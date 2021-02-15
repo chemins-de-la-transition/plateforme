@@ -22,5 +22,7 @@ $GLOBALS['translations'] = array_merge(
     'CUSTOM_ARCHIVE_ACTION_OPTION' => 'L\'option ' ,
     'CUSTOM_ARCHIVE_ACTION_OPTION_NOT_DEFINED' => ' n\'est pas encore définie ! Soyez patient !' ,
     'CUSTOM_ARCHIVE_ACTION_RETURN' => 'Choisir un autre type' ,
+    'CUSTOM_FIELD_SENDMAIL_YES' => 'oui' ,
+    'CUSTOM_FIELD_SENDMAIL_NO' => 'non' ,
     )
 );
