@@ -33,6 +33,7 @@ lien_internet***text_presdecheznous***Fiche Près de chez nous***40***255*** ***
 labelhtml***</div><div id="listeListeOuiNonbf_text_presdecheznous_non" style="display:none;"><a href="https://presdecheznous.fr/elements/add" target="blank">Créez votre fiche Près de chez nous</a></div>*** *** ***
 texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***url,schema:telephone*** ***
 champs_mail***bf_mail***Email*** *** *** ***form*** ***1*** *** *** * ***% @moderateurs*** ***url,schema:email*** ***
+customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_mail***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *******
 texte***bf_contact_principal***Nom du contact principal*** *** *** *** ***text***1*** *** ***% @moderateurs***% @moderateurs*** ***Person:name,schema:Person:name*** ***
 radio***ListeOuiNon***Je suis en lien avec la structure : *** *** *** ***implication_structure*** ***0*** ***impliqué  salarié  en lien direct  ...***% @moderateurs***% @moderateurs*** *** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***

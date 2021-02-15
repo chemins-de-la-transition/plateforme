@@ -1,3 +1,4 @@
-====== ======
-
-Avant de renseigner une fiche Lieux, nous vous invitons à {{button link="ParametresUtilisateur" text="créer votre compte" class="btn-primary"}} et à [[Contact_Email nous contacter directement]] pour obtenir un accès dédié.
+Avant de renseigner une fiche Lieux, nous vous invitons à :
+ 1. {{button link="ParametresUtilisateur" text="créer votre compte" class="btn-primary"}}
+ 2. en raison d'un bug, nous devons ajouter manuellement votre compte dans le groupe des Lieux, pour ceci [[Contact_Email_Dev contacter-nous directement]] après avoir créé votre compte, 
+ 3. préciser dans le message que vous voulez créer un compte "Lieux" et donner votre e-mail.

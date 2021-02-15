@@ -8,12 +8,14 @@ texte***bf_prenom***Prénom*** *** *** *** ***text***1*** ***ATTENTION : donnée
 texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** ***name,schema:name*** ***
 image***bf_image***Portrait***210***140***300***200***right***0*** *** ***% @moderateurs*** * *** ***image,schema:image*** ***
 champs_mail***bf_email***Email*** *** *** *** *** ***1*** *** ***% @moderateurs*** * *** *** *** ***
+customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_email***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *** ***
 champs_mail***bf_gmail***Identifiant Gmail*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** ***url,schema:url*** ***
 texte***bf_tel***Téléphone***15***15*** *** ***text***0*** *** ***% @moderateurs*** * *** ***url,schema:telephone*** ***
 texte***bf_id_matrix***Identifiant matrix.org / Element*** *** *** *** ***text***1*** ***plus d'info sur https://element.io/ {en}***% @moderateurs*** * *** ***url,schema:url*** ***
 texte***bf_id_github***Identifiant GitHub*** *** *** *** ***text***0*** ***Plus d'info sur https://github.com/ {en}***% @moderateurs*** * *** ***name,schema:name*** ***
 labelhtml***<a class="btn btn-primary pull-right" href="https://www.helloasso.com/associations/les-chemins-de-la-transition/adhesions/cotisations/">Adhérer</a>*** *** ***
 listedatedeb***bf_date_adhesion***Date d'adhésion*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** ***startTime,schema:startDate*** ***
+labelhtml***<script>document.querySelector('select.form-control.select-allday[name=bf_date_adhesion_allday]').style.display = "none" ;</script>*** *** ***
 liste***ListeOuiNon***J'accepte que mes informations soient diffusées au sein des Chemins de la Transition*** *** *** ***bf_partage_info*** ***1*** *** ***% @moderateurs*** * *** *** *** ***
 texte***bf_adresse***Adresse***50*** *** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:streetAddress*** ***
 texte***bf_complement_adresse***Adresse (complément)***50*** *** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:streetAddress*** ***

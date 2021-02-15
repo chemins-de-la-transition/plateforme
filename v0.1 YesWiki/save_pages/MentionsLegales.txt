@@ -22,4 +22,4 @@ Le site utilise la technologie [[http://www.yeswiki.net/ YesWiki]] et est héber
 Le nom de domaine du site **lescheminsdelatransition.org/** est la propriété de l'association les Chemins de la Transition.
 Contact technique : [[Contact_technique contacter Jérémy par formulaire]]
 
-{{include page="RGPD"}}[[RGPD  ]]
+{{include page="RGPD"}}

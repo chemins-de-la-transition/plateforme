@@ -10,7 +10,8 @@ image***bf_image***Photo***210***140***300***200***right***0*** ***ATTENTION : d
 listedatedeb***date_naissance***Date de naissance*** *** *** *** *** ***0*** ***Cliquez sur le mois en haut pour remonter aux années  puis décennies***% @moderateurs*** * *** ***schema:birthDate*** ***
 labelhtml***<script>document.querySelector('select.form-control.select-allday[name=date_naissance_allday]').style.display = "none" ;</script>*** *** ***
 texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs*** * *** ***url,schema:telephone*** ***
-champs_mail***bf_mail***Email de contact*** *** *** ***form*** ***1*** ***Un bouton contact s'affichera  votre adresse email ne sera pas visible publiquement.*** * *** * *** *** *** ***
+champs_mail***bf_mail***Email de contact*** *** *** ***form*** ***1*** ***Un bouton contact s'affichera votre adresse email ne sera pas visible publiquement.*** * *** * *** *** *** ***
+customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_mail***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *** ***
 texte***bf_adresse***Adresse***50***80*** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:streetAddress*** ***
 texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:streetAddress*** ***
 texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:postalCode*** ***
