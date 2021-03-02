@@ -40,4 +40,5 @@ $wakkaConfig = array (
   'default_language' => 'fr',
   'db_charset' => 'utf8mb4',
   'baz_map_zoom' => '6',
+  'BAZ_MAX_CHECKBOXLIST_WITHOUT_SELECTALL' => '4',
 );
