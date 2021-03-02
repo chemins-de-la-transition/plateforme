@@ -4,7 +4,7 @@
   - [[LEquipe L'équipe]]
   - [[EcosytemeCdlT Notre écosystème]]
   - [[ChartE La Charte]]
- - [[CommentCaMarche Comment ça marche ?]]
+ - [[CommentCaMarche Vous êtes...]]
   - [[CommentCaMarche_Initiative_Accueillante Vous êtes une Initiative accueillante]]
   - [[CommentCaMarche_Voyageur Vous êtes Voyageur]]
   - {{button hideifnoaccess="true" link="CommentCaMarche_Collectivite" nobtn="1" text="Vous êtes une Collectivité" }}
@@ -18,7 +18,8 @@
   - [[Thematiques_Exemple1 Thème Exemple 1]]
   - [[Thematiques_Exemple2 Thème Exemple 2]]
   - {{button hideifnoaccess="true" link="Thematiques_LowTech" nobtn="1" text="LowTech" }}
- - [[NosServices Nos services]] 
+  - {{button hideifnoaccess="true" link="Chemin_VeloBamBou" nobtn="1" text="Chemin du vélo bambou" }}
+ - [[NosServices Services]] 
   -  [[NosServices_VoyagesApprenants Voyages apprenants]]
   -  [[NosServices_NosFormations Nos formations]]
   -  [[NosServices_OffresPro Offres pro]]
@@ -29,14 +30,7 @@
   - [[Evenements_Prochains_Voyages_Apprenants Prochains voyages apprenants organisés]]
   - {{button hideifnoaccess="true" link="Evenements_Ajouter_Voyages_Apprenants" nobtn="1" text="Ajouter un voyage apprenant à l'agenda" }}
   - [[Evenements_VueCarte Par zone géographique]]
- - [[Blog_Temoignages  Le blog]]
-  - [[Blog_Temoignages  Témoignages]]
-  - [[Blog_WikiHow  Wiki-How]]
- - [[AidE Aide]]
-  - [[AidE Aide générale]]
-  - [[Aide_FAQ FAQ]]
-  - [[Aide_ParcoursThematiques Liste des parcours thématiques]]
-  - [[AideTypeDeVoyage Différents types de voyage]]
-  - [[ReglesDeFormatage Aide formatage]]
-  - [[Aide_DocumentationYesWiki Documentation YesWiki]]
+ - {{button hideifnoaccess="true" link="Blog_Temoignages" nobtn="1" text="Le blog"}}
+  - {{button hideifnoaccess="true" link="Blog_Temoignages" nobtn="1" text="Témoignages"}}
+  - {{button hideifnoaccess="true" link="Blog_WikiHow" nobtn="1" text="Wiki-How"}}
  - [[Contact Contact]]

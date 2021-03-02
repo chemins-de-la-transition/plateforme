@@ -1,10 +1,16 @@
+{{buttondropdown icon="fa fa-question" caret="0"}}
+  - [[AidE Aide générale]]
+  - [[Aide_FAQ FAQ]]
+  - [[Aide_ParcoursThematiques Liste des parcours thématiques]]
+  - [[AideTypeDeVoyage Différents types de voyage]]
+  - [[ReglesDeFormatage Aide formatage]]
+  - [[Aide_DocumentationYesWiki Documentation YesWiki]]
+{{end elem="buttondropdown"}}
 {{moteurrecherche template="moteurrecherche_button.tpl.html"}}
 {{buttondropdown icon="cog" caret="0"}}
  - {{login template="modal.tpl.html" nobtn="1"}}
  - {{button nobtn="1" icon="fa fa-folder-open" text="Mes fiches" link="MesFiches" hideifnoaccess="true" }}
  - {{button hideifnoaccess="true" link="Espace_Moderateurs" nobtn="1" icon="fa fa-check" text="Accès à l'espace Modérateurs" }}
- - ------
- - {{button nobtn="1" icon="fa fa-question" text="Aide" link="AidE"}}
  - ------
  - {{button nobtn="1" icon="fa fa-wrench" text="Gestion du site" link="GererSite" hideifnoaccess="true" }}
  - {{button nobtn="1" icon="fa fa-tachometer-alt" text="Tableau de bord" link="TableauDeBord" hideifnoaccess="true" }}
