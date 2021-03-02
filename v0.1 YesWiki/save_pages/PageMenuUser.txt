@@ -1,0 +1,1 @@
+""<li>""{{button nobtn="1" icon="fa fa-folder-open" text="Mes fiches" link="MesFiches" hideifnoaccess="true" }}""</li>""
