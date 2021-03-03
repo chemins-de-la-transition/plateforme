@@ -84,3 +84,19 @@ div#calendar1:not(.minical) >div.fc-view-container  td.fc-event-container>a>div.
     position: relative;
    }
 }
+
+/* Pour les icône du bas de la page d'AccueiL */
+.margin-button {
+	margin-right: 3px;
+   margin-left: 3px;
+}
+
+.btn-fb {
+	background: #3b5998;
+}
+.btn-rss {
+	background: #ee802f;
+}
+.btn-twitter {
+	background: #00acee;
+}

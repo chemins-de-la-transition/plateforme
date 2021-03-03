@@ -14,7 +14,7 @@
   - [[LaCarte_RechercheAvancee Recherche avancée]]
   - {{button hideifnoaccess="true" link="AjouterLieux" nobtn="1" text="Ajouter un lieu" }}
   - {{button hideifnoaccess="true" link="Espace_Moderateurs_Lieux_a_moderer_Carte" nobtn="1" text="Fiches lieux à modérer" }}
- - [[Thematiques_Formations Thématiques & formations]]
+ - [[Thematiques_Formations Thématiques]]
   - [[Thematiques_Exemple1 Thème Exemple 1]]
   - [[Thematiques_Exemple2 Thème Exemple 2]]
   - {{button hideifnoaccess="true" link="Thematiques_LowTech" nobtn="1" text="LowTech" }}

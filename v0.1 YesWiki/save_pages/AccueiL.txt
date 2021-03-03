@@ -33,7 +33,10 @@
 ====Suivez-nous, partagez-nous !====
 {{grid}}
 {{col size="12" class="text-center"}}
-{{button link="https://www.facebook.com/groups/lescheminsdelatransition" icon="fab fa-facebook" class="btn-info" text="Groupe Facebook"}}{{button link="https://www.facebook.com/CdlTOccitanie/" icon="fab fa-facebook" class="btn-info" text="page Facebook en Occitanie"}}{{button link="https://twitter.com/CdlT_Occitanie" icon="fab fa-twitter" class="btn-info"}}{{button link="http://lescheminsdelatransition.org/feed/" icon="fa fa-rss" class="btn-info"}}
+{{button link="https://www.facebook.com/groups/lescheminsdelatransition" icon="fab fa-facebook" class="btn-fb btn-icon margin-button" text="Groupe Facebook"}}
+{{button link="https://www.facebook.com/CdlTOccitanie/" icon="fab fa-facebook" class="btn-fb btn-icon margin-button" text="page Facebook en Occitanie"}}
+{{button link="https://twitter.com/CdlT_Occitanie" icon="fab fa-twitter" class="btn-twitter btn-icon margin-button"}}
+{{button link="http://lescheminsdelatransition.org/feed/" icon="fa fa-rss" class="btn-rss btn-icon margin-button"}}
 {{end elem="col"}}
 {{end elem="grid"}}""<script>
 function deleteAgendaBlocById(id){
