@@ -100,3 +100,133 @@ Be able to use admintag for not admin users
 
 In a page write `{{admintagcdlt}}`.
 ADfine the ACL with `{{editactionsacls}}`
+
+# formEditTemplateCdlt handler
+
+## Aim
+
+Dynamically update form-edit-template.js with custom options for read and write field's acl.
+
+## Files
+
+/actions/bazar__.php
+/handlers/formEditTemplateCdlt.php
+
+## Use
+
+Nothing to do, it is automaticcaly when modifying a form.
+
+
+# Bazarlistm18cdltAction
+
+## Aim
+
+Be able to filter entries with date lower than 18 years;
+
+## Files
+
+/actions/Bazarlistm18cdltAction.php
+
+## Use
+
+`{{Bazarlistm18cdlt datefield="NAME OF FIELD" displayIfNoDate="true"...}}` le reste comme BazarListeAction, `displayIfNoDate="true"` est optionnel.
+
+
+# BazarUserPageCDLTAction
+
+## Aim
+
+Retrocompatibility with previous custom action. 
+Add a title for bazarliste configured to display only owner entries.
+
+## Files
+
+/actions/BazarUserPageCDLTAction.php
+
+## Use
+
+`{{BazarUserPageCDLT titre="LE TITRE" ...}}` le reste comme BazarListeAction.
+
+# CommentAction
+
+## Aim
+
+Be able to have add comment in a page not displayed in the html.
+
+## Files
+
+/actions/CommentAction.php
+
+## Use
+
+`{{comment  ...}}` : tout ce qui est entre `comment`et `}}` n'est pas affiché ni inclus dans le html.
+
+
+# CleanDataField
+
+## Aim
+
+Remove unwanted fields saved in an entry.
+
+## Files
+
+/fields/CleanDataField.php
+
+## Use
+
+In a form, use custom field with this code.
+
+`cleandata***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** ***`
+
+
+# CustomSendMailField
+
+## Aim
+
+Define a custom send mail option in an entry.
+
+## Files
+
+/fields/CustomSendMailField.php
+/templates/custom/inputs/customSendMailRadio.twig
+/templates/custom/inputs/customSendMailSelect.twig
+
+## Use
+
+In a form, use custom field with this code.
+
+`customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_mail***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *** ***`
+
+0 : customsendmail
+1 : name (ex:'custombfmail')
+2 : label (ex:'Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?')
+3 : associated field (ex:'bf_mail')
+4 : FIELD_ASK_FOR_CURRENT_SAVE (yes = ask to send or not an email at the save whereas is the option sendmail ; no = do not ask, follow sendmail option)
+5 : default (yes or no)
+6 : not used
+7 : FIELD_LABEL_FOR_OPTION only displayed when editing entry and FIELD_ASK_FOR_CURRENT_SAVE = yes (ex: Envoyer un message cette fois ?)
+8 : required (ex: “empty”, or 0 or 1)
+9 : searchable
+10: hint
+11: readAccess (ex: % @moderateurs)
+12: writeAcces (ex: % @moderateurs)
+13: not used
+14: semantic predicate
+
+
+# LinkficheField
+
+## Aim
+
+Display a link to the current entry (usefull in bazarcarto)
+
+## Files
+
+/fields/LinkficheField.php
+/templates/custom/fields/link.twig
+
+## Use
+
+In a form, use custom field with this code.
+
+`linkfiche***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** ***`
