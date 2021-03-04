@@ -230,3 +230,20 @@ Display a link to the current entry (usefull in bazarcarto)
 In a form, use custom field with this code.
 
 `linkfiche***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** ***`
+
+# BazarImportAction
+
+## Aim
+
+Could be able to open BazarImport to non admin
+
+## Files
+
+/actions/BazarImportAction.php
+
+## Use
+
+In a page, write :
+
+`{{bazarimport}}` or `{{bazarimport id="5"}}`
+
