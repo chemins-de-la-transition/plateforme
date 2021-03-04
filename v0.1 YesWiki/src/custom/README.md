@@ -1,3 +1,17 @@
+# _nav
+
+## Aim
+
+Activate the option "hideifnoaccess" for nav
+
+## Files
+
+/actions/__nav.php
+
+## Use
+
+Add the parameter "hideifnoaccess" in `{{nav hideifnoaccess="true" ...}}`
+
 # CustomSendMailField
 
 ## Aim
@@ -70,3 +84,19 @@ with COOKIES containing :
  
 you will receive a zip file.
 in case of error, it is return an html page with header and footer rendered and an alert message.
+
+
+# Admintagcdlt
+
+## Aim
+
+Be able to use admintag for not admin users
+
+## Files
+
+/actions/admintagcdlt.php
+
+## Use
+
+In a page write `{{admintagcdlt}}`.
+ADfine the ACL with `{{editactionsacls}}`
