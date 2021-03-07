@@ -89,27 +89,37 @@ function toastMessage(message, duration = 3000, toastClass = 'alert alert-second
       text = "<h3></h3>";
     }
 
-    $("body").append(
-      '<div class="modal fade" id="YesWikiModal">' +
-        '<div class="modal-dialog' +
-        size +
-        '">' +
-        '<div class="modal-content">' +
-        '<div class="modal-header">' +
-        '<button type="button" class="close" data-dismiss="modal">&times;</button>' +
-        text +
-        "</div>" +
-        '<div class="modal-body">' +
-        "</div>" +
-        "</div>" +
-        "</div>" +
+    var $modal = $("#YesWikiModal");
+    var yesWikiModalHtml = '<div class="modal-dialog' +
+      size +
+      '">' +
+      '<div class="modal-content">' +
+      '<div class="modal-header">' +
+      '<button type="button" class="close" data-dismiss="modal">&times;</button>' +
+      text +
+      "</div>" +
+      '<div class="modal-body">' +
+      "</div>" +
+      "</div>" +
+      "</div>" ;
+    if ($modal.length == 0) {
+      $("body").append(
+        '<div class="modal fade" id="YesWikiModal">' +
+        yesWikiModalHtml +
         "</div>"
-    );
+      );
+      $modal = $("#YesWikiModal");
+    } else {
+      $modal.html(yesWikiModalHtml) ;
+    }
 
     var link = $this.attr("href");
     // incomingurl can be usefull (per example for deletepage handler)
-    link += "&incomingurl=" + encodeURIComponent(window.location.toString());
-    var $modal = $("#YesWikiModal");
+    try {
+      if (iframe !== 1) {
+        link += "&incomingurl=" + encodeURIComponent(window.location.toString());
+      }
+    } catch (e) {}
     if (/\.(gif|jpg|jpeg|tiff|png)$/i.test(link)) {
       $modal
         .find(".modal-body")
@@ -119,24 +129,77 @@ function toastMessage(message, duration = 3000, toastClass = 'alert alert-second
             '" alt="image" />'
         );
     } else if (iframe === 1) {
+      var modalTitle = $modal.find(".modal-header h3") ;
+      if (modalTitle.length > 0 && modalTitle[0].innerText == 0) {
+        modalTitle[0].innerText = link.substr(0,128);
+      }
       $modal
         .find(".modal-body")
         .html(
           '<span id="yw-modal-loading" class="throbber"></span>' +
             '<iframe id="yw-modal-iframe" src="' +
             link +
-            '""></iframe>'
+            '" referrerpolicy="no-referrer"></iframe>'
         );
       $("#yw-modal-iframe").on("load", function() {
         $("#yw-modal-loading").hide();
       });
     } else {
-      $modal
-        .find(".modal-body")
-        .load(link + " .page", function(response, status, xhr) {
+      // AJAX Request
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var xmlString = this.responseText;
+          var doc = new DOMParser().parseFromString(xmlString, "text/html");
+          var page = doc.querySelector(".page").innerHTML ;
+          $modal.find(".modal-body").html(page) ;
+          // find scripts
+          var res = doc.scripts;
+          var l = res.length-1;
+          var i;
+          for (i = 0; i < l; i++) {
+            var src = res[i].getAttribute("src");
+            if (src) {
+              var selection = document.querySelectorAll('script[src="'+src+'"]') ;
+              if (selection.length == 0) {
+                // append script and load it only if not present
+                document.body.appendChild(document.importNode(res[i]));
+                $.getScript(src);
+              }
+            } else {
+              var script=res[i].innerHTML ;
+              // select all script of current page without src
+              var selection = document.scripts ;
+              var selLenght = selection.length-1;
+              var j;
+              for (j = 0; j < selLenght; j++) {
+                if (!selection[j].hasAttribute('src') && script != selection[j].innerHTML){
+                  var newScript = document.importNode(res[i]) ;
+                  document.body.appendChild(newScript);
+                }
+              }
+            }
+          } 
+          // find css
+          var importedCSS = doc.querySelectorAll('link[rel="stylesheet"]');
+          var l = importedCSS.length-1;
+          var i;
+          for (i = 0; i < l; i++) {
+            var href = importedCSS[i].getAttribute("href");
+            if (href) {
+              var selection = document.querySelector('link[href="'+href+'"]') ;
+              if (selection.length == 0) {
+                // append link
+                document.body.appendChild(document.importNode(importedCSS[i]));
+              }
+            }
+          }
+
           $(document).trigger("yw-modal-open");
-          return false;
-        });
+        }
+      };
+      xhttp.open("GET", link, true);
+      xhttp.send();
     }
     $modal
       .modal({
