@@ -1,7 +1,7 @@
  - [[QuiSommesNous Qui sommes-nous ?]]
   - [[QuiSommesNous Qui sommes-nous ?]]
-  - [[LeProjet Le projet]]
-  - [[LEquipe L'équipe]]
+  - {{button class="modalbox" link="https://lescheminsdelatransition.org/pourquoi-ce-projet/" nobtn="1" text="Le projet" title="Pourquoi ce projet ?" }}
+  - {{button class="modalbox" link="https://lescheminsdelatransition.org/le-conseil-dadministration/" nobtn="1" text="L'équipe" title="L'équipe du projet" }}
   - [[EcosytemeCdlT Notre écosystème]]
   - [[ChartE La Charte]]
  - [[CommentCaMarche Vous êtes...]]

@@ -1,7 +1,5 @@
 ======Foire Aux Questions======
 
-
-
 {{accordion}}
 
 ====Quelques balises sur le Chemin...====
@@ -20,7 +18,7 @@ La participation consciente permet notamment à des personnes disposant de faibl
 ====... et sur la Plateforme====
 
 {{panel title="<span class='glyphicon glyphicon-question-sign'></span> C'est quoi YesWiki ?" class="panel-info" id="acc3"}}
-YesWiki est le "moteur" qui permet de faire tourner la plateforme. Logiciel libre et open-source, tout ce que vous avez toujours voulu savoir sans jamais oser le demander se trouvera sur la [[Aide_DocumentationYesWiki  documentation YesWiki]].
+YesWiki est le "moteur" qui permet de faire tourner la plateforme. Logiciel libre et open-source, tout ce que vous avez toujours voulu savoir sans jamais oser le demander se trouvera sur la {{button class="modalbox" link="https://yeswiki.net/?DocumentatioN/iframe" nobtn="1" text="documentation YesWiki" title="Documentation sur YesWiki.net/"}}.
 {{end elem="panel"}}
 {{panel title="<span class='glyphicon glyphicon-font'></span> Comment mettre en forme mon texte ?" class="panel-info" id="acc4"}}
 Lors de la création d'une page, vous aurez en général une barre d'outil présentant les différentes possibilités de mise en forme. Pour aller plus loin, vous pouvez aussi consulter l' [[ReglesDeFormatage  aide sur le formatage]].

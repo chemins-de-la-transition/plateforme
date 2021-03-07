@@ -1,6 +1,6 @@
 {{attach file="LCDLT_Logotype10x10cm150DPI.png" desc="CDLT_Logo" size="small" class="left" link="?AccueiL"}}
 
-======Plateforme des [[http://lescheminsdelatransition.org/ Chemins de la Transition]]======
+======Plateforme des {{button class="btn-primary modalbox" link="https://lescheminsdelatransition.org/" nobtn="1" text="Chemins de la Transition" title="Site des chemins de la Transition"}}======
 
 ""<div style="text-align: center;font-size: 160%;">""Bienvenue sur la première plateforme d'apprentissages itinérants""</div>""
 
@@ -17,11 +17,11 @@
 
 {{section visibility="@editeurs"}}
 =====[[Blog_Temoignages Ils ont participé, ils nous partagent leur expérience]]=====
-{{bazarliste template="blog.tpl.html" id="3" nb="3" header="no"}}[[Blog_Temoignages suite...]]{{end elem="section"}}
+{{bazarliste template="blog.tpl.html" id="3" nb="3" header="no"}}[[Blog_Temoignages suite...]]
 =====[[Evenements_VueActivite Actualité des lieux]]=====
 {{bazarliste template="agenda.tpl.html" id="2" agenda="futur" correspondance="bf_titre=bf_nom" pagination="3"}}[[Evenements_VueActivite suite...]]
 =====[[Evenements_Prochains_Voyages_Apprenants Prochains voyages apprenants organisés]]=====
-{{bazarliste template="agenda.tpl.html" id="1" agenda="futur" correspondance="bf_titre=bf_nom" pagination="3"}}[[Evenements_Prochains_Voyages_Apprenants suite...]]
+{{bazarliste template="agenda.tpl.html" id="1" agenda="futur" correspondance="bf_titre=bf_nom" pagination="3"}}[[Evenements_Prochains_Voyages_Apprenants suite...]]{{end elem="section"}}
 {{grid}}{{col size="6"}}=====[[EcosytemeCdlT Ecosystème]]=====
 
 {{bazarliste id="9" template="carousel_v2.tpl.html" query="checkboxListeTypeDePartenariat=part_ecosysteme" idcarousel="gauche" dureems="4100" correspondance="bf_lien=bf_site_internet"}}{{end elem="col"}}
@@ -40,7 +40,8 @@
 {{end elem="col"}}
 {{end elem="grid"}}""<script>
 function deleteAgendaBlocById(id){
-	if (document.querySelector("div#bazar-list-" + id + ".bazar-list>div.list>div.agenda-container").children.length == 0) {
+	var block = document.querySelectorAll("div#bazar-list-" + id + ".bazar-list>div.list>div.agenda-container");
+	if (block.length > 0 && block[0].children.length == 0) {
 		var bloc = document.querySelector("div#bazar-list-" + id + ".bazar-list") ;
 		bloc.nextElementSibling.remove() ;
 		bloc.previousElementSibling.remove() ;
@@ -48,7 +49,8 @@ function deleteAgendaBlocById(id){
 	}
 }
 function deleteBlogBlocById(id){
-	if (document.querySelector("div#bazar-list-" + id + '.bazar-list[data-template="blog.tpl.html"]>div.list').children.length == 0) {
+	var block = document.querySelectorAll("div#bazar-list-" + id + '.bazar-list[data-template="blog.tpl.html"]>div.list');
+	if (block.length > 0 && block[0].children.length == 0) {
 		var bloc = document.querySelector("div#bazar-list-" + id + ".bazar-list") ;
 		bloc.nextElementSibling.remove() ;
 		bloc.previousElementSibling.remove() ;

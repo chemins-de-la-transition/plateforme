@@ -8,19 +8,22 @@ function defineAutoUpdateDepartment(){
 }
 function updateDepartement(elem){
 	var x=document.getElementById('listeListeDepartementsbf_department');
-	var i;
-	if (elem.value.length == 1){	
-		var number = "0" + elem.value ;
-	} else {
-		var number = elem.value.substr(0,2) ;
-		if (number == 97 &&elem.value.length > 2){
-			var number = elem.value.substr(0,3);
+	if (x) {
+		if (elem.value.length == 1){	
+			var number = "0" + elem.value ;
+		} else {
+			var number = elem.value.substr(0,2) ;
+			if (number == 97 && elem.value.length > 2){
+				var number = elem.value.substr(0,3);
+			}
 		}
-	}
-	for(i=0;i<x.options.length;i++){
-		if(x.options[i].value==number){
-			x.options.selectedIndex=i;
+		var i;
+		var iMax = x.options.length -1 ;
+		for(i=0;i<iMax;i++){
+			if(x.options[i].value==number){
+				x.options.selectedIndex=i;
+			};
 		};
-	};
+	}
 };
 </script>""

@@ -1,4 +1,4 @@
-{{grid}}
+""<div class="carteAvecFacettes">""{{grid}}
 {{col size="3"}}
 ""<div class="checkbox">
  <label for="checkboxListeTypeDAccueiltype_accueilEcotourisme">""{{section class="alert alert-primary auto-resize-height" nocontainer="1"}}
@@ -69,7 +69,7 @@
  </span>
  </label>
 </div>""{{end elem="col"}}
-{{end elem="grid"}}{{include page="CartoLieux"}}""<style>
+{{end elem="grid"}}{{include page="CartoLieux"}}""</div><style>
 div.lead.auto-resize-height{
 	margin-bottom : initial ;
 }
@@ -80,19 +80,22 @@ div.lead.auto-resize-height{
 	}
 }
 </style><script>
-document.getElementById("checkboxListeTypeDAccueiltype_accueilEcotourisme").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
-document.getElementById("checkboxListeTypeDAccueiltype_accueilVoyageApprenant").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
-document.getElementById("checkboxListeTypeDAccueiltype_accueilWoofingChantiers").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
-document.getElementById("checkboxListeTypeDAccueiltype_accueilCompagnonnage").setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
+function setOnChangeAttr(id) {
+	var elem = document.getElementById(id)
+	if (elem) {
+		elem.setAttribute("onchange","localFuncUpdateCheckbox(this.id,this.checked)");
+	}	
+}
+
+setOnChangeAttr("checkboxListeTypeDAccueiltype_accueilEcotourisme");
+setOnChangeAttr("checkboxListeTypeDAccueiltype_accueilVoyageApprenant");
+setOnChangeAttr("checkboxListeTypeDAccueiltype_accueilWoofingChantiers");
+setOnChangeAttr("checkboxListeTypeDAccueiltype_accueilCompagnonnage");
+
 document.querySelector(".panel.panel-default.checkboxListeTypeDAccueiltype_accueil").setAttribute("style","display:none;") ;
 function localFuncUpdateCheckbox(id,checked) {
 	document.querySelector("input#"+id+"_other").checked = checked ;
 }
-/*var listInput = document.querySelectorAll("input[type=checkbox].filter-checkbox") ;
-var i ;
-for (i=0;i<listInput.length;i++){
-	listInput[i].checked = true ;
-}*/
 document.getElementsByTagName("body")[0].onload = defer() ;
 function defer() {
     if (window.jQuery) {
@@ -121,6 +124,12 @@ function defer() {
 					$(this).css("min-height",minSectionHeight + "px") ;
 				}) ;
 			}
+		}
+		var listInput = document.querySelectorAll(".carteAvecFacettes input[type=checkbox].filter-checkbox") ;
+		var i ;
+		var iMax = listInput.length - 1;
+		for (i=0;i<iMax;i++){
+			listInput[i].checked = true ;
 		}
    	autoResizeHeight();
    	$(window).resize(autoResizeHeight);

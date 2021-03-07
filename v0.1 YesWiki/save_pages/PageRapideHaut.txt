@@ -3,8 +3,8 @@
   - [[Aide_FAQ FAQ]]
   - [[Aide_ParcoursThematiques Liste des parcours thématiques]]
   - [[AideTypeDeVoyage Différents types de voyage]]
-  - [[ReglesDeFormatage Aide formatage]]
-  - [[Aide_DocumentationYesWiki Documentation YesWiki]]
+  - [[ReglesDeFormatage Aide avancée pour le formatage]]
+  - {{section visibility="@editeurs" nocontainer="1"}}{{button class="modalbox" link="https://yeswiki.net/?DocumentatioN/iframe" nobtn="1" text="Documentation YesWiki" title="Documentation sur YesWiki.net/"}}{{end elem="section"}}
 {{end elem="buttondropdown"}}
 {{moteurrecherche template="moteurrecherche_button.tpl.html"}}
 {{buttondropdown icon="cog" caret="0"}}
