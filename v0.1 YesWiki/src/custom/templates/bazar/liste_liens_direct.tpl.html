@@ -5,7 +5,17 @@ if(count($fiches)>0) : ?>
     <?php
     foreach($fiches as $fiche): ?>
         <li class="bazar-entry" <?php echo $fiche['html_data'];?>>
-          <a href="<?php echo (isset($fiche['bf_lien']) && $fiche['bf_lien']!='') ? $fiche['bf_lien'] : $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>" target="_blank">
+          <?php 
+              $hasLink = (!empty($fiche['bf_lien'])) ;
+              $link = ($hasLink ) ? $fiche['bf_lien'] : $this->wiki->href('', $fiche['id_fiche']);
+              $isextlink = (isset($fiche['radioListeOuiNonisextlink']) && $fiche['radioListeOuiNonisextlink'] == 'oui') ;
+          ?>
+          <a <?php 
+              echo ((!$isextlink ) ? 'class="modalbox" data-size="modal-lg" ' : '');
+              echo (($hasLink && !$isextlink) ? 'data-iframe="1"' :'') ;
+              ?> href="<?php echo $link ;?>" <?php 
+              echo (($isextlink ) ? 'target="_blank"' :'');
+              ?>>
             <?php
             $style = '';
             $color = getCustomValueForEntry(

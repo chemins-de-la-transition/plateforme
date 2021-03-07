@@ -225,8 +225,16 @@ padding: 20px;
 	    <?php if (!empty($fiche['imagebf_image'])) : ?>
 	      <a href="<?php echo $GLOBALS['wiki']->href('', $fiche['id_fiche']); ?>"><img class="slide-<?php echo $nb; ?>" src="<?php echo 'cache/image_'.$fiche['imagebf_image'];?>"></a>
 	    <?php endif; ?>
-                <?php if (isset($fiche['bf_lien']) && $fiche['bf_lien']!='' ) : ?>
-                    <a class="btn btn-hero" href="<?php echo $fiche['bf_lien']; ?>">Site internet</a>
+                <?php if (!empty($fiche['bf_lien'])) : ?>                
+                  <?php 
+                      $link = $fiche['bf_lien'] ;
+                      $isextlink = (isset($fiche['radioListeOuiNonisextlink']) && $fiche['radioListeOuiNonisextlink'] == 'oui') ;
+                  ?>
+                  <a <?php 
+                    echo ((!$isextlink ) ? 'class="btn btn-hero modalbox" data-size="modal-lg" data-iframe="1" ' : 'class="btn btn-hero" ');
+                    ?> href="<?php echo $link ;?>" <?php 
+                    echo (($isextlink ) ? 'target="_blank"' :'');
+                  ?>>Site internet</a>
                 <?php endif; ?>
 	   </div>
     </div>
