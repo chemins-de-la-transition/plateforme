@@ -24,10 +24,10 @@
 {{bazarliste template="agenda.tpl.html" id="1" agenda="futur" correspondance="bf_titre=bf_nom" pagination="3"}}[[Evenements_Prochains_Voyages_Apprenants suite...]]{{end elem="section"}}
 {{grid}}{{col size="6"}}=====[[EcosytemeCdlT Ecosystème]]=====
 
-{{bazarliste id="9" template="carousel_v2.tpl.html" query="checkboxListeTypeDePartenariat=part_ecosysteme" idcarousel="gauche" dureems="4100" correspondance="bf_lien=bf_site_internet"}}{{end elem="col"}}
+{{bazarliste id="9" template="carousel_v2.tpl.html" query="checkboxListeTypeDePartenariat=part_ecosysteme" idcarousel="gauche" dureems="4100" correspondance="bf_lien=bf_site_internet" random="1"}}{{end elem="col"}}
 {{col size="6"}}=====[[EcosytemeCdlT Partenaires financiers]]=====
 
-{{bazarliste id="9" template="carousel_v2.tpl.html" query="checkboxListeTypeDePartenariat=part_financier" idcarousel="droite" dureems="3900" correspondance="bf_lien=bf_site_internet"}}
+{{bazarliste id="9" template="carousel_v2.tpl.html" query="checkboxListeTypeDePartenariat=part_financier" idcarousel="droite" dureems="3900" correspondance="bf_lien=bf_site_internet" random="1"}}
 {{end elem="col"}}{{end elem="grid"}}
 
 ====Suivez-nous, partagez-nous !====
