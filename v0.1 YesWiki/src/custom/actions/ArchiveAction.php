@@ -78,9 +78,13 @@ class ArchiveAction extends YesWikiAction
                 'download' => $this->readyToExport ?? false
             ]);
         } else {
-            $this->htmlReturn = $this->render('@custom/alert-message.twig', [
-                    'alertMessage' => _t('CUSTOM_ARCHIVE_ACTION_RESERVED_TO_ADMIN')
-                ]);
+            $this->htmlReturn = $this->render(
+                '@templates/alert-message.twig',
+                [
+                    'type' => 'danger',
+                    'message' => _t('CUSTOM_ARCHIVE_ACTION_RESERVED_TO_ADMIN')
+                ]
+            );
         }
     }
 
@@ -106,9 +110,14 @@ class ArchiveAction extends YesWikiAction
                 // $this->sendZip($this->getSite()) ;
                 // break;
             default:
-                $output = $this->render('@custom/alert-message.twig', [
-                        'alertMessage' => _t('CUSTOM_ARCHIVE_ACTION_OPTION') . '\'' . $this->arguments['export'] . '\'' . _t('CUSTOM_ARCHIVE_ACTION_OPTION_NOT_DEFINED')
-                    ]);
+                $output = $this->render(
+                    '@templates/alert-message.twig',
+                    [
+                        'type' => 'danger',
+                        'message' => _t('CUSTOM_ARCHIVE_ACTION_OPTION') . '\'' .
+                                $this->arguments['export'] . '\'' . _t('CUSTOM_ARCHIVE_ACTION_OPTION_NOT_DEFINED')
+                    ]
+                );
                 return $output ;
         }
     }
@@ -168,9 +177,13 @@ class ArchiveAction extends YesWikiAction
     {
         $output = '' ;
         if (count($data) == 0) {
-            $output = $this->render('@custom/alert-message.twig', [
-                'alertMessage' => 'ALERT : empty date when trying to export ' . $zipName .' !'
-            ]);
+            $output = $this->render(
+                '@templates/alert-message.twig',
+                [
+                'type' => 'danger',
+                'message' => 'ALERT : empty date when trying to export ' . $zipName .' !'
+            ]
+            );
         } else {
             // create tempfile
             $tmp_location = tempnam(sys_get_temp_dir(), 'zipArchive') ;
@@ -209,16 +222,22 @@ class ArchiveAction extends YesWikiAction
                     header("Content-Type: text/html; charset=$charset");
                     $output =  _t('PERFORMABLE_ERROR') . "<br/>" . $t->getMessage() . ' in <i>' . $t->getFile();
                     $output .=  '</i> on line <i>' . $t->getLine() . '</i><br/>' ;
-                    return $this->render('@custom/alert-message.twig', [
-                        'alertMessage' => $output
-                    ]);
+
+                    return $this->render(
+                        '@templates/alert-message.twig',
+                        ['type' => 'danger','message' => $output]
+                    );
                 }
             } else {
                 // delete tempfile
                 fclose($tmp_file);
-                $output = $this->render('@custom/alert-message.twig', [
-                        'alertMessage' => 'Error when creating zipArchive object'
-                    ]);
+                $output = $this->render(
+                    '@templates/alert-message.twig',
+                    [
+                        'type' => 'danger',
+                        'message' => 'Error when creating zipArchive object'
+                    ]
+                );
             }
         }
         return $output ;
