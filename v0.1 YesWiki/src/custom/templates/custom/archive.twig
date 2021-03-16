@@ -1,67 +1,43 @@
 {{ include_javascript('tools/bazar/libs/bazar.js') }}
 <div class="well">
-    {% if download %}
-        <form action="{{ url({tag:'',handler:'ArchiveDownloadZip'}) }}" method="post" name="formulaire" id="formulaire" enctype="multipart/form-data" class="form-horizontal">
+    <form action="" method="post" name="formulaire" id="formulaire" enctype="multipart/form-data" class="form-horizontal">
+        {% if password_confirm and not wrongPassword %}
             <input type="hidden" name="password_confirm_md5" value="{{ password_confirm }}">
-            <input type="hidden" name="export" value="{{ export }}">
-            <div class="form-actions form-group">
-                <div class="col-sm-9 col-sm-offset-3">
-                    <button type="submit" class="btn btn-primary">{{ _t('CUSTOM_ARCHIVE_ACTION_DOWNLOAD') }}</button>
-                </div>
+        {% else %}
+            <div class="alert alert-info">{{ _t('CUSTOM_ARCHIVE_ACTION_CONFIRM_PASSWORD_TEXT') }}</div>
+            <div><strong>{{ _t('CUSTOM_ARCHIVE_ACTION_USERNAME_ANNONCE') }}</strong>{{ userName }}</div>
+            {% include '@bazar/inputs/password.twig' with {'field': {
+                'name':'password_confirm',
+                'maxChars':'500',
+                'required':true,
+                'type':'password',
+                'hint': ( wrongPassword ? _t('CUSTOM_ARCHIVE_ACTION_WRONG_PASSWORD') : _t('CUSTOM_ARCHIVE_ACTION_ASK_PASSWORD')) ,
+                'label': ( wrongPassword ? _t('CUSTOM_ARCHIVE_ACTION_WRONG_PASSWORD') : _t('CUSTOM_ARCHIVE_ACTION_ASK_PASSWORD'))
+                }} %}
+        {% endif %}
+        {% include '@bazar/inputs/select.twig' with {'field': {
+            'name':'export',
+            'propertyName':'export',
+            'maxChars':null,
+            'required':true,
+            'type':'select',
+            'hint':  _t('CUSTOM_ARCHIVE_ACTION_SELECT_TYPE') ,
+            'label': _t('CUSTOM_ARCHIVE_ACTION_SELECT_TYPE') 
+            }, 
+            'options': {
+                'pages' : _t('CUSTOM_ARCHIVE_ACTION_PAGES') ,
+                'forms' : _t('CUSTOM_ARCHIVE_ACTION_FORMS') ,
+                'entries' : _t('CUSTOM_ARCHIVE_ACTION_ENTRIES') 
+                }
+            ,'value':(export ?? '')} %}
+                {# ,
+                'sql' : _t('CUSTOM_ARCHIVE_ACTION_SQL'),
+                'filesAndCache' : _t('CUSTOM_ARCHIVE_ACTION_FILES_AND_CACHE') ,
+                'site' : _t('CUSTOM_ARCHIVE_ACTION_SITE')  #}
+        <div class="form-actions form-group">
+            <div class="col-sm-9 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary">{{ _t('TAGS_DOWNLOAD') }}</button>
             </div>
-        </form>
-        <form action="" method="post" name="formulaire" id="formulaire" enctype="multipart/form-data" class="form-horizontal">
-            <input type="hidden" name="password_confirm_md5" value="{{ password_confirm }}">
-            <div class="form-actions form-group">
-                <div class="col-sm-9 col-sm-offset-3">
-                    <button type="submit" class="btn btn-info">{{ _t('CUSTOM_ARCHIVE_ACTION_RETURN') }}</button>
-                </div>
-            </div>
-        </form>
-    {% else %}
-        <form action="" method="post" name="formulaire" id="formulaire" enctype="multipart/form-data" class="form-horizontal">
-            {% if password_confirm and not wrongPassword %}
-                <input type="hidden" name="password_confirm_md5" value="{{ password_confirm }}">
-            {% else %}
-                <div class="alert alert-info">{{ _t('CUSTOM_ARCHIVE_ACTION_CONFIRM_PASSWORD_TEXT') }}</div>
-                <div><strong>{{ _t('CUSTOM_ARCHIVE_ACTION_USERNAME_ANNONCE') }}</strong>{{ userName }}</div>
-                {% include '@bazar/inputs/password.twig' with {'field': {
-                    'name':'password_confirm',
-                    'maxChars':'500',
-                    'required':true,
-                    'type':'password',
-                    'hint': ( wrongPassword ? _t('CUSTOM_ARCHIVE_ACTION_WRONG_PASSWORD') : _t('CUSTOM_ARCHIVE_ACTION_ASK_PASSWORD')) ,
-                    'label': ( wrongPassword ? _t('CUSTOM_ARCHIVE_ACTION_WRONG_PASSWORD') : _t('CUSTOM_ARCHIVE_ACTION_ASK_PASSWORD'))
-                    }} %}
-            {% endif %}
-            {% if export %}
-                <input type="hidden" name="export" value="{{ export }}">
-            {% else %}
-                {% include '@bazar/inputs/select.twig' with {'field': {
-                    'name':'export',
-                    'propertyName':'export',
-                    'maxChars':null,
-                    'required':true,
-                    'type':'select',
-                    'hint':  _t('CUSTOM_ARCHIVE_ACTION_SELECT_TYPE') ,
-                    'label': _t('CUSTOM_ARCHIVE_ACTION_SELECT_TYPE') 
-                    }, 
-                    'options': {
-                        'pages' : _t('CUSTOM_ARCHIVE_ACTION_PAGES') ,
-                        'forms' : _t('CUSTOM_ARCHIVE_ACTION_FORMS') ,
-                        'entries' : _t('CUSTOM_ARCHIVE_ACTION_ENTRIES') 
-                        }
-                    } %}
-                        {# ,
-                        'sql' : _t('CUSTOM_ARCHIVE_ACTION_SQL'),
-                        'filesAndCache' : _t('CUSTOM_ARCHIVE_ACTION_FILES_AND_CACHE') ,
-                        'site' : _t('CUSTOM_ARCHIVE_ACTION_SITE')  #}
-            {% endif %}
-            <div class="form-actions form-group">
-                <div class="col-sm-9 col-sm-offset-3">
-                    <button type="submit" class="btn btn-primary">{{ buttonName }}</button>
-                </div>
-            </div>
-        </form>
-    {% endif %}
+        </div>
+    </form>
 </div>

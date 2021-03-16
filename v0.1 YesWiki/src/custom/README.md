@@ -49,20 +49,13 @@ Be able to archive pages/forms/entries/sql/website by downloading a zip file.
 ## Files
 
 /actions/ArchiveAction.php
-config.yml
-/controllers/ArchiveController.php
 /lang/custom_fr.inc.php
-/handlers/ArchiveDownloadZipHandler.php
-/templates/custom/alert-message.twig
 /templates/custom/archive.twig.twig
-wiki.php
 
 ## Use
 
 In a page write `{{archive}}`.
 All others parameters are asked by forms.
-
-You can use the handler `/ArchiveDownloadZip` to do the same.
 
 **Before using**, you need to define a parameter in wakka.congig.php with a table with authorized usernames.
 Example of wakka.config.php
