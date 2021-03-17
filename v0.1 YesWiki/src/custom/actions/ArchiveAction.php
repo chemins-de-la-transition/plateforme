@@ -252,7 +252,7 @@ class ArchiveAction extends YesWikiAction
     {
         $this->dbService = $this->getService(DbService::class) ;
 
-        $tablesPrefix = $this->dbService->prefixTable('');
+        $tablesPrefix = trim($this->dbService->prefixTable(''));
         $tablesPostfix = [];
         // get Tables
         $tables = $this->dbService->loadAll("show tables");
@@ -263,7 +263,10 @@ class ArchiveAction extends YesWikiAction
             if (!is_array($tableInfo)) {
                 return ['error.log' => 'Error in Archive->getSQL() : $tableInfo should be an array !'];
             }
-            $tablesPostfix[] = array_values($tableInfo)[0];
+            $tableName = array_values($tableInfo)[0];
+            if (strpos($tableName,$tablesPrefix) === 0) {
+                $tablesPostfix[] = $tableName;
+            }
         }
 
         // generate file
