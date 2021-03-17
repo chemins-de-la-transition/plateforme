@@ -1,4 +1,5 @@
 <?php
+/*vim: set expandtab tabstop=2 shiftwidth=2: */
 
 $GLOBALS['translations'] = array_merge(
     $GLOBALS['translations'],
@@ -15,8 +16,9 @@ $GLOBALS['translations'] = array_merge(
     'CUSTOM_ARCHIVE_ACTION_FORMS' => 'tous les formulaires' ,
     'CUSTOM_ARCHIVE_ACTION_ENTRIES' => 'toutes les fiches' ,
     'CUSTOM_ARCHIVE_ACTION_SQL' => 'la base SQL' ,
-    'CUSTOM_ARCHIVE_ACTION_FILES_AND_CACHE' => 'les dossiers Files et Cache' ,
-    'CUSTOM_ARCHIVE_ACTION_SITE' => 'tout le site' ,
+    'CUSTOM_ARCHIVE_ACTION_FILES_AND_CACHE' => 'les dossiers Files et Cache (LONG)' ,
+    'CUSTOM_ARCHIVE_ACTION_SITE' => 'tout le site sauf vendor (LONG)' ,
+    'CUSTOM_ARCHIVE_ACTION_CUSTOM' => 'tout le dossier custom' ,
     'CUSTOM_ARCHIVE_ACTION_SELECT_TYPE' => 'Choisir le type de données' ,
     'CUSTOM_ARCHIVE_ACTION_DOWNLOAD' => 'Télécharger le fichier' ,
     'CUSTOM_ARCHIVE_ACTION_OPTION' => 'L\'option ' ,
