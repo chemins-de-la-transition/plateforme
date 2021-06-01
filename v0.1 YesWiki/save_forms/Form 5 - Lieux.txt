@@ -112,4 +112,3 @@ labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 5 --> </div><!
 labelhtml***<script>var list_elements = document.getElementsByClassName("moderation-a-afficher") ; for (id_item in list_elements){if (document.querySelector("#balise-de-test-moderation>div") != null) {list_elements[id_item].style = ""}};/* Gestion affichage en cas d'erreur de saisie */ document.getElementsByTagName("body")[0].onload = function() { document.querySelector("form#formulaire .form-actions button.btn[type=submit]").onclick = function() { $('#formulaire .nav-tabs .active').removeClass('active');  $('#formulaire .tab-pane.active').removeClass('active');  $('#formulaire .tab-pane').addClass('active');    window.dispatchEvent(new Event('resize')); };};</script>*** *** ***
 labelhtml***<script>defineAutoUpdateDepartment();</script>*** *** ***
 acls*** * ***% @moderateurs*** * ***
-cleandata***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** ***

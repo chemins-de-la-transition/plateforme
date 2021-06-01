@@ -66,7 +66,7 @@ Example of wakka.config.php
 ```
 
 To get data with curl call :
-`https://yoursite.ext/?APage/ArchiveDownloadZip`
+`https://yoursite.ext/?APageWithArchiveAction
 with parameter in GET or POST : 
  - `export` with value `pages`,`forms`, `entries` (and soon `sql` or `site`)
 with parameter in POST : 
@@ -153,24 +153,6 @@ Be able to have add comment in a page not displayed in the html.
 ## Use
 
 `{{comment  ...}}` : tout ce qui est entre `comment`et `}}` n'est pas affiché ni inclus dans le html.
-
-
-# CleanDataField
-
-## Aim
-
-Remove unwanted fields saved in an entry.
-
-## Files
-
-/fields/CleanDataField.php
-
-## Use
-
-In a form, use custom field with this code.
-
-`cleandata***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** ***`
-
 
 # CustomSendMailField
 
