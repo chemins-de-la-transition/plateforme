@@ -8,5 +8,7 @@ if (!defined("WIKINI_VERSION")) {
 **/
 
 if ($this->UserIsAdmin()){
-    $GLOBALS['js'] = str_replace('/tools/bazar/presentation/javascripts/form-edit-template.js"></script>', '?' . $this->config['root_page'] . '/formEditTemplateCdlt"></script>', $GLOBALS['js']);
+    $pattern = '/(?<=\/)(tools\/bazar\/presentation\/javascripts\/form-edit-template\.js(?:\?v=[0-9-]*)?)(?="><\/script>)/';
+    $replacement = '?' . $this->config['root_page'] . '/formEditTemplateCdlt';
+    $GLOBALS['js'] = preg_replace($pattern,$replacement,$GLOBALS['js']);
 }
