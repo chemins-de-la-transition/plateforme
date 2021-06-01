@@ -140,20 +140,6 @@ Add a title for bazarliste configured to display only owner entries.
 
 `{{BazarUserPageCDLT titre="LE TITRE" ...}}` le reste comme BazarListeAction.
 
-# CommentAction
-
-## Aim
-
-Be able to have add comment in a page not displayed in the html.
-
-## Files
-
-/actions/CommentAction.php
-
-## Use
-
-`{{comment  ...}}` : tout ce qui est entre `comment`et `}}` n'est pas affiché ni inclus dans le html.
-
 # CustomSendMailField
 
 ## Aim
