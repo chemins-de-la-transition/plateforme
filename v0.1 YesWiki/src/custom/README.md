@@ -1,17 +1,3 @@
-# _nav
-
-## Aim
-
-Activate the option "hideifnoaccess" for nav
-
-## Files
-
-/actions/__nav.php
-
-## Use
-
-Add the parameter "hideifnoaccess" in `{{nav hideifnoaccess="true" ...}}`
-
 # CustomSendMailField
 
 ## Aim
