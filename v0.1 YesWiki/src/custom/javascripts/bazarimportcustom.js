@@ -1,17 +1,28 @@
+var listImportedEntries = [];
+
 function extractgeo(){
     // get inputs
     let inputs = $('form > #accordion-import > label:not(.gps-ready) > input[type=checkbox]:not(.error-adress):checked');
+    listImportedEntries = [];
     $(inputs).each(function (){
         let entry = decodeBase64FromAnchor($(this));
         if (!entry) return false;
+        // save id
+        let name = $(this).attr("name");
+        if (!name) {
+            console.log('name not defined');
+            return false;
+        }
+        let id_fiche = entry.id_fiche ?? false;
+        if (!id_fiche) {
+            console.log('No id_fiche !')
+            return false;
+        }
+        listImportedEntries[id_fiche] = $(this);
+        console.log(id_fiche+' : searching gps data');
         // check gps
         if (!entry.bf_latitude || !entry.bf_longitude) {
             // generate gps async
-            let id_fiche = entry.id_fiche ?? false;
-            if (!id_fiche) {
-                console.log('No id_fiche !')
-                return false;
-            }
             if (!$(this).hasClass('remove-adress')){
                 var bf_adresse = entry.bf_adresse ?? '';
                 var bf_adresse1 = entry.bf_adresse1 ?? '';
@@ -26,6 +37,7 @@ function extractgeo(){
 
             updateAddress(id_fiche,bf_adresse,bf_adresse1,bf_adresse2,bf_ville,bf_code_postal);
         } else {
+            console.log(id_fiche+' : found gps data - no update');
             // add class
             $(this).parent().addClass('gps-ready');
         }
@@ -164,7 +176,7 @@ function testGeocodage(address,id){
 
     geocodage( address, 
         function (lon,lat){
-            var elem = findBase64Anchor(id);
+            var elem = listImportedEntries[id];
             if (!elem) {
                 console.log('No elem found for id : '+id+' !')
                 return false;
@@ -175,6 +187,7 @@ function testGeocodage(address,id){
                 return false;
             }
             
+            console.log(id+' : gps data fond lon: '+lon+' ,lat: '+lat);
             $(elem).removeClass('remove-adress');
             $(elem).removeClass('error-adress');
             $(elem).parent().addClass('gps-ready');
@@ -189,8 +202,8 @@ function testGeocodage(address,id){
             $(elem).val(base64);
         }, 
         function (msg){
-            var elem = findBase64Anchor(id);
-            consolge.log('error msg : '+msg);
+            var elem = listImportedEntries[id];
+            console.log(id+' ,error msg : '+msg);
             if (!elem) {
                 console.log('No elem found for id : '+id+' !')
                 return false;
@@ -203,11 +216,6 @@ function testGeocodage(address,id){
             }
         }
     );
-}
-
-function findBase64Anchor(id){
-    var elem = $('form > #accordion-import > label > input[name="importfiche['+id+']"]').first();
-    return elem;
 }
 
 function decodeBase64FromAnchor(elem){
@@ -223,6 +231,7 @@ function decodeBase64FromAnchor(elem){
         console.log('no values decoded for '+JSON.stringify(elem));
         return false;
     }
+    // let formattedDec = decodeURIComponent(escape(dec)) ;
     var entry = unserialize(dec) ;
     return entry;
 }
