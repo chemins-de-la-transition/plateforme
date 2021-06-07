@@ -1,9 +1,13 @@
 var listImportedEntries = [];
+var requestsCache = [];
+var requests = [];
+var inCourse = false;
 
 function extractgeo(){
     // get inputs
     let inputs = $('form > #accordion-import > label:not(.gps-ready) > input[type=checkbox]:not(.error-adress):checked');
     listImportedEntries = [];
+    requests = [];
     $(inputs).each(function (){
         let entry = decodeBase64FromAnchor($(this));
         if (!entry) return false;
@@ -19,7 +23,6 @@ function extractgeo(){
             return false;
         }
         listImportedEntries[id_fiche] = $(this);
-        console.log(id_fiche+' : searching gps data');
         // check gps
         if (!entry.bf_latitude || !entry.bf_longitude) {
             // generate gps async
@@ -42,6 +45,7 @@ function extractgeo(){
             $(this).parent().addClass('gps-ready');
         }
     });
+    readRequests();
 }
 //http://www.navioo.com/javascript/tutorials/Javascript_unserialize_1614.html
 function unserialize(data){
@@ -169,39 +173,52 @@ function unserialize(data){
 function updateAddress(id_fiche,bf_adresse,bf_adresse1,bf_adresse2,bf_ville,bf_code_postal) {
     var address = [bf_adresse,bf_adresse1,bf_adresse2,bf_ville,bf_code_postal].join(' ');
     address = address.replace(/\\("|\'|\\)/g, " ").trim();
-    testGeocodage(address,id_fiche);
+    requests.push({'address':address,'id_fiche':id_fiche});
+    // testGeocodage(address,id_fiche);
+}
+
+var requestIndex = 0;
+function readRequests(j = 0){
+    if (j > 5 || j < 0){
+        j = 0;
+        requestIndex = requestIndex +1;
+    } 
+    if (!requests[requestIndex]){
+        return false;
+    }
+    if (j == 0){
+        inCourse = true;
+        testGeocodage(requests[requestIndex].address,requests[requestIndex].id_fiche);
+    }
+    setTimeout(function(){
+        console.log('inCourse (j = '+j+',request = '+requests[requestIndex].address+', id = '+requests[requestIndex].id_fiche+')');
+        if (inCourse){
+            readRequests(j+1);
+        } else {
+            readRequests(-1);
+        }
+    },1000); // wait on second before checking inCourse
 }
 
 function testGeocodage(address,id){
+    
+    console.log(id+' : searching gps data');
+    if (requestsCache[address]){
+        postGeocodage(requestsCache[address].lon,requestsCache[address].lat);
+        return false;
+    }
 
-    geocodage( address, 
+    geocodage( address,
         function (lon,lat){
-            var elem = listImportedEntries[id];
-            if (!elem) {
-                console.log('No elem found for id : '+id+' !')
-                return false;
-            }
-            let entry = decodeBase64FromAnchor(elem);
-            if (!entry) {
-                console.log('No entry decoded for id : '+id+' !')
-                return false;
-            }
-            
-            console.log(id+' : gps data fond lon: '+lon+' ,lat: '+lat);
-            $(elem).removeClass('remove-adress');
-            $(elem).removeClass('error-adress');
-            $(elem).parent().addClass('gps-ready');
-            entry['bf_latitude'] = lat;
-            entry['bf_longitude'] = lon;
-            let data = serialize(entry);
-            if (!data) {
-                console.log('No data serialized for id : '+id+', entry : '+JSON.stringify(entry)+' !')
-                return false;
-            }
-            let base64 = btoa(data);
-            $(elem).val(base64);
+            requestsCach[address] = {
+                'lon':lon,
+                'lat':lat
+            };
+            postGeocodage(lon,lat);
+            inCourse = false;
         }, 
         function (msg){
+            inCourse = false;
             var elem = listImportedEntries[id];
             console.log(id+' ,error msg : '+msg);
             if (!elem) {
@@ -216,6 +233,33 @@ function testGeocodage(address,id){
             }
         }
     );
+}
+
+function postGeocodage(lon,lat){
+    var elem = listImportedEntries[id];
+    if (!elem) {
+        console.log('No elem found for id : '+id+' !')
+        return false;
+    }
+    let entry = decodeBase64FromAnchor(elem);
+    if (!entry) {
+        console.log('No entry decoded for id : '+id+' !')
+        return false;
+    }
+    
+    console.log(id+' : gps data fond lon: '+lon+' ,lat: '+lat);
+    $(elem).removeClass('remove-adress');
+    $(elem).removeClass('error-adress');
+    $(elem).parent().addClass('gps-ready');
+    entry['bf_latitude'] = lat;
+    entry['bf_longitude'] = lon;
+    let data = serialize(entry);
+    if (!data) {
+        console.log('No data serialized for id : '+id+', entry : '+JSON.stringify(entry)+' !')
+        return false;
+    }
+    let base64 = btoa(data);
+    $(elem).val(base64);
 }
 
 function decodeBase64FromAnchor(elem){
