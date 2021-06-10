@@ -208,34 +208,39 @@ function testGeocodage(address,id){
         return false;
     }
 
-    geocodage( address,
-        function (lon,lat){
-            requestsCach[address] = {
-                'lon':lon,
-                'lat':lat
-            };
-            postGeocodage(lon,lat);
-            inCourse = false;
-        }, 
-        function (msg){
-            inCourse = false;
-            var elem = listImportedEntries[id];
-            console.log(id+' ,error msg : '+msg);
-            if (!elem) {
-                console.log('No elem found for id : '+id+' !')
-                return false;
+    try {
+        geocodage( address,
+            function (lon,lat){
+                requestsCache[address] = {
+                    'lon':lon,
+                    'lat':lat
+                };
+                postGeocodage(lon,lat, id);
+                inCourse = false;
+            }, 
+            function (msg){
+                inCourse = false;
+                var elem = listImportedEntries[id];
+                console.log(id+' ,error msg : '+msg);
+                if (!elem) {
+                    console.log('No elem found for id : '+id+' !')
+                    return false;
+                }
+                if ($(elem).hasClass('remove-adress')){
+                    $(elem).removeClass('remove-adress');
+                    $(elem).addClass('error-adress');
+                } else {
+                    $(elem).addClass('remove-adress');
+                }
             }
-            if ($(elem).hasClass('remove-adress')){
-                $(elem).removeClass('remove-adress');
-                $(elem).addClass('error-adress');
-            } else {
-                $(elem).addClass('remove-adress');
-            }
-        }
-    );
+        );
+    } catch (error) {
+        console.log(error.message);
+        inCourse = false;
+    }
 }
 
-function postGeocodage(lon,lat){
+function postGeocodage(lon,lat, id){
     var elem = listImportedEntries[id];
     if (!elem) {
         console.log('No elem found for id : '+id+' !')
