@@ -1,0 +1,34 @@
+{% if form.bn_id_nature != 5 %}
+  {{ include_javascript('tools/bazar/libs/bazar.js') }}
+{% endif %}
+
+<h3 class="titre_type_fiche">{{ _t('BAZ_TITRE_SAISIE_FICHE') }}&nbsp;{{ form.bn_label_nature }}</h3>
+<form action="" method="post" name="formulaire" id="formulaire" enctype="multipart/form-data" class="form-horizontal" {% if not showConditions %}novalidate{% endif %}>
+  {% if showConditions %}
+    {{ form.bn_condition|raw }}
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" required name="accept_condition" value="1">
+        {{ _t('BAZ_ACCEPTE_CONDITIONS') }}
+      </label>
+    </div>
+  {% else %}
+    {% for renderedInput in renderedInputs %}
+      {{ renderedInput|raw }}
+    {% endfor %}
+  {% endif %}
+  <div class="form-actions form-group">
+    <div class="col-sm-9 col-sm-offset-3">
+      <button type="submit" class="btn btn-primary">{{ _t('BAZ_VALIDER') }}</button>
+      <a class="btn btn-xs btn-default" onclick="javascript:history.back()">{{ _t('BAZ_ANNULER') }}</a>
+    </div>
+  </div>
+  <input name="antispam" value="0" type="hidden">
+  <input name="id_typeannonce" value="{{ form.bn_id_nature }}" type="hidden">
+  {% if entryId %}
+    <input name="id_fiche" value="{{ entryId }}" type="hidden">
+  {% endif %}
+  {% if passwordForEditing %}
+    <input name="password_for_editing" value="{{ passwordForEditing }}" type="hidden">
+  {% endif %}
+</form>
