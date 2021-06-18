@@ -3,7 +3,7 @@ labelhtml***<ul class="nav nav-tabs" role="tablist"><li role="presentation" clas
 labelhtml***<div role="tabpanel" class="tab-pane active" id="menu1Presentation"><br><br><!--ouvre le premier onglet-->*** *** ***
 labelhtml***<h2 class="text-center">Présentation</h2>*** *** ***
 texte***bf_titre***Nom du lieu*** *** *** *** ***text***1*** *** *** * ***% @moderateurs*** ***name,schema:name*** ***
-linkfiche***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** ***
+linkfiche***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** *** ***
 image***bf_image***Logo***140***140***600***600***right***0*** *** *** * ***% @moderateurs*** ***image,schema:image*** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 checkboxfiche***6***Thématique*** *** *** ***bf_thematique_officielle*** ***0*** ***Thématique officielle déjà couverte par un parcours*** * ***% @moderateurs*** *** ***radioListeOuiNonbf_officiel=oui***
@@ -32,8 +32,8 @@ labelhtml***<div id="listeListeOuiNonbf_text_presdecheznous_oui" style="display:
 lien_internet***text_presdecheznous***Fiche Près de chez nous***40***255*** *** ***url***0*** *** ***% @moderateurs***% @moderateurs*** ***url,schema:url*** ***
 labelhtml***</div><div id="listeListeOuiNonbf_text_presdecheznous_non" style="display:none;"><a href="https://presdecheznous.fr/elements/add" target="blank">Créez votre fiche Près de chez nous</a></div>*** *** ***
 texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***url,schema:telephone*** ***
-champs_mail***bf_mail***Email*** *** *** ***form*** ***1*** *** *** * ***% @moderateurs*** ***url,schema:email*** ***
-customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_mail***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *******
+champs_mail***bf_mail***Email*** *** *** ***form*** ***1***0*** *** * ***% @moderateurs*** ***url,schema:email*** ***
+customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_mail***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *** *******
 texte***bf_contact_principal***Nom du contact principal*** *** *** *** ***text***1*** *** ***% @moderateurs***% @moderateurs*** ***Person:name,schema:Person:name*** ***
 radio***ListeOuiNon***Je suis en lien avec la structure : *** *** *** ***implication_structure*** ***0*** ***impliqué  salarié  en lien direct  ...***% @moderateurs***% @moderateurs*** *** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
@@ -52,7 +52,7 @@ texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text**
 texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** *** * ***% @moderateurs*** ***location,schema:postalCode*** ***
 texte***bf_ville***Ville***50***80*** *** ***text***1*** *** *** * ***% @moderateurs*** ***location,schema:addressLocality*** ***
 liste***ListeDepartements***Département*** *** *** ***bf_department*** ***0*** *** *** * ***% @moderateurs*** *** *** ***
-carte_google***bf_latitude***bf_longitude*** *** ***
+map***bf_latitude***bf_longitude*** *** ***
 textelong***textarea_1605712029235***Accès transports en commun*** ***5*** *** ***nohtml***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu2Coordonnees" role="tab" data-toggle="tab"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 2. Coordonnées</a><a class="btn btn-primary pull-right" href="#menu4Hebergement" role="tab" data-toggle="tab">Onglet 4. Accueil-hébergement<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 2 et un bouton pour passer à l'onglet 4-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 3 --> <div role="tabpanel" class="tab-pane" id="menu4Hebergement"><br><br><!-- ouvre l'onglet 4-->*** *** ***
@@ -112,3 +112,4 @@ labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 5 --> </div><!
 labelhtml***<script>var list_elements = document.getElementsByClassName("moderation-a-afficher") ; for (id_item in list_elements){if (document.querySelector("#balise-de-test-moderation>div") != null) {list_elements[id_item].style = ""}};/* Gestion affichage en cas d'erreur de saisie */ document.getElementsByTagName("body")[0].onload = function() { document.querySelector("form#formulaire .form-actions button.btn[type=submit]").onclick = function() { $('#formulaire .nav-tabs .active').removeClass('active');  $('#formulaire .tab-pane.active').removeClass('active');  $('#formulaire .tab-pane').addClass('active');    window.dispatchEvent(new Event('resize')); };};</script>*** *** ***
 labelhtml***<script>defineAutoUpdateDepartment();</script>*** *** ***
 acls*** * ***% @moderateurs*** * ***
+replacebazarjs*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
