@@ -8,7 +8,7 @@ listedatedeb***bf_date_fin_evenement***Fin du parcours*** *** *** *** *** ***1**
 checkbox***ListeInformationsSurLesEvenements***Informations*** *** *** ***bf_infos*** ***0*** *** *** * *** * *** *** *** ***
 texte***bf_site_internet***Site Web***80***255*** *** ***text***0*** *** *** * *** * *** ***url,schema:url*** ***
 texte***bf_contact***Personne à contacter*** *** *** *** ***text***1*** *** *** * *** * *** ***person,schema:person*** ***
-champs_mail***bf_mail***Email*** *** *** ***form*** ***0*** *** *** * *** * *** ***url,schema:email*** ***
+champs_mail***bf_mail***Email*** *** *** ***form*** ***0***0*** *** * *** * *** ***url,schema:email*** ***
 texte***bf_tel***Téléphone***15***15*** *** ***text***0*** ***ATTENTION : donnée publique*** * *** * *** ***url,schema:telephone*** ***
 image***bf_image***Image (facultatif)***140***140***600***600***right***0*** *** *** * *** * *** ***image,schema:image*** ***
 fichier***fichier***Documents***20000000*** *** *** ***file***0*** *** *** * *** * *** ***document,schema:digitalDocument*** ***

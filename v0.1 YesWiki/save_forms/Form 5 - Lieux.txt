@@ -2,103 +2,103 @@ labelhtml***<i><span class="symbole_obligatoire"></span> : champs requis</i>*** 
 labelhtml***<ul class="nav nav-tabs" role="tablist"><li role="presentation" class="active"><a href="#menu1Presentation" role="tab" data-toggle="tab" onclick="document.querySelector('#formulaire .form-actions').classList.remove('view');">1. Présentation</a></li><li role="presentation"><a href="#menu2Coordonnees" role="tab" data-toggle="tab" onclick="document.querySelector('#formulaire .form-actions').classList.remove('view');">2. Coordonnées</a></li><li role="presentation"><a href="#menu3Localisation" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'));document.querySelector('#formulaire .form-actions').classList.remove('view');">3. Localisation</a></li><li role="presentation"><a href="#menu4Hebergement" role="tab" data-toggle="tab" onclick="document.querySelector('#formulaire .form-actions').classList.remove('view');">4. Type d'accueil-hébergement</a></li><li role="presentation"><a href="#menu5Preferences" role="tab" data-toggle="tab" onclick="document.querySelector('#formulaire .form-actions').classList.add('view');">5. Informations utiles</a></li></ul><div class="tab-content"><!--indique qu'il y aura 5 onglets-->*** *** ***
 labelhtml***<div role="tabpanel" class="tab-pane active" id="menu1Presentation"><br><br><!--ouvre le premier onglet-->*** *** ***
 labelhtml***<h2 class="text-center">Présentation</h2>*** *** ***
-texte***bf_titre***Nom du lieu*** *** *** *** ***text***1*** *** *** * ***% @moderateurs*** ***name,schema:name*** ***
+texte***bf_titre***Nom du lieu*** *** *** *** ***text***1*** *** *** * ***%,@moderateurs*** ***name,schema:name*** ***
 linkfiche***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** *** ***
-image***bf_image***Logo***140***140***600***600***right***0*** *** *** * ***% @moderateurs*** ***image,schema:image*** ***
+image***bf_image***Logo***140***140***600***600***right***0*** *** *** * ***%,@moderateurs*** ***image,schema:image*** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-checkboxfiche***6***Thématique*** *** *** ***bf_thematique_officielle*** ***0*** ***Thématique officielle déjà couverte par un parcours*** * ***% @moderateurs*** *** ***radioListeOuiNonbf_officiel=oui***
-checkboxfiche***6***Autres thématiques*** *** *** ***bf_autre_thematiques*** ***0*** ***Thématique prochainement couverte par un parcours*** * ***% @moderateurs*** *** ***radioListeOuiNonbf_officiel=non***
+checkboxfiche***6***Thématique*** *** *** ***bf_thematique_officielle*** ***0*** ***Thématique officielle déjà couverte par un parcours*** * ***%,@moderateurs*** *** ***radioListeOuiNonbf_officiel=oui***
+checkboxfiche***6***Autres thématiques*** *** *** ***bf_autre_thematiques*** ***0*** ***Thématique prochainement couverte par un parcours*** * ***%,@moderateurs*** *** ***radioListeOuiNonbf_officiel=non***
 labelhtml***Une page d'aide permet d'avoir une <a href="?Aide_ParcoursThematiques" target="blank" class="modalbox">description détaillée des différentes thématiques couvertes par les parcours.</a> Vous pouvez en outre nous indiquer les thématiques et les sous-domaines de votre lieu non mentionnées ici dans le champ Mots clés ci-dessous.*** *** ***
 labelhtml***</div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-textelong***bf_description_courte***Courte description du lieu***5***5*** *** ***nohtml***0*** *** *** * ***% @moderateurs*** ***schema:description*** ***
-tags***bf_motscles***Mots-clés*** *** *** *** *** ***0*** ***Validez par "Entrée" pour séparer les mots-clés*** * ***% @moderateurs*** *** *** ***
+textelong***bf_description_courte***Courte description du lieu***5***5*** *** ***nohtml***0*** *** *** * ***%,@moderateurs*** ***schema:description*** ***
+tags***bf_motscles***Mots-clés*** *** *** *** *** ***0*** ***Validez par "Entrée" pour séparer les mots-clés*** * ***%,@moderateurs*** *** *** ***
 labelhtml***Vous pouvez saisir dans la zone ci-dessus des mots-clés que vous associez à votre lieu. Appuyez sur Entrée pour valider chaque mot.</div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-checkbox***ListeTypeDAccueil***Type de voyage*** *** *** ***type_accueil*** ***1*** ***Voir la description ci-dessous.*** * ***% @moderateurs*** *** *** ***
+checkbox***ListeTypeDAccueil***Type de voyage*** *** *** ***type_accueil*** ***1*** ***Voir la description ci-dessous.*** * ***%,@moderateurs*** *** *** ***
 labelhtml***Nous vous proposons de compléter des informations sur le type de voyage que vous pouvez fournir. Une page d'aide permet d'avoir une <a href="?AideTypeDeVoyage" target="blank" class="modalbox">description détaillée des différents types de voyage</a></div>*** *** ***
-radio***ListeOuiNon***Tout ou une partie des formations proposées sont certifiantes*** *** *** ***formations_certifiantes_radio*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+radio***ListeOuiNon***Tout ou une partie des formations proposées sont certifiantes*** *** *** ***formations_certifiantes_radio*** ***0*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 labelhtml***Nous vous proposons de choisir une ou plusieurs compétences proposées à l'apprentissage dans les activités du lieu.*** *** ***
-checkboxfiche***8***Compétences proposées à l'apprentissage*** *** *** *** *** ***0*** *** *** * ***% @moderateurs*** *** *** ***
+checkboxfiche***8***Compétences proposées à l'apprentissage*** *** *** *** *** ***0*** *** *** * ***%,@moderateurs*** *** *** ***
 labelhtml***S'il en manque une&#44;  vous pouvez l'ajouter avec le bouton suivant : <a href="?AjouterUneCompetence" target="blank" class="btn btn-primary">Ajouter une nouvelle compétence</a></div>*** *** ***
 labelhtml***<a class="btn btn-primary pull-right" href="#menu2Coordonnees" role="tab" data-toggle="tab">Onglet 2. Coordonnées<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour passer à l'onglet 2-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 1 --> <div role="tabpanel" class="tab-pane" id="menu2Coordonnees"><br><br><!-- ouvre l'onglet 2-->*** *** ***
 labelhtml***<h2 class="text-center">Coordonnées</h2>*** *** ***
-lien_internet***bf_site_internet***Site Internet***40***255*** *** ***url***0*** *** *** * ***% @moderateurs*** ***url,schema:WebPage*** ***
-lien_internet***text_facebook***Page Facebook***40***255*** *** ***url***0*** *** *** * ***% @moderateurs*** ***url,schema:url*** ***
-liste***ListeOuiNon***Êtes-vous référencé sur la carte Près de chez nous ?*** *** *** ***bf_text_presdecheznous*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+lien_internet***bf_site_internet***Site Internet*** *** *** *** *** ***0*** *** *** * ***%,@moderateurs*** ***url,schema:WebPage*** ***
+lien_internet***text_facebook***Page Facebook*** *** *** *** *** ***0*** *** *** * ***%,@moderateurs*** ***url,schema:url*** ***
+liste***ListeOuiNon***Êtes-vous référencé sur la carte Près de chez nous ?*** *** *** ***bf_text_presdecheznous*** ***0*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***<div id="listeListeOuiNonbf_text_presdecheznous_oui" style="display:none;">*** *** ***
-lien_internet***text_presdecheznous***Fiche Près de chez nous***40***255*** *** ***url***0*** *** ***% @moderateurs***% @moderateurs*** ***url,schema:url*** ***
+lien_internet***text_presdecheznous***Fiche Près de chez nous*** *** *** *** *** ***0*** *** ***%,@moderateurs***%,@moderateurs*** ***url,schema:url*** ***
 labelhtml***</div><div id="listeListeOuiNonbf_text_presdecheznous_non" style="display:none;"><a href="https://presdecheznous.fr/elements/add" target="blank">Créez votre fiche Près de chez nous</a></div>*** *** ***
-texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***url,schema:telephone*** ***
-champs_mail***bf_mail***Email*** *** *** ***form*** ***1***0*** *** * ***% @moderateurs*** ***url,schema:email*** ***
-customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_mail***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *** *******
-texte***bf_contact_principal***Nom du contact principal*** *** *** *** ***text***1*** *** ***% @moderateurs***% @moderateurs*** ***Person:name,schema:Person:name*** ***
-radio***ListeOuiNon***Je suis en lien avec la structure : *** *** *** ***implication_structure*** ***0*** ***impliqué  salarié  en lien direct  ...***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***%,@moderateurs***%,@moderateurs*** ***url,schema:telephone*** ***
+champs_mail***bf_mail***Email*** *** *** ***form*** ***1***0*** *** * ***%,@moderateurs*** ***url,schema:email*** ***
+customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_mail***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_contact_principal***Nom du contact principal*** *** *** *** ***text***1*** *** ***%,@moderateurs***%,@moderateurs*** ***Person:name,schema:Person:name*** ***
+radio***ListeOuiNon***Je suis en lien avec la structure : *** *** *** ***implication_structure*** ***0*** ***impliqué  salarié  en lien direct  ...***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-texte***denomination_raison_sociale***Dénomination / Raison sociale*** *** *** *** ***text***0*** *** *** * ***% @moderateurs*** *** *** ***
+texte***denomination_raison_sociale***Dénomination / Raison sociale*** *** *** *** ***text***0*** *** *** * ***%,@moderateurs*** *** *** ***
 labelhtml***<a href="https://lescheminsdelatransition.org/plateforme/?Aide_DenominationRaisonSociale" class="modalbox">Aide sur la dénomination / raison sociale</a></div>*** *** ***
-liste***ListeTypeDeStructure***Type de structure*** *** *** *** *** ***0*** *** *** * ***% @moderateurs*** *** *** ***
-texte***bf_siret***SIRET*** ***13*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+liste***ListeTypeDeStructure***Type de structure*** *** *** *** *** ***0*** *** *** * ***%,@moderateurs*** *** *** ***
+texte***bf_siret***SIRET*** ***13*** *** ***text***0*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***<div id="ListeTypeDeStructure_Autre" style="display:none;">*** *** ***
-texte***bf_autre_type_structure***Autre type de structure :*** *** *** *** ***text***0*** *** *** * ***% @moderateurs*** *** *** ***
+texte***bf_autre_type_structure***Autre type de structure :*** *** *** *** ***text***0*** *** *** * ***%,@moderateurs*** *** *** ***
 labelhtml***</div>*** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu1Presentation" role="tab" data-toggle="tab"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 1. Présentation</a><a class="btn btn-primary pull-right" href="#menu3Localisation" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))">Onglet 3. Localisation<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 1 et un bouton pour passer à l'onglet 3-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 2 --> <div role="tabpanel" class="tab-pane" id="menu3Localisation"><br><br><!-- ouvre l'onglet 3-->*** *** ***
 labelhtml***<h2 class="text-center">Localisation</h2>*** *** ***
-texte***bf_adresse***Adresse***50***80*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***location,schema:streetAddress*** ***
-texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** ***location,schema:streetAddress*** ***
-texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** *** * ***% @moderateurs*** ***location,schema:postalCode*** ***
-texte***bf_ville***Ville***50***80*** *** ***text***1*** *** *** * ***% @moderateurs*** ***location,schema:addressLocality*** ***
-liste***ListeDepartements***Département*** *** *** ***bf_department*** ***0*** *** *** * ***% @moderateurs*** *** *** ***
-map***bf_latitude***bf_longitude*** *** ***
-textelong***textarea_1605712029235***Accès transports en commun*** ***5*** *** ***nohtml***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_adresse***Adresse***50***80*** *** ***text***0*** *** *** * ***%,@moderateurs*** ***location,schema:streetAddress*** ***
+texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text***0*** *** ***%,@moderateurs***%,@moderateurs*** ***location,schema:streetAddress*** ***
+texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** *** * ***%,@moderateurs*** ***location,schema:postalCode*** ***
+texte***bf_ville***Ville***50***80*** *** ***text***1*** *** *** * ***%,@moderateurs*** ***location,schema:addressLocality*** ***
+liste***ListeDepartements***Département*** *** *** ***bf_department*** ***0*** *** *** * ***%,@moderateurs*** *** *** ***
+map***bf_latitude***bf_longitude*** *** *** *** *** ***0***
+textelong***textarea_1605712029235***Accès transports en commun*** ***5*** *** ***nohtml***0*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu2Coordonnees" role="tab" data-toggle="tab"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 2. Coordonnées</a><a class="btn btn-primary pull-right" href="#menu4Hebergement" role="tab" data-toggle="tab">Onglet 4. Accueil-hébergement<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 2 et un bouton pour passer à l'onglet 4-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 3 --> <div role="tabpanel" class="tab-pane" id="menu4Hebergement"><br><br><!-- ouvre l'onglet 4-->*** *** ***
 labelhtml***<h2 class="text-center">Type d'accueil et hébergement</h2>*** *** ***
-checkbox***ListeAccessibilite***Accessibilité*** *** *** *** *** ***0*** *** *** * ***% @moderateurs*** *** *** ***
-texte***bf_capacite_restauration***Capacité de restauration***0*** *** *** ***number***0*** ***Nombre de couverts***% @moderateurs***% @moderateurs*** *** *** ***
-checkbox***ListeTypeDeLogement***Type de logement*** *** *** ***logement*** ***0*** *** *** * ***% @moderateurs*** *** *** ***
+checkbox***ListeAccessibilite***Accessibilité*** *** *** *** *** ***0*** *** *** * ***%,@moderateurs*** *** *** ***
+texte***bf_capacite_restauration***Capacité de restauration***0*** *** *** ***number***0*** ***Nombre de couverts***%,@moderateurs***%,@moderateurs*** *** *** ***
+checkbox***ListeTypeDeLogement***Type de logement*** *** *** ***logement*** ***0*** *** *** * ***%,@moderateurs*** *** *** ***
 labelhtml***<div id="checkboxListeTypeDeLogementlogement_chambre" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_chambre***Capacité d'hébergement en chambre individuelle***0*** *** *** ***number***0*** ***Nombre de chambres***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_capacite_hebergement_chambre***Capacité d'hébergement en chambre individuelle***0*** *** *** ***number***0*** ***Nombre de chambres***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_camping" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_camping***Capacité d'hébergement en camping***0*** *** *** ***number***0*** ***Nombre d'emplacements***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_capacite_hebergement_camping***Capacité d'hébergement en camping***0*** *** *** ***number***0*** ***Nombre d'emplacements***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_yourte_tipi" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_yourte_tipi***Capacité d'hébergement en yourte ou tipi***0*** *** *** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_capacite_hebergement_yourte_tipi***Capacité d'hébergement en yourte ou tipi***0*** *** *** ***number***0*** ***Nombre de couchages***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_cabane_mobilhome" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_cabane_mobilhome***Capacité d'hébergement en cabane ou mobilhome***0*** *** *** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_capacite_hebergement_cabane_mobilhome***Capacité d'hébergement en cabane ou mobilhome***0*** *** *** ***number***0*** ***Nombre de couchages***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_dortoir" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_dortoir***Capacité d'hébergement en dortoir***0*** *** *** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_capacite_hebergement_dortoir***Capacité d'hébergement en dortoir***0*** *** *** ***number***0*** ***Nombre de couchages***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***</div><div id="checkboxListeTypeDeLogementlogement_chezunvoisin" style="display:none;">*** *** ***
-texte***bf_capacite_hebergement_chezunvoisin***Capacité d'hébergement chez un voisin***0*** *** *** ***number***0*** ***Nombre de couchages***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_capacite_hebergement_chezunvoisin***Capacité d'hébergement chez un voisin***0*** *** *** ***number***0*** ***Nombre de couchages***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***</div>*** *** ***
-checkbox***ListeTypeDeVoyageurs***Qui aimeriez-vous accueillir ?*** *** *** ***bf_type_voyageurs*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
-radio***ListeOuiNon***Sans expérience requise*** *** *** ***bf_sans_experience_requise_voyageurs*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
-textelong***bf_mises_en_garde***Mises en garde, contraintes particulières d'accueil ?***255***5*** *** ***nohtml***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+checkbox***ListeTypeDeVoyageurs***Qui aimeriez-vous accueillir ?*** *** *** ***bf_type_voyageurs*** ***0*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
+radio***ListeOuiNon***Sans expérience requise*** *** *** ***bf_sans_experience_requise_voyageurs*** ***1*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
+textelong***bf_mises_en_garde***Mises en garde, contraintes particulières d'accueil ?***255***5*** *** ***nohtml***0*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu3Localisation" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 3. Localisation</a><a class="btn btn-primary pull-right" href="#menu5Preferences" role="tab" data-toggle="tab" onclick="document.querySelector('#formulaire .form-actions').classList.add('view');">Onglet 5. Informations utiles<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 3 et un bouton pour passer à l'onglet 5-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 4 --> <div role="tabpanel" class="tab-pane" id="menu5Preferences"><br><br><!-- ouvre l'onglet 5-->*** *** ***
 labelhtml***<h2 class="text-center">Informations utiles</h2>*** *** ***
 texte***bf_suivi***Interlocutrice, interlocuteur privilégié aux Chemins de la Transition*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** ***Person:name,schema:Person:name*** ***
 textelong***pref_contact***Préférences de contact*** ***3*** *** ***nohtml***0*** *** *** * ***@Lieux*** *** *** ***
 labelhtml***Nous avons à cœur de préserver votre temps. Indiquez ci-dessus vos disponibilités pour être contacté (exemple : uniquement par e-mail en novembre&#44;  uniquement par téléphone entre 18h et 19h&#44;  etc...)*** *** ***
-radio***ListeOuiNon***Les voyageurs et voyageuses peuvent-ils vous contacter directement ?*** *** *** ***bf_contact_direct_voyageurs*** ***1*** *** *** * ***% @moderateurs*** *** *** ***
-radio***ListeOuiNon***Les voyageurs et voyageuses  peuvent-ils venir de façon spontanée ?*** *** *** ***bf_venue_spontanee_voyageurs*** ***1*** *** *** * ***% @moderateurs*** *** *** ***
-radio***ListeOuiNon***Acceptez-vous ou organisez-vous des visites ponctuelles ?*** *** *** ***bf_visite_ponctuelle_voyageurs*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
-checkbox***ListeMois***Quelles sont les périodes propices à l'accueil ?*** *** *** ***bf_periodes_propices*** ***0*** *** *** * ***% @moderateurs*** *** *** ***
+radio***ListeOuiNon***Les voyageurs et voyageuses peuvent-ils vous contacter directement ?*** *** *** ***bf_contact_direct_voyageurs*** ***1*** *** *** * ***%,@moderateurs*** *** *** ***
+radio***ListeOuiNon***Les voyageurs et voyageuses  peuvent-ils venir de façon spontanée ?*** *** *** ***bf_venue_spontanee_voyageurs*** ***1*** *** *** * ***%,@moderateurs*** *** *** ***
+radio***ListeOuiNon***Acceptez-vous ou organisez-vous des visites ponctuelles ?*** *** *** ***bf_visite_ponctuelle_voyageurs*** ***1*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
+checkbox***ListeMois***Quelles sont les périodes propices à l'accueil ?*** *** *** ***bf_periodes_propices*** ***0*** *** *** * ***%,@moderateurs*** *** *** ***
 labelhtml***<div id="checkboxListeTypeDAccueiltype_accueil_WoofingChantiers" style="display:none;">*** *** ***
-liste***ListeOuiNon***Dans le cas du woofing,  avez-vous besoin de compétences ou d'expériences spécifiques ?*** *** *** ***bf_niveau_mini_woofing_competences*** ***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+liste***ListeOuiNon***Dans le cas du woofing,  avez-vous besoin de compétences ou d'expériences spécifiques ?*** *** *** ***bf_niveau_mini_woofing_competences*** ***0*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***<div id="listeListeOuiNonbf_niveau_mini_woofing_competences_oui" style="display:none;">*** *** ***
-textelong***bf_competences_woofing***Compétences/expériences spécifiques woofing*** ***3*** *** ***nohtml***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+textelong***bf_competences_woofing***Compétences/expériences spécifiques woofing*** ***3*** *** ***nohtml***0*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***</div></div>*** *** ***
-radio***ListeOuiNon***Souhaiteriez-vous que les Chemins de la Transition prennent en charge les réservations ?*** *** *** ***bf_gestion_reservations*** ***0*** ***Nous évaluons en ce moment les possibilités de prendre en charge les réservations.***% @moderateurs***% @moderateurs*** *** *** ***
-radio***ListeOuiNon***Souhaiteriez-vous que les Chemins de la Transition prennent en charge l'accueil sur votre lieu ?*** *** *** ***bf_gestion_accueil*** ***0*** ***Nous évaluons en ce moment les possibilités de prendre en charge l'accueil.***% @moderateurs***% @moderateurs*** *** *** ***
-liste***ListeOuiNon***Avez-vous des demandes particulières concernant l'usage de vos données et de votre vie privée ?*** *** *** ***bf_vie_privee*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+radio***ListeOuiNon***Souhaiteriez-vous que les Chemins de la Transition prennent en charge les réservations ?*** *** *** ***bf_gestion_reservations*** ***0*** ***Nous évaluons en ce moment les possibilités de prendre en charge les réservations.***%,@moderateurs***%,@moderateurs*** *** *** ***
+radio***ListeOuiNon***Souhaiteriez-vous que les Chemins de la Transition prennent en charge l'accueil sur votre lieu ?*** *** *** ***bf_gestion_accueil*** ***0*** ***Nous évaluons en ce moment les possibilités de prendre en charge l'accueil.***%,@moderateurs***%,@moderateurs*** *** *** ***
+liste***ListeOuiNon***Avez-vous des demandes particulières concernant l'usage de vos données et de votre vie privée ?*** *** *** ***bf_vie_privee*** ***1*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***<div id="listeListeOuiNonbf_vie_privee_oui" style="display:none;">*** *** ***
-texte***bf_details_donnes_personnelles***Quelles sont vos demandes concernant vos données personnelles ?*** *** *** *** ***text***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_details_donnes_personnelles***Quelles sont vos demandes concernant vos données personnelles ?*** *** *** *** ***text***0*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***</div>*** *** ***
-liste***ListeOuiNon***Accepteriez-vous que votre lieu / projet soit annoté, évalué, commenté ?*** *** *** ***bf_acceptation_notes*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
-liste***ListeOuiNon***Accepteriez-vous que l’on voie combien de voyageuses et voyageurs ont visité votre lieu ? (fréquentation)*** *** *** ***bf_acceptation_frequentation*** ***1*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+liste***ListeOuiNon***Accepteriez-vous que votre lieu / projet soit annoté, évalué, commenté ?*** *** *** ***bf_acceptation_notes*** ***1*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
+liste***ListeOuiNon***Accepteriez-vous que l’on voie combien de voyageuses et voyageurs ont visité votre lieu ? (fréquentation)*** *** *** ***bf_acceptation_frequentation*** ***1*** *** ***%,@moderateurs***%,@moderateurs*** *** *** ***
 labelhtml***<div class="moderation-a-afficher" style="display:none;">*** *** ***
 labelhtml***<div class="well">Le cadre ci-dessous ne s'affiche que pour les modérateurs.<br><ul><li>"à modérer" indique que la fiche est encore à modérer</li><li>la case "affichable" doit être cochée pour permettre un affichage public de cette fiche (sinon elle n'est accessible qu'aux modérateurs.)</li><li>"lieu à contacter" permet d'indiquer qu'il faut contacter le lieu</li><li>"en attente de réponse" permet d'indiquer que le lieu n'a pas encore répondu au premier message qui lui a été envoyé.</li>*** *** ***
 radio***ListeModeration***Moderation*** *** ***a_moderer***bf_moderation*** ***1*** *** ***@moderateurs*** * *** *** *** ***
@@ -111,5 +111,5 @@ labelhtml***<div class="clearfix"></div><div style="font-weight: bold; font-size
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 5 --> </div><!-- ferme l'ensemble des onglets --><style>#formulaire .form-actions:not(.view) { display:none; }</style><!--Efface les boutons Valider/Annuler en bas de chaque onglet-->*** *** ***
 labelhtml***<script>var list_elements = document.getElementsByClassName("moderation-a-afficher") ; for (id_item in list_elements){if (document.querySelector("#balise-de-test-moderation>div") != null) {list_elements[id_item].style = ""}};/* Gestion affichage en cas d'erreur de saisie */ document.getElementsByTagName("body")[0].onload = function() { document.querySelector("form#formulaire .form-actions button.btn[type=submit]").onclick = function() { $('#formulaire .nav-tabs .active').removeClass('active');  $('#formulaire .tab-pane.active').removeClass('active');  $('#formulaire .tab-pane').addClass('active');    window.dispatchEvent(new Event('resize')); };};</script>*** *** ***
 labelhtml***<script>defineAutoUpdateDepartment();</script>*** *** ***
-acls*** * ***% @moderateurs*** * ***
+acls*** * ***%,@moderateurs*** * ***
 replacebazarjs*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***

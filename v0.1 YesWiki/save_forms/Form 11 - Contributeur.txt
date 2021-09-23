@@ -3,44 +3,44 @@ labelhtml***<ul class="nav nav-tabs" role="tablist"><li role="presentation" clas
 labelhtml***<div role="tabpanel" class="tab-pane active" id="menu1Contact"><br><br><!--ouvre le premier onglet-->*** *** ***
 labelhtml***<h2 class="text-center">Contact</h2>*** *** ***
 titre***Fiche contributeur {{bf_prenom}} {{bf_nom}}***Titre Automatique***
-linkfiche***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** ***
+linkfiche***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** *** ***
 texte***bf_prenom***Prénom*** *** *** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** ***name,schema:givenName*** ***
-texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** ***name,schema:name*** ***
-image***bf_image***Portrait***210***140***300***200***right***0*** *** ***% @moderateurs*** * *** ***image,schema:image*** ***
-champs_mail***bf_email***Email*** *** *** *** *** ***1*** *** ***% @moderateurs*** * *** *** *** ***
-customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_email***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *** ***
-champs_mail***bf_gmail***Identifiant Gmail*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** ***url,schema:url*** ***
-texte***bf_tel***Téléphone***15***15*** *** ***text***0*** *** ***% @moderateurs*** * *** ***url,schema:telephone*** ***
-texte***bf_id_matrix***Identifiant matrix.org / Element*** *** *** *** ***text***1*** ***plus d'info sur https://element.io/ {en}***% @moderateurs*** * *** ***url,schema:url*** ***
-texte***bf_id_github***Identifiant GitHub*** *** *** *** ***text***0*** ***Plus d'info sur https://github.com/ {en}***% @moderateurs*** * *** ***name,schema:name*** ***
+texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***%,@moderateurs*** * *** ***name,schema:name*** ***
+image***bf_image***Portrait***210***140***300***200***right***0*** *** ***%,@moderateurs*** * *** ***image,schema:image*** ***
+champs_mail***bf_email***Email*** *** *** *** *** ***1***0*** ***%,@moderateurs*** * *** *** *** ***
+customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_email***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+champs_mail***bf_gmail***Identifiant Gmail*** *** *** *** *** ***0***0*** ***%,@moderateurs*** * *** ***url,schema:url*** ***
+texte***bf_tel***Téléphone***15***15*** *** ***text***0*** *** ***%,@moderateurs*** * *** ***url,schema:telephone*** ***
+texte***bf_id_matrix***Identifiant matrix.org / Element*** *** *** *** ***text***1*** ***plus d'info sur https://element.io/ {en}***%,@moderateurs*** * *** ***url,schema:url*** ***
+texte***bf_id_github***Identifiant GitHub*** *** *** *** ***text***0*** ***Plus d'info sur https://github.com/ {en}***%,@moderateurs*** * *** ***name,schema:name*** ***
 labelhtml***<a class="btn btn-primary pull-right" href="https://www.helloasso.com/associations/les-chemins-de-la-transition/adhesions/cotisations/">Adhérer</a>*** *** ***
-listedatedeb***bf_date_adhesion***Date d'adhésion*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** ***startTime,schema:startDate*** ***
+listedatedeb***bf_date_adhesion***Date d'adhésion*** *** *** *** *** ***0*** *** ***%,@moderateurs*** * *** ***startTime,schema:startDate*** ***
 labelhtml***<script>document.querySelector('select.form-control.select-allday[name=bf_date_adhesion_allday]').style.display = "none" ;</script>*** *** ***
-liste***ListeOuiNon***J'accepte que mes informations soient diffusées au sein des Chemins de la Transition*** *** *** ***bf_partage_info*** ***1*** *** ***% @moderateurs*** * *** *** *** ***
-texte***bf_adresse***Adresse***50*** *** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:streetAddress*** ***
-texte***bf_complement_adresse***Adresse (complément)***50*** *** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:streetAddress*** ***
-texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:postalCode*** ***
-texte***bf_ville***Ville***25*** *** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:addressLocality*** ***
-carte_google***bf_latitude***bf_longitude*** *** ***
+liste***ListeOuiNon***J'accepte que mes informations soient diffusées au sein des Chemins de la Transition*** *** *** ***bf_partage_info*** ***1*** *** *** * *** * *** *** *** ***
+texte***bf_adresse***Adresse***50*** *** *** ***text***0*** *** ***%,@moderateurs*** * *** ***location,schema:streetAddress*** ***
+texte***bf_complement_adresse***Adresse (complément)***50*** *** *** ***text***0*** *** ***%,@moderateurs*** * *** ***location,schema:streetAddress*** ***
+texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** ***%,@moderateurs*** * *** ***location,schema:postalCode*** ***
+texte***bf_ville***Ville***25*** *** *** ***text***0*** *** ***%,@moderateurs*** * *** ***location,schema:addressLocality*** ***
+map***bf_latitude***bf_longitude*** *** *** *** *** ***0***
 labelhtml***<p>Dans le champ suivant  indiquez pour chaque organisation :<br><ul><li>Le périmètre d'intervention</li><li>Nombre de bénéficiaires : ........ dont ........ hommes et ........ femmes</li><li>Effectif salarié : ........ dont ........ hommes et ........ femmes</li><li>Effectif bénévole : ........ dont ........ hommes et ........ femmes</li></ul></p><br>*** *** ***
-textelong***bf_organisations***Organisation(s) représentée(s)***60***5*** *** ***wiki***0*** *** ***% @moderateurs*** * *** ***organization,schema:organization*** ***
+textelong***bf_organisations***Organisation(s) représentée(s)***60***5*** *** ***wiki***0*** *** ***%,@moderateurs*** * *** ***organization,schema:organization*** ***
 labelhtml***<a class="btn btn-primary pull-right" href="#menu2Questionnaire" role="tab" data-toggle="tab" onclick="document.querySelector('#formulaire .form-actions').classList.add('view');">Onglet 2. Questionnaire<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour passer à l'onglet 2-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 1 --> <div role="tabpanel" class="tab-pane" id="menu2Questionnaire"><br><br><!-- ouvre l'onglet 2-->*** *** ***
 labelhtml***<h2 class="text-center">Questionnaire</h2>*** *** ***
-textelong***bf_connaissance***Comment ai-je connu Les Chemins de la Transition ?*** ***5*** *** ***nohtml***0*** *** ***% @moderateurs*** * *** *** *** ***
-textelong***bf_rejoindre***Pourquoi rejoindre les Chemins de la Transition ?*** ***5*** *** ***nohtml***0*** *** ***% @moderateurs*** * *** *** *** ***
-textelong***bf_attentes***Quelles sont mes attentes, sur quels sujets ai-je envie de m'impliquer ?*** ***5*** *** ***nohtml***0*** *** ***% @moderateurs*** * *** *** *** ***
-textelong***bf_disponibilites***Quelles sont mes disponibilités ?*** ***5*** *** ***nohtml***0*** *** ***% @moderateurs*** * *** *** *** ***
-textelong***bf_competences***Quelles sont mes compétences/Que puis-je apporter&nbsp;? (mini CV en 8 lignes max)*** ***8*** *** ***html***0*** *** ***% @moderateurs*** * *** *** *** ***
-textelong***bf_autres_informations***Autres informations que je souhaite porter à la connaissance du collectif*** ***8*** *** ***wiki***0*** *** ***% @moderateurs*** * *** *** *** ***
+textelong***bf_connaissance***Comment ai-je connu Les Chemins de la Transition ?*** ***5*** *** ***nohtml***0*** *** ***%,@moderateurs*** * *** *** *** ***
+textelong***bf_rejoindre***Pourquoi rejoindre les Chemins de la Transition ?*** ***5*** *** ***nohtml***0*** *** ***%,@moderateurs*** * *** *** *** ***
+textelong***bf_attentes***Quelles sont mes attentes, sur quels sujets ai-je envie de m'impliquer ?*** ***5*** *** ***nohtml***0*** *** ***%,@moderateurs*** * *** *** *** ***
+textelong***bf_disponibilites***Quelles sont mes disponibilités ?*** ***5*** *** ***nohtml***0*** *** ***%,@moderateurs*** * *** *** *** ***
+textelong***bf_competences***Quelles sont mes compétences/Que puis-je apporter&nbsp;? (mini CV en 8 lignes max)*** ***8*** *** ***html***0*** *** ***%,@moderateurs*** * *** *** *** ***
+textelong***bf_autres_informations***Autres informations que je souhaite porter à la connaissance du collectif*** ***8*** *** ***wiki***0*** *** ***%,@moderateurs*** * *** *** *** ***
 labelhtml***<div class="moderation-a-afficher" style="display:none;">*** *** ***
 labelhtml***<div class="well">Le cadre ci-dessous ne s'affiche que pour les modérateurs.<br><ul><li>"à modérer" indique que la fiche est encore à modérer</li><li>la case "affichable" doit être cochée pour permettre un affichage public de cette fiche (sinon elle n'est accessible qu'aux modérateurs.)</li><li>"lieu à contacter" permet d'indiquer qu'il faut contacter le lieu</li><li>"en attente de réponse" permet d'indiquer que le lieu n'a pas encore répondu au premier message qui lui a été envoyé.</li>*** *** ***
 radio***ListeModeration***Moderation*** *** ***a_moderer***bf_moderation*** ***1*** *** ***@moderateurs*** * *** *** *** ***
 checkbox***ListeSuivi***Suivi*** *** *** ***bf_suivi*** ***0*** *** ***@moderateurs*** * *** *** *** ***
 labelhtml***</div></div><div id="balise-de-test-moderation" style="display:none;">*** *** ***
-texte***text_test_moderateur***Test modérateur<br>*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** *** ***
+texte***text_test_moderateur***Test modérateur*** *** *** *** ***text***0*** *** ***@moderateurs***@moderateurs*** *** *** ***
 labelhtml***</div><div class="clearfix"></div>*** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu1Contact" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'));document.querySelector('#formulaire .form-actions').classList.remove('view');"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 1. Informations de contact</a><!--Affiche un bouton pour revenir à l'onglet 1-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 2 --> </div><!-- ferme l'ensemble des onglets -->*** *** ***
 labelhtml***<script>var list_elements = document.getElementsByClassName("moderation-a-afficher") ; for (id_item in list_elements){if (document.querySelector("#balise-de-test-moderation>div") != null) {list_elements[id_item].style = ""}};/* Gestion affichage en cas d'erreur de saisie */ document.getElementsByTagName("body")[0].onload = function() { document.querySelector("form#formulaire .form-actions button.btn[type=submit]").onclick = function() { $('#formulaire .nav-tabs .active').removeClass('active');  $('#formulaire .tab-pane.active').removeClass('active');  $('#formulaire .tab-pane').addClass('active');    window.dispatchEvent(new Event('resize')); };};</script><style>#formulaire .form-actions:not(.view) { display:none; }</style>*** *** ***
-acls***% @moderateurs***% @moderateurs***% @moderateurs***
+acls***%,@moderateurs***%,@moderateurs***%,@moderateurs***

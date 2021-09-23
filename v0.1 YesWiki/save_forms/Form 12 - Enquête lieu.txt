@@ -1,7 +1,7 @@
 titre***Enquete_Lieux_{{checkboxfiche5bf_lieu}}_{{bf_prenom}}_{{bf_nom}}***Titre***
 labelhtml***<i><span class="symbole_obligatoire"></span> : champs requis</i>*** *** ***
-texte***bf_prenom***Prénom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** ***name,schema:givenName*** ***
-texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***% @moderateurs*** * *** ***name,schema:name*** ***
+texte***bf_prenom***Prénom*** *** *** *** ***text***1*** *** ***%,@moderateurs*** * *** ***name,schema:givenName*** ***
+texte***bf_nom***Nom*** *** *** *** ***text***1*** *** ***%,@moderateurs*** * *** ***name,schema:name*** ***
 checkboxfiche***5***Lieu*** *** *** ***bf_lieu***tags***1*** ***Taper les premières lettres du nom du lieu puis cliquer ou appuyer sur Entrée pour valider.*** * *** * *** ***organization,schema:organization*** ***
 textelong***bf_recommandations***Auriez-vous des acteurs / lieux de transition à nous recommander dans votre réseau ou près de chez vous ?***255***5*** *** ***nohtml***0*** *** *** * *** * *** *** *** ***
 checkbox***ListeTypeDeContribution***Aimeriez-vous contribuer aux Chemins de la Transition ? en devenant...*** *** *** ***bf_contribution*** ***0*** *** *** * *** * *** *** *** ***
@@ -18,4 +18,4 @@ textelong***bf_rapport_au_territoire***Rapport au territoire***255***5*** *** **
 textelong***bf_ameliorations***Quelles seraient les fonctionnalités que devrait proposer la plateforme&nbsp; ?*** *** *** *** ***html***0*** *** *** * *** * *** *** *** ***
 labelhtml***<span style="font-weight:600;color: var(--primary-color);font-size:1 em;">Avez-vous des besoins ou rencontrez-vous des difficultés que vous souhaiteriez nous communiquer ?</span>*** *** ***
 textelong***bf_besoins***Besoins ou difficultés auxquelles nous pourrions répondre*** *** *** *** ***html***0*** *** *** * *** * *** *** *** ***
-acls*** * ***% @moderateurs*** * ***
+acls*** * ***%,@moderateurs*** * ***

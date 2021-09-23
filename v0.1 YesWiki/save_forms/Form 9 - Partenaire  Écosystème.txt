@@ -1,6 +1,6 @@
 texte***bf_titre***Nom de l'organisation*** *** *** *** ***text***1*** *** *** * *** * *** ***name,schema:name*** ***
 image***bf_image***Logo***140***140***600***600***right***0*** *** *** * *** * *** ***image,schema:logo*** ***
 textelong***bf_description***Description***5***5*** *** ***wiki***0*** *** *** * *** * *** ***schema:description*** ***
-lien_internet***bf_site_internet***Site Internet***40***255*** *** ***url***0*** *** *** * *** * *** ***url,schema:WebPage*** ***
+lien_internet***bf_site_internet***Site Internet*** *** *** *** *** ***0*** *** *** * *** * *** ***url,schema:WebPage*** ***
 checkbox***ListeTypeDePartenariat***Type de partenariat*** *** *** *** *** ***0*** *** *** * *** * *** *** *** ***
 radio***ListeOuiNon***Lien à ouvrir dans une nouvelle page ?*** *** ***non***isextlink*** ***0*** *** ***@admins***@admins*** *** *** ***

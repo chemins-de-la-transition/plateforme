@@ -3,66 +3,66 @@ labelhtml***<ul class="nav nav-tabs" role="tablist"><li role="presentation" clas
 labelhtml***<div role="tabpanel" class="tab-pane active" id="menu1Contact"><br><br><!--ouvre le premier onglet-->*** *** ***
 labelhtml***<h2 class="text-center">Contact</h2>*** *** ***
 titre***{{bf_prenom}} de {{bf_ville}}***Titre Automatique***
-linkfiche***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** ***
+linkfiche***vide***vide*** *** *** *** *** *** *** *** *** *** *** *** *** ***
 texte***bf_prenom***Prénom*** *** *** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** ***name,schema:givenName*** ***
-texte***bf_nom***Nom*** *** *** *** ***text***1*** ***Votre nom ne sera pas visible publiquement.***% @moderateurs*** * *** ***name,schema:name*** ***
+texte***bf_nom***Nom*** *** *** *** ***text***1*** ***Votre nom ne sera pas visible publiquement.***%,@moderateurs*** * *** ***name,schema:name*** ***
 image***bf_image***Photo***210***140***300***200***right***0*** ***ATTENTION : donnée publique*** * *** * *** ***image,schema:image*** ***
-listedatedeb***date_naissance***Date de naissance*** *** *** *** *** ***0*** ***Cliquez sur le mois en haut pour remonter aux années  puis décennies***% @moderateurs*** * *** ***schema:birthDate*** ***
+listedatedeb***date_naissance***Date de naissance*** *** *** *** *** ***0*** ***Cliquez sur le mois en haut pour remonter aux années  puis décennies***%,@moderateurs*** * *** ***schema:birthDate*** ***
 labelhtml***<script>document.querySelector('select.form-control.select-allday[name=date_naissance_allday]').style.display = "none" ;</script>*** *** ***
-texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***% @moderateurs*** * *** ***url,schema:telephone*** ***
-champs_mail***bf_mail***Email de contact*** *** *** ***form*** ***1*** ***Un bouton contact s'affichera votre adresse email ne sera pas visible publiquement.*** * *** * *** *** *** ***
-customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_mail***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *** ***
-texte***bf_adresse***Adresse***50***80*** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:streetAddress*** ***
-texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:streetAddress*** ***
-texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** ***% @moderateurs*** * *** ***location,schema:postalCode*** ***
+texte***bf_tel***Téléphone***10***20*** *** ***text***0*** *** ***%,@moderateurs*** * *** ***url,schema:telephone*** ***
+champs_mail***bf_mail***Email de contact*** *** *** ***form*** ***1***0***Un bouton contact s'affichera votre adresse email ne sera pas visible publiquement.*** * *** * *** *** *** ***
+customsendmail***custombfmail***Envoyer un message à cette adresse aux prochaines modifications de cette fiche ?***bf_mail***yes***no*** ***Envoyer un message cette fois ?*** *** *** ***% @moderateurs***% @moderateurs*** *** *** ***
+texte***bf_adresse***Adresse***50***80*** *** ***text***0*** *** ***%,@moderateurs*** * *** ***location,schema:streetAddress*** ***
+texte***bf_complement_adresse***Complément d'adresse***50***80*** *** ***text***0*** *** ***%,@moderateurs*** * *** ***location,schema:streetAddress*** ***
+texte***bf_code_postal***Code postal***8***8*** *** ***text***0*** *** ***%,@moderateurs*** * *** ***location,schema:postalCode*** ***
 texte***bf_ville***Ville***50***80*** *** ***text***1*** ***ATTENTION : donnée publique*** * *** * *** ***location,schema:addressLocality*** ***
-carte_google***bf_latitude***bf_longitude*** *** ***
+map***bf_latitude***bf_longitude*** *** *** *** *** ***0***
 labelhtml***<a class="btn btn-primary pull-right" href="https://www.helloasso.com/associations/les-chemins-de-la-transition/adhesions/cotisations/">Adhérer</a>*** *** ***
-listedatedeb***bf_date_adhesion***Date d'adhésion*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** ***startTime,schema:startDate*** ***
+listedatedeb***bf_date_adhesion***Date d'adhésion*** *** *** *** *** ***0*** *** ***%,@moderateurs*** * *** ***startTime,schema:startDate*** ***
 labelhtml***<script>document.querySelector('select.form-control.select-allday[name=bf_date_adhesion_allday]').style.display = "none" ;</script>*** *** ***
 labelhtml***<a class="btn btn-primary pull-right" href="#menu2FaireConnaissance" role="tab" data-toggle="tab">Onglet 2. Faire connaissance<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour passer à l'onglet 2-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 1 --> <div role="tabpanel" class="tab-pane" id="menu2FaireConnaissance"><br><br><!-- ouvre l'onglet 2-->*** *** ***
 labelhtml***<h2 class="text-center">Faire connaissance</h2>*** *** ***
-checkbox***ListeTypeDeVoyageurs***Je suis...*** *** *** ***bf_type_voyageurs*** ***0*** *** ***% @moderateurs*** * *** *** *** ***
-textelong***textarea_1606129253939***... et forcément plus que ça :*** ***3*** *** ***nohtml***0*** *** ***% @moderateurs***% @moderateurs*** *** *** ***
-textelong***bf_connaissance***Comment ai-je connu Les Chemins de la Transition ?***600***5*** *** ***nohtml***0*** *** ***% @moderateurs*** * *** *** *** ***
-textelong***bf_rejoindre***Pourquoi emprunter les Chemins de la Transition ?***600***5*** *** ***nohtml***0*** *** ***% @moderateurs*** * *** *** *** ***
-textelong***bf_attentes***Quelles sont mes attentes ?***600***5*** *** ***nohtml***0*** *** ***% @moderateurs*** * *** *** *** ***
-textelong***textarea_1606217346583***Pourquoi utiliser une plateforme comme celle des Chemins de la Transition ?***600***5*** *** ***nohtml***0*** *** ***% @moderateurs*** * *** *** *** ***
+checkbox***ListeTypeDeVoyageurs***Je suis...*** *** *** ***bf_type_voyageurs*** ***0*** *** ***%,@moderateurs*** * *** *** *** ***
+textelong***textarea_1606129253939***... et forcément plus que ça :*** ***3*** *** ***nohtml***0*** *** ***%,@moderateurs*** * *** *** *** ***
+textelong***bf_connaissance***Comment ai-je connu Les Chemins de la Transition ?***600***5*** *** ***nohtml***0*** *** ***%,@moderateurs*** * *** *** *** ***
+textelong***bf_rejoindre***Pourquoi emprunter les Chemins de la Transition ?***600***5*** *** ***nohtml***0*** *** ***%,@moderateurs*** * *** *** *** ***
+textelong***bf_attentes***Quelles sont mes attentes ?***600***5*** *** ***nohtml***0*** *** ***%,@moderateurs*** * *** *** *** ***
+textelong***textarea_1606217346583***Pourquoi utiliser une plateforme comme celle des Chemins de la Transition ?***600***5*** *** ***nohtml***0*** *** ***%,@moderateurs*** * *** *** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu1Contact" role="tab" data-toggle="tab" onclick="window.dispatchEvent(new Event('resize'))"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 1. Contact</a><a class="btn btn-primary pull-right" href="#menu3MonParcours" role="tab" data-toggle="tab">Onglet 3. Mon parcours<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 1 et un bouton pour passer à l'onglet 3-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 2 --> <div role="tabpanel" class="tab-pane" id="menu3MonParcours"><br><br><!-- ouvre l'onglet 3-->*** *** ***
 labelhtml***<h2 class="text-center">Mon parcours</h2>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-checkbox***ListeTypeDAccueil***J'ai déjà participé à des voyages de type :*** *** *** ***type_accueil*** ***0*** ***Voir la description ci-dessous.***% @moderateurs*** * *** *** *** ***
+checkbox***ListeTypeDAccueil***J'ai déjà participé à des voyages de type :*** *** *** ***type_accueil*** ***0*** ***Voir la description ci-dessous.***%,@moderateurs*** * *** *** *** ***
 labelhtml***Une page d'aide permet d'avoir une <a href="?AideTypeDeVoyage" target="blank" class="modalbox">description détaillée des différents types de voyage</a></div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
-checkboxfiche***6***Thématiques*** *** *** *** *** ***0*** ***Voir la description ci-dessous.***% @moderateurs*** * *** *** *** ***
+checkboxfiche***6***Thématiques*** *** *** *** *** ***0*** ***Voir la description ci-dessous.***%,@moderateurs*** * *** *** *** ***
 labelhtml***Nous vous invitons à cocher les thématiques que vous avez déjà abordées lors de précédents parcours. Une page d'aide permet d'avoir une <a href="?Aide_ParcoursThematiques" target="blank" class="modalbox">description détaillée des différentes thématiques couvertes par les parcours.</a> Vous pouvez en outre nous indiquer les thématiques non mentionnées ici dans le cadre ci-dessous. </div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 tags***bf_tags***Mes mots-clés*** *** *** *** *** ***0*** *** *** * *** * *** *** *** ***
 labelhtml***Vous pouvez saisir dans la zone ci-dessus d'autres thématiques et tout mot clé lié. Appuyez sur Entrée pour valider chaque mot.</div>*** *** ***
 labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">*** *** ***
 labelhtml***Lors de ces parcours ou par ailleurs  j'ai acquis la ou les compétences suivantes.*** *** ***
-checkboxfiche***8***Mes compétences*** *** *** *** *** ***0*** *** ***% @moderateurs*** * *** *** *** ***
+checkboxfiche***8***Mes compétences*** *** *** *** *** ***0*** *** ***%,@moderateurs*** * *** *** *** ***
 labelhtml***S'il en manque une&#44;  il est possible de l'ajouter avec le bouton suivant : <a href="?AjouterUneCompetence" target="blank" class="btn btn-primary">Ajouter une nouvelle compétence</a></div>*** *** ***
 labelhtml***<div id="checkboxListeTypeDAccueiltype_accueil_WoofingChantiers" style="display:none;">*** *** ***
-liste***ListeOuiNon***Dans le cas du woofing,  avez-vous des compétences ou expériences spécifiques ?*** *** *** ***bf_niveau_woofing_competences*** ***0*** *** ***% @moderateurs*** * *** *** *** ***
+liste***ListeOuiNon***Dans le cas du woofing,  avez-vous des compétences ou expériences spécifiques ?*** *** *** ***bf_niveau_woofing_competences*** ***0*** *** ***%,@moderateurs*** * *** *** *** ***
 labelhtml***</div>*** *** ***
 labelhtml***<div id="listeListeOuiNonbf_niveau_mini_woofing_competences_oui" style="display:none;">*** *** ***
-textelong***bf_competences_woofing***Compétences/expériences spécifiques woofing*** ***3*** *** ***nohtml***0*** *** ***% @moderateurs*** * *** *** *** ***
+textelong***bf_competences_woofing***Compétences/expériences spécifiques woofing*** ***3*** *** ***nohtml***0*** *** ***%,@moderateurs*** * *** *** *** ***
 labelhtml***</div>*** *** ***
 labelhtml***<a class="btn btn-primary pull-left" href="#menu2FaireConnaissance" role="tab" data-toggle="tab"> <i class="glyphicon glyphicon-chevron-left"></i>Onglet 2. Faire connaissance</a><a class="btn btn-primary pull-right" href="#menu4Preferences" role="tab" data-toggle="tab" onclick="document.querySelector('#formulaire .form-actions').classList.add('view');">Onglet 4. Informations utiles<i class="glyphicon glyphicon-chevron-right"></i></a><!--Affiche un bouton pour revenir à l'onglet 2 et un bouton pour passer à l'onglet 4-->*** *** ***
 labelhtml***<div class="clearfix"></div></div><!-- ferme l'onglet 3 --> <div role="tabpanel" class="tab-pane" id="menu4Preferences"><br><br><!-- ouvre l'onglet 4-->*** *** ***
 labelhtml***<h2 class="text-center">Informations utiles</h2>*** *** ***
-texte***bf_suivi***Fiche suivie en interne par*** *** *** *** ***text***0*** *** ***% @moderateurs***@moderateurs*** ***Person:name,schema:Person:name*** ***
-liste***ListeOuiNon***J'ai des demandes particulières concernant l'usage de mes données et de ma vie privée.*** *** *** ***bf_vie_privee*** ***1*** *** ***% @moderateurs*** * *** *** *** ***
+texte***bf_suivi***Fiche suivie en interne par*** *** *** *** ***text***0*** *** ***%,@moderateurs***@moderateurs*** ***Person:name,schema:Person:name*** ***
+liste***ListeOuiNon***J'ai des demandes particulières concernant l'usage de mes données et de ma vie privée.*** *** *** ***bf_vie_privee*** ***1*** *** ***%,@moderateurs*** * *** *** *** ***
 labelhtml***<div id="listeListeOuiNonbf_vie_privee_oui" style="display:none;">*** *** ***
-texte***bf_details_donnes_personnelles***Quelles sont vos demandes concernant vos données personnelles ?*** *** *** *** ***text***0*** *** ***% @moderateurs*** * *** *** *** ***
+texte***bf_details_donnes_personnelles***Quelles sont vos demandes concernant vos données personnelles ?*** *** *** *** ***text***0*** *** ***%,@moderateurs*** * *** *** *** ***
 labelhtml***</div>*** *** ***
-radio***ListeOuiNon***J'accepte que mes informations soient diffusées au sein de l'écosystème des Chemins de la Transition (pour créer mon parcours)*** *** *** ***radio_partage_info*** ***1*** *** ***% @moderateurs*** * *** *** *** ***
-liste***ListeOuiNon***J'accepte que l’on voie les lieux que j'aurai visités ?*** *** *** ***bf_acceptation_suivi_lieux*** ***1*** *** ***% @moderateurs*** * *** *** *** ***
+radio***ListeOuiNon***J'accepte que mes informations soient diffusées au sein de l'écosystème des Chemins de la Transition (pour créer mon parcours)*** *** *** ***radio_partage_info*** ***1*** *** ***%,@moderateurs*** * *** *** *** ***
+liste***ListeOuiNon***J'accepte que l’on voie les lieux que j'aurai visités ?*** *** *** ***bf_acceptation_suivi_lieux*** ***1*** *** ***%,@moderateurs*** * *** *** *** ***
 labelhtml***<div></div>*** *** ***
-liste***ListeOuiNon***J'accepte que mes informations soient publiées sur la plateforme des Chemins de la Transition*** *** *** ***bf_publication_info*** ***1*** *** ***% @moderateurs*** * *** *** *** ***
+liste***ListeOuiNon***J'accepte que mes informations soient publiées sur la plateforme des Chemins de la Transition*** *** *** ***bf_publication_info*** ***1*** *** ***%,@moderateurs*** * *** *** *** ***
 labelhtml***<div class="moderation-a-afficher" style="display:none;">*** *** ***
 labelhtml***<div class="well">Le cadre ci-dessous ne s'affiche que pour les modérateurs.<br><ul><li>"à modérer" indique que la fiche est encore à modérer</li><li>la case "affichable" doit être cochée pour permettre un affichage public de cette fiche (sinon elle n'est accessible qu'aux modérateurs.)</li><li>"lieu à contacter" permet d'indiquer qu'il faut contacter le lieu</li><li>"en attente de réponse" permet d'indiquer que le lieu n'a pas encore répondu au premier message qui lui a été envoyé.</li>*** *** ***
 radio***ListeModeration***Moderation*** *** ***a_moderer***bf_moderation*** ***1*** *** ***@moderateurs*** * *** *** *** ***
@@ -74,4 +74,4 @@ labelhtml***<a class="btn btn-primary pull-left" href="#menu3MonParcours" role="
 labelhtml***<div class="clearfix"></div><div style="font-weight: bold; font-size: large;">Il ne vous reste plus qu'à valider ! </div>*** *** ***
 labelhtml***</div><!-- ferme l'onglet 4 --> </div><!-- ferme l'ensemble des onglets --><style>#formulaire .form-actions:not(.view) { display:none; }</style><!--Efface les boutons Valider/Annuler en bas de chaque onglet-->*** *** ***
 labelhtml***<script>var list_elements = document.getElementsByClassName("moderation-a-afficher") ; for (id_item in list_elements){if (document.querySelector("#balise-de-test-moderation>div") != null) {list_elements[id_item].style = ""}};/* Gestion affichage en cas d'erreur de saisie */ document.getElementsByTagName("body")[0].onload = function() { document.querySelector("form#formulaire .form-actions button.btn[type=submit]").onclick = function() { $('#formulaire .nav-tabs .active').removeClass('active');  $('#formulaire .tab-pane.active').removeClass('active');  $('#formulaire .tab-pane').addClass('active');    window.dispatchEvent(new Event('resize')); };};</script>*** *** ***
-acls***% @moderateurs***% @moderateurs***% @moderateurs***
+acls***%,@moderateurs***%,@moderateurs***%,@moderateurs***

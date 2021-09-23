@@ -6,4 +6,4 @@ labelhtml***<div class="well" style="border: 3px solid var(--primary-color);">**
 checkbox***ListeCategoriesDuBlog***Catégorie*** *** *** ***categorie*** ***1*** *** *** * *** * *** *** *** ***
 tags***bf_tags***Ajouter un tag*** *** *** *** *** ***0*** ***pour plusieurs tags  validez par "Entrée" après chaque saisie*** * *** * *** *** *** ***
 labelhtml***</div>*** *** ***
-acls*** * ***% @moderateurs*** * ***
+acls*** * ***%,@moderateurs*** * ***
